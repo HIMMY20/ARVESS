@@ -69,14 +69,14 @@ const Navbar = () => {
     <li><a href="/womenspecific">Women Specific Programs</a></li>
     <li><a href="/angle">Angel & VC Connect</a></li>
     <li><a href="/privatefunding">Private Funding</a></li>
-    <li><a href="#">Govt & Private Loans</a></li>
+    <li><a href="/governmentandprivateloans">Govt & Private Loans</a></li>
   </ul>
 </div>
 
 <div className="col-md-4">
   <h6 className="mega-title">Studio Of Branding & Digital</h6>
   <ul className="mega-list">
-    <li><a href="#">Branding & Designs</a></li>
+    <li><a href="/branding">Branding & Designs</a></li>
     <li><a href="#">Website & App Development</a></li>
     <li><a href="#">Lead Generation</a></li>
     <li><a href="#">Performance Marketing</a></li>

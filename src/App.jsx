@@ -15,6 +15,8 @@ import Industryfunding from "./Pages/OfficeOfOpportunity/Industryfunding";
 import Womenspecification from "./Pages/OfficeOfOpportunity/Womenspecification";
 import Angel from "./Pages/OfficeOfOpportunity/Angel";
 import Privatefunding from "./Pages/OfficeOfOpportunity/Privatefunding";
+import GovernmentandPrivateloans from "./Pages/OfficeOfOpportunity/GovernmentandPrivateloans";
+import Branding from "./Pages/StudioDigital&branding/Branding";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         <Route path="/womenspecific" element={<Womenspecification/>} />
         <Route path="/angle" element={<Angel/>} />
         <Route path="/privatefunding" element={<Privatefunding/>} />
+        <Route path="/governmentandprivateloans" element={<GovernmentandPrivateloans/>} />
+        <Route path="/branding" element={<Branding/>} />
 
         
       </Routes>
