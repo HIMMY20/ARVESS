@@ -27,8 +27,8 @@ export const Footer = () => {
 
       <div className="info-item">
         <div className="info-icon">📞</div>
-        <h6>Connect</h6>
-        <p>Facebook · Twitter · Instagram · LinkedIn</p>
+        <h6>Contact</h6>
+        <p>+91 9662347619</p>
       </div>
     </div>
 

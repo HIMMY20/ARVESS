@@ -251,7 +251,12 @@ section:first-child {
 /* HERO */
 /* ============================= */
 .home-hero {
-  background: linear-gradient(135deg, var(--green-main), var(--green-soft));
+  background: 
+  url("/home1bgimage.jpeg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
   color: var(--white);
   padding: 120px 0;
 }
@@ -264,7 +269,7 @@ section:first-child {
 .home-hero p {
   margin-top: 18px;
   font-size: 16px;
-  color: #A00A20;
+  color: rgb(255, 255, 99);
 }
 
 .hero-box {
@@ -283,6 +288,7 @@ section:first-child {
   padding: 120px 0;
   background: linear-gradient(135deg, #012d0e, #063a1c);
   overflow: hidden;
+  margin-top: 20px;
 }
 
 /* subtle bg image */
