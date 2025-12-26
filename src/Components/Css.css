@@ -265,14 +265,27 @@ background-repeat: no-repeat;
   font-size: 46px;
   font-weight: 800;
 }
-
+.home-hero h1 {
+  text-align: center;
+  margin-bottom: 80px;
+  
+}
+.home-hero h2 {
+  font-size: 42px;
+  font-weight: 900;
+}
 .home-hero p {
   margin-top: 18px;
   font-size: 16px;
-  color: rgb(255, 255, 99);
+  color: #A00A20;
+  font-weight: 500;
 }
-
-.hero-box {
+.home-hero h4 {
+  color: #A00A20;
+  font-variant: small-caps;
+  font-size: 32px;
+}
+.hero-box .col-lg-12 {
   background: var(--white);
   color: var(--green-main);
   padding: 38px;

@@ -13,28 +13,21 @@ const Home = () => {
       {/* ================= HERO SECTION ================= */}
       <section className="home-hero reveal">
         <div className="container">
+            <h1>Welcome to Arvess <sup>TM</sup></h1>
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <h1>
-                Where Strategy Meets Execution 
-                for Sustainable Growth
-              </h1>
-              <p>
-                From strategic business consulting to end-to-end outsourcing
-                solutions, Arvess partners with founders and enterprises to
-                build resilient, compliant, and scalable organizations. We
-                simplify complex operations, strengthen governance and financial
-                frameworks, and design execution-driven systems that enable
-                sustainable growth. With Arvess, businesses gain clarity,
-                control, and the confidence to scale in an evolving market.
-              </p>
+              <h2>Where Strategy Meets Execution for Sustainable Growth</h2>
             </div>
 
             <div className="col-lg-6 text-center">
-              <div className="hero-box">
-                <h4>Trusted Business Support Partner</h4>
-                <p>Expertise. Transparency. Growth-Focused Solutions.</p>
-              </div>
+            <div className="hero-box">
+              <h4>Turning idea's into impact</h4>
+              <p>
+                Arvess brings structure, strategy, and operational discipline to
+                growing businesses.
+              </p>
+              
+            </div>
             </div>
           </div>
         </div>
