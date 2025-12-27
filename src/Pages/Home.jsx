@@ -43,14 +43,14 @@ const Home = () => {
             to support ambitious startups and growth-stage enterprises in
             navigating complexity with confidence. We partner with founders to
             establish strong foundations across legal, financial, operational,
-            and digital functions—ensuring their businesses are structured,
+            and digital function sensuring their businesses are structured,
             compliant, and ready to scale. 
           </h4>
           <h4>
             Our approach blends strategic insight
             with execution excellence. From early-stage setup to long-term
             growth optimization, Arvess delivers clarity, control, and
-            credibility—empowering businesses to make informed decisions,
+            credibility empowering businesses to make informed decisions,
             attract opportunities, and grow sustainably in an evolving market.
           </h4>
         </div>
