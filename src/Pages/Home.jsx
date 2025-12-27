@@ -76,16 +76,16 @@ const Home = () => {
       </div>
 
       <div className="stat-card">
+        <Counter end={20} suffix="+" />
+        <span className="stat-line"></span>
+        <p>Strategic hubs and nationwide partner agencies</p>
+      </div>
+      <div className="stat-card">
         <Counter end={79} suffix="%" />
         <span className="stat-line"></span>
         <p>Our success rate across schemes</p>
       </div>
 
-      <div className="stat-card">
-        <Counter end={20} suffix="+" />
-        <span className="stat-line"></span>
-        <p>Strategic hubs and nationwide partner agencies</p>
-      </div>
 
       <div className="stat-card">
         <Counter end={5} suffix="+" />
