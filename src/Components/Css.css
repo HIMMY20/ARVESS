@@ -150,8 +150,8 @@ section:first-child {
 }
 /* Full width dropdown */
 .mega-menu {
-  width: 50vw;
-  left: -500px !important;
+  width: 70vw;
+  left: -800px !important;
   right: 0;
   top: 100%;
   border: none;
