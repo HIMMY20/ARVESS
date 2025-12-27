@@ -13,23 +13,46 @@ const Home = () => {
       {/* ================= HERO SECTION ================= */}
       <section className="home-hero reveal">
         <div className="container">
-            <h1>Welcome to Arvess <sup>TM</sup></h1>
+          <h1>
+            Welcome to Arvess <sup>TM</sup>
+          </h1>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h2>Where Strategy Meets Execution for Sustainable Growth</h2>
             </div>
 
             <div className="col-lg-6 text-center">
-            <div className="hero-box">
-              <h4>Turning idea's into impact</h4>
-              <p>
-                Arvess brings structure, strategy, and operational discipline to
-                growing businesses.
-              </p>
-              
-            </div>
+              <div className="hero-box">
+                <h4>Turning idea's into impact</h4>
+                <p>
+                  Arvess brings structure, strategy, and operational discipline
+                  to growing businesses.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT SECTION ================= */}
+      <section className="home-about reveal">
+        <div className="container text-center">
+          <h1>About Arvess</h1>
+          <h4>
+            Arvess is a strategic business consulting and outsourcing firm built
+            to support ambitious startups and growth-stage enterprises in
+            navigating complexity with confidence. We partner with founders to
+            establish strong foundations across legal, financial, operational,
+            and digital functions—ensuring their businesses are structured,
+            compliant, and ready to scale. 
+          </h4>
+          <h4>
+            Our approach blends strategic insight
+            with execution excellence. From early-stage setup to long-term
+            growth optimization, Arvess delivers clarity, control, and
+            credibility—empowering businesses to make informed decisions,
+            attract opportunities, and grow sustainably in an evolving market.
+          </h4>
         </div>
       </section>
 
@@ -137,22 +160,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ================= ABOUT SECTION ================= */}
-      <section className="home-about reveal">
-        <div className="container text-center">
-          <h2>About Arvess</h2>
-          <p>
-            Arvess is a professional consulting and outsourcing organization
-            focused on enabling startups, enterprises, and growing businesses
-            through structured legal, financial, and digital support systems.
-          </p>
-          <p>
-            Our mission is to simplify complex processes and provide businesses
-            with dependable guidance at every stage of their journey.
-          </p>
         </div>
       </section>
 

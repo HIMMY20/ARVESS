@@ -18,8 +18,16 @@ section:first-child {
 
   /* Navbar height control */
   .navbar {
-    padding: 6px 0;   /* 🔥 compact height */
+    padding: 6px 0;
   }
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.2s linear;
+}
 
   /* Logo size */
   .arvess-logo img {
@@ -265,8 +273,13 @@ background-repeat: no-repeat;
 }
 
 .home-hero h1 {
-  font-size: 46px;
+  font-size: 72px;
   font-weight: 800;
+  letter-spacing: 2px;
+}
+.home-hero h1 sup{
+  font-size: 16px;
+  vertical-align: super;
 }
 .home-hero h1 {
   text-align: center;
@@ -1001,6 +1014,18 @@ background-repeat: no-repeat;
   .footer-info-box {
     grid-template-columns: 1fr;
   }
+}
+
+.home-about{
+  padding: 100px 0px;
+}
+.home-about h1{
+  font-size: 62px;
+  font-weight: 900;
+
+}
+.home-about h4{
+  padding: 20px;
 }
 
 

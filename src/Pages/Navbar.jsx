@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Components/Css.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Navbar = () => {
+
+useEffect(() => {
+  const navbar = document.querySelector(".custom-navbar");
+  if (!navbar) return;
+
+  const onScroll = () => {
+    if (window.scrollY > 60) {
+      // 👇 DIRECT INLINE STYLE (BOOTSTRAP KO FORCE OVERRIDE)
+      navbar.style.backgroundColor = "transparent";
+      navbar.style.boxShadow = "none";
+    } else {
+      navbar.style.backgroundColor = "#ffffff";
+      navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+    }
+    
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll();
+
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
+
         <div className="container">
 
           {/* Logo */}
