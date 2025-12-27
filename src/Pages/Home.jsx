@@ -57,45 +57,46 @@ const Home = () => {
       </section>
 
       {/* ================= STATISTICS SECTION ================= */}
-      <section className="home-stats reveal">
-        <div className="stats-bg"></div>
+<section className="home-stats reveal">
+  <div className="stats-bg"></div>
 
-        <div className="container">
-          <div className="row g-4 text-center stats-row">
-            <div className="col-md-3 col-sm-6">
-              <div className="stat-card">
-                <Counter end={500} suffix="+" />
-                <span className="stat-line"></span>
-                <p>Startups supported and scaled successfully with Arvess</p>
-              </div>
-            </div>
+  <div className="container">
+    <div className="stats-grid">
 
-            <div className="col-md-3 col-sm-6">
-              <div className="stat-card">
-                <Counter end={1200} suffix="+" />
-                <span className="stat-line"></span>
-                <p>Customized funding and grant proposals delivered</p>
-              </div>
-            </div>
+      <div className="stat-card">
+        <Counter end={550} suffix="+" />
+        <span className="stat-line"></span>
+        <p>Startups supported and scaled successfully with Arvess</p>
+      </div>
 
-            <div className="col-md-3 col-sm-6">
-              <div className="stat-card">
-                <Counter end={98} suffix="%" />
-                <span className="stat-line"></span>
-                <p>Approval and interview success rate across schemes</p>
-              </div>
-            </div>
+      <div className="stat-card">
+        <Counter end={1500} suffix="+" />
+        <span className="stat-line"></span>
+        <p>Customized funding and grant proposals delivered</p>
+      </div>
 
-            <div className="col-md-3 col-sm-6">
-              <div className="stat-card">
-                <Counter end={15} suffix="+" />
-                <span className="stat-line"></span>
-                <p>Strategic hubs and nationwide partner agencies</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="stat-card">
+        <Counter end={79} suffix="%" />
+        <span className="stat-line"></span>
+        <p>Our success rate across schemes</p>
+      </div>
+
+      <div className="stat-card">
+        <Counter end={20} suffix="+" />
+        <span className="stat-line"></span>
+        <p>Strategic hubs and nationwide partner agencies</p>
+      </div>
+
+      <div className="stat-card">
+        <Counter end={5} suffix="+" />
+        <span className="stat-line"></span>
+        <p>Year's of Experience</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <section className="home-values reveal">
         <div className="container">

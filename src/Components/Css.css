@@ -328,18 +328,17 @@ background-repeat: no-repeat;
 /* ============================= */
 /* STATISTICS SECTION – PREMIUM */
 /* ============================= */
+
 .home-stats {
   position: relative;
   padding: 120px 0;
   background: linear-gradient(135deg, #012d0e, #063a1c);
   overflow: hidden;
   margin-top: 20px;
-    font-weight: 800;
   font-family: "DM Serif Display", serif;
-  font-style: normal;
 }
 
-/* subtle bg image */
+/* background image */
 .stats-bg {
   position: absolute;
   inset: 0;
@@ -350,22 +349,32 @@ background-repeat: no-repeat;
   z-index: 0;
 }
 
-.stats-row {
+/* GRID – 5 cards in one line */
+.stats-grid {
   position: relative;
   z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
 }
 
 /* CARD */
 .stat-card {
-  height: 100%;
   padding: 38px 22px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
   transition: all 0.45s ease;
+
+  /* reveal animation */
   opacity: 0;
   transform: translateY(50px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* number */
@@ -373,16 +382,15 @@ background-repeat: no-repeat;
 .stat-card span.counter {
   font-size: 48px;
   font-weight: 800;
-  color: white; /* yellow */
+  color: #ffffff;
 }
 
 /* divider */
 .stat-line {
-  display: block;
   width: 50px;
   height: 3px;
   background: linear-gradient(90deg, #a00a20, #ededed);
-  margin: 14px auto;
+  margin: 14px 0;
   border-radius: 2px;
 }
 
@@ -392,7 +400,6 @@ background-repeat: no-repeat;
   color: #e5e7eb;
   line-height: 1.6;
   max-width: 220px;
-  margin: auto;
 }
 
 /* hover */
@@ -401,7 +408,7 @@ background-repeat: no-repeat;
   background: rgba(255, 255, 255, 0.14);
 }
 
-/* SCROLL REVEAL */
+/* reveal active */
 .reveal.active .stat-card {
   opacity: 1;
   transform: translateY(0);
@@ -412,23 +419,24 @@ background-repeat: no-repeat;
 .reveal.active .stat-card:nth-child(2) { transition-delay: 0.25s; }
 .reveal.active .stat-card:nth-child(3) { transition-delay: 0.4s; }
 .reveal.active .stat-card:nth-child(4) { transition-delay: 0.55s; }
+.reveal.active .stat-card:nth-child(5) { transition-delay: 0.7s; }
 
 /* ============================= */
-/* MOBILE */
+/* RESPONSIVE */
 /* ============================= */
-@media (max-width: 768px) {
-  .home-stats {
-    padding: 90px 0;
-  }
 
-  .stat-card {
-    padding: 30px 18px;
-  }
-
-  .stat-card h2 {
-    font-size: 36px;
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ============================= */
 /* SERVICES */
@@ -1022,6 +1030,7 @@ background-repeat: no-repeat;
 .home-about h1{
   font-size: 62px;
   font-weight: 900;
+  color: #A00A20;
 
 }
 .home-about h4{
