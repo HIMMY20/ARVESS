@@ -145,7 +145,9 @@ section:first-child {
 .mega-dropdown {
   position: static;
 }
-
+.more-dropdown {
+  position: relative;
+}
 /* Full width dropdown */
 .mega-menu {
   width: 50vw;
@@ -164,10 +166,33 @@ section:first-child {
   transition: all 0.35s ease;
   display: block;
 }
+.more-menu {
+  width: 13.5vw;
+  left: -100px !important;
+  right: 0;
+  top: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 50px 0;
+  background: #ffffff;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: all 0.35s ease;
+  display: block;
+}
+
 
 
 /* Show on hover */
 .mega-dropdown:hover .mega-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+.more-dropdown:hover .more-menu {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -202,6 +227,11 @@ section:first-child {
   padding: 0;
   margin: 0;
 }
+.more-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .mega-list li {
   font-size: 14px;
@@ -210,8 +240,19 @@ section:first-child {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.more-list li {
+  font-size: 14px;
+  /* padding:  0; */
+  color: #064e3b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 .mega-list li:hover {
+  color: #A00A20;
+  transform: translateX(6px);
+}
+.more-list li:hover {
   color: #A00A20;
   transform: translateX(6px);
 }
@@ -230,6 +271,103 @@ section:first-child {
   }
 }
 
+/* ============================= */
+/* MEGA MENU – A TAG STYLING */
+/* ============================= */
+
+.mega-menu .mega-list li {
+  padding: 8px 0;
+}
+
+/* anchor base */
+.mega-menu .mega-list li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #064e3b;
+  text-decoration: none;
+
+  position: relative;
+  padding-left: 22px;
+  transition: all 0.3s ease;
+}
+
+/* left indicator (line) */
+.mega-menu .mega-list li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: linear-gradient(90deg, #16a34a, #A00A20);
+  transform: translateY(-50%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.mega-menu .mega-list li a:hover {
+  color: #A00A20;
+  transform: translateX(6px);
+}
+
+/* hover line animation */
+.mega-menu .mega-list li a:hover::before {
+  width: 16px;
+  opacity: 1;
+}
+/* ============================= */
+/* MORE DROPDOWN – LINKS STYLE  */
+/* ============================= */
+
+.more-menu .more-list li {
+  padding: 10px 0;
+}
+
+/* anchor styling */
+.more-menu .more-list li a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #064e3b;
+  text-decoration: none;
+
+  position: relative;
+  padding-left: 18px;
+  transition: all 0.3s ease;
+}
+
+/* left accent line (premium look) */
+.more-menu .more-list li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: #16a34a;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.more-menu .more-list li a:hover {
+  color: #A00A20;
+  transform: translateX(6px);
+}
+
+/* hover dot animation */
+.more-menu .more-list li a:hover::before {
+  background: #A00A20;
+  transform: translateY(-50%) scale(1.4);
+}
+
+/* optional divider between items */
+.more-menu .more-list li:not(:last-child) {
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
 
 /* ============================= */
 /* CORE COLOR SYSTEM */

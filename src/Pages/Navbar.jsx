@@ -110,14 +110,34 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
-
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact Us</a>
               </li>
+<li className="nav-item dropdown more-dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  More
+                </a>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#">More</a>
+                <div className="dropdown-menu more-menu p-4">
+                  <div className="row">
+                    <div className="col-md">
+                      <ul className="more-list">
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">Privacy Policy</a></li>
+                        <li><a href="/">Refund Policy</a></li>
+                        <li><a href="/">Term & Condition</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
+
+              
 
             </ul>
           </div>
