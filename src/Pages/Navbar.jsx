@@ -72,38 +72,38 @@ const Navbar = () => {
                   <div className="row">
 
                     <div className="col-md-4">
-                      <h6 className="mega-title">House Of Legal Foundations</h6>
+                      <h6 className="mega-title">Legal & Compliance Infrastructure</h6>
                       <ul className="mega-list">
-                        <li><a href="/companyincorporation">Company Incorporation</a></li>
-                        <li><a href="/government">Government Licences</a></li>
-                        <li><a href="/legalcertification">Legal Certifications</a></li>
-                        <li><a href="/annualCompliances">Annual Compliances</a></li>
-                        <li><a href="/CA&CS">CA & CS Services</a></li>
-                        <li><a href="/financialmodel">Financial Modelling</a></li>
+                        <li><a href="/companyincorporation">Business Incorporation & Structuring</a></li>
+                        <li><a href="/government">Regulatory Licenses & Registrations</a></li>
+                        <li><a href="/legalcertification">Statutory Certifications</a></li>
+                        <li><a href="/annualCompliances">Ongoing Compliance Management</a></li>
+                        <li><a href="/CA&CS">CA, CS & Corporate Advisory</a></li>
+                        <li><a href="/financialmodel">Financial Planning & Projections</a></li>
                       </ul>
                     </div>
 
                     <div className="col-md-4">
-                      <h6 className="mega-title">Office Of Opportunity</h6>
+                      <h6 className="mega-title">Capital, Grants & Growth Access</h6>
                       <ul className="mega-list">
-                        <li><a href="/startup">Startup India Seed Fund</a></li>
-                        <li><a href="/industryfund">Industry Grant Schemes</a></li>
-                        <li><a href="/womenspecific">Women Specific Programs</a></li>
-                        <li><a href="/angle">Angel & VC Connect</a></li>
-                        <li><a href="/privatefunding">Private Funding</a></li>
-                        <li><a href="/governmentandprivateloans">Govt & Private Loans</a></li>
+                        <li><a href="/startup">Startup India & Seed Fund Assistance</a></li>
+                        <li><a href="/industryfund">Central & State Grant Programs</a></li>
+                        <li><a href="/womenspecific">Women Entrepreneur Schemes</a></li>
+                        <li><a href="/angle">Angel & Venture Capital Access</a></li>
+                        <li><a href="/privatefunding">Strategic Private Funding</a></li>
+                        <li><a href="/governmentandprivateloans">Government & Institutional Loans</a></li>
                       </ul>
                     </div>
 
                     <div className="col-md-4">
-                      <h6 className="mega-title">Studio Of Branding & Digital</h6>
+                      <h6 className="mega-title">Brand, Digital & Growth Studio</h6>
                       <ul className="mega-list">
-                        <li><a href="/branding">Branding & Designs</a></li>
+                        <li><a href="/branding">Brand Identity & Creative Design</a></li>
                         <li><a href="#">Website & App Development</a></li>
-                        <li><a href="#">Lead Generation</a></li>
-                        <li><a href="#">Performance Marketing</a></li>
-                        <li><a href="#">SEO & Content Strategy</a></li>
-                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Demand & Lead Generation</a></li>
+                        <li><a href="#">Performance Marketing </a></li>
+                        <li><a href="#">SEO, Content & Growth Strategy</a></li>
+                        <li><a href="#">Social Media & Community Building</a></li>
                       </ul>
                     </div>
 
