@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React, { useEffect } from "react";
 import "../Components/Css.css";
 import Counter from "../Components/Counter";
@@ -7,6 +8,7 @@ const Home = () => {
   useEffect(() => {
     initScrollReveal();
   }, []);
+const [open, setOpen] = useState(null);
 
   return (
     <>
@@ -215,156 +217,121 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* ================= BLOG SECTION ================= */}
-      <section className="home-blog reveal">
-        <div className="container">
-          <div className="row align-items-start">
-            {/* LEFT CONTENT */}
-            <div className="col-lg-4 mb-4 reveal">
-              <span className="blog-tag">Blog & News</span>
-              <h2 className="blog-heading">
-                Read Our Articles to Learn <br />
-                About us in Depth.
-              </h2>
-            </div>
 
-            {/* RIGHT BLOG CARDS */}
-            <div className="col-lg-8">
-              <div className="row g-4">
-                {/* BLOG CARD 1 */}
-                <div className="col-md-4 reveal delay-1">
-                  <div className="blog-card">
-                    <img
-                      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                      alt="blog"
-                    />
-                    <span className="blog-date">12 Dec, 2024</span>
-                    <h5>
-                      Top 10 Government Grants Every Startup Should Apply For In
-                      2025
-                    </h5>
-                    <p>
-                      Top 10 Government Grants Every Startup Should Apply for in
-                      2025
-                    </p>
-                  </div>
-                </div>
 
-                {/* BLOG CARD 2 */}
-                <div className="col-md-4 reveal delay-2">
-                  <div className="blog-card">
-                    <span className="blog-date">12 Dec, 2024</span>
-                    <h5>How To Build An Investor-Ready Pitch Deck</h5>
-                    <p>How to Build an Investor-Ready Pitch Deck</p>
-                  </div>
-                </div>
+{/* ================= FAQ SECTION ================= */}
+<section className="home0-faq0 reveal">
+  <div className="container">
+    <div className="row align-items-center">
 
-                {/* BLOG CARD 3 */}
-                <div className="col-md-4 reveal delay-3">
-                  <div className="blog-card">
-                    <span className="blog-date">12 Dec, 2024</span>
-                    <h5>
-                      Angel Investors Vs. Venture Capitalists: Key Differences
-                      Explained
-                    </h5>
-                    <p>
-                      Angel Investors vs. Venture Capitalists: Key Differences
-                      Explained
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* LEFT SIDE */}
+      <div className="col-lg-5">
+        <div className="faq0-heading-image">
+          <img src="./FaqHomeQuestion.png" className="faq0-heading-img" />
+          <img src="./FAQHome.png" className="faq0-illustration-img" />
         </div>
-      </section>
+      </div>
 
-      {/* ================= FAQ SECTION ================= */}
-      <section className="home0-faq0 reveal">
-        <div className="container">
-          <div className="row align-items-center">
-            {/* LEFT SIDE */}
-            <div className="col-lg-5">
+      {/* RIGHT SIDE */}
+      <div className="col-lg-7">
 
-              <div className="faq0-heading-image">
-                <img
-                  src="./FaqHomeQuestion.png"
-                  alt="FAQ Title"
-                  className="faq0-heading-img"
-                />
-                <img
-                  src="./FAQHome.png"
-                  alt="FAQ Illustration"
-                  className="faq0-illustration-img"
-                />
-              </div>
-
-            </div>
-
-            {/* RIGHT SIDE */}
-            <div className="col-lg-7">
-              <div className="faq0-item0 active">
-                <h5>
-                  <span>1.</span> What services does Arvess provide?
-                </h5>
-                <p>
-                  Arvess offers end-to-end business support, including legal and
-                  regulatory compliance, government schemes and funding
-                  assistance, financial structuring, branding, digital growth,
-                  and strategic consulting to support sustainable business
-                  expansion.
-                </p>
-              </div>
-
-              <div className="faq0-item0">
-                <h5>
-                  <span>2.</span> Who can work with Arvess?
-                </h5>
-                <p>
-                  Arvess works with idea-stage founders, early-stage startups,
-                  MSMEs, and scaling enterprises across multiple industries,
-                  supporting businesses at every stage of growth.
-                </p>
-              </div>
-
-              <div className="faq0-item0">
-                <h5>
-                  <span>3.</span> Does Arvess assist with government schemes
-                  and grants?
-                </h5>
-                <p>
-                  Yes. We specialize in MSME, DPIIT, Startup India, state and
-                  central government schemes, grants, incentives, and related
-                  compliance and application processes.
-                </p>
-              </div>
-
-              <div className="faq0-item0">
-                <h5>
-                  <span>4.</span> How does Arvess ensure legal and financial
-                  compliance?
-                </h5>
-                <p>
-                  Our team follows structured legal, financial, and regulatory
-                  frameworks, ensuring accuracy, transparency, and adherence to
-                  statutory requirements at every stage.
-                </p>
-              </div>
-
-              <div className="faq0-item0">
-                <h5>
-                  <span>5.</span> Does Arvess provide long-term support?
-                </h5>
-                <p>
-                  Absolutely. We focus on long-term partnerships, offering
-                  continuous advisory and operational support as your business
-                  grows, evolves, and scales.
-                </p>
-              </div>
-            </div>
+        {/* FAQ 1 */}
+        <div
+          className={`faq0-item0 ${open === 1 ? "active" : ""}`}
+          onClick={() => setOpen(open === 1 ? null : 1)}
+        >
+          <div className="faq0-question">
+            <h5><span>1.</span> What services does Arvess provide?</h5>
+            <button className="faq0-toggle">{open === 1 ? "−" : "+"}</button>
           </div>
+
+          {open === 1 && (
+            <p>
+              Arvess offers end-to-end business support, including legal and
+              regulatory compliance, government schemes and funding assistance,
+              financial structuring, branding, digital growth, and strategic
+              consulting.
+            </p>
+          )}
         </div>
-      </section>
+
+        {/* FAQ 2 */}
+        <div
+          className={`faq0-item0 ${open === 2 ? "active" : ""}`}
+          onClick={() => setOpen(open === 2 ? null : 2)}
+        >
+          <div className="faq0-question">
+            <h5><span>2.</span> Who can work with Arvess?</h5>
+            <button className="faq0-toggle">{open === 2 ? "−" : "+"}</button>
+          </div>
+
+          {open === 2 && (
+            <p>
+              Arvess works with idea-stage founders, early-stage startups, MSMEs,
+              and scaling enterprises across multiple industries.
+            </p>
+          )}
+        </div>
+
+        {/* FAQ 3 */}
+        <div
+          className={`faq0-item0 ${open === 3 ? "active" : ""}`}
+          onClick={() => setOpen(open === 3 ? null : 3)}
+        >
+          <div className="faq0-question">
+            <h5><span>3.</span> Does Arvess assist with government schemes?</h5>
+            <button className="faq0-toggle">{open === 3 ? "−" : "+"}</button>
+          </div>
+
+          {open === 3 && (
+            <p>
+              Yes. We specialize in MSME, DPIIT, Startup India, and government
+              grants and incentives.
+            </p>
+          )}
+        </div>
+         <div
+          className={`faq0-item0 ${open === 4 ? "active" : ""}`}
+          onClick={() => setOpen(open === 4 ? null : 4)}
+        >
+          <div className="faq0-question">
+            <h5><span>4.</span> How does Arvess ensure legal and financial compliance?</h5>
+            <button className="faq0-toggle">{open === 4 ? "−" : "+"}</button>
+          </div>
+
+          {open === 4 && (
+            <p>
+              Our team follows structured legal, financial, and regulatory
+              frameworks, ensuring accuracy, transparency, and adherence
+              to statutory requirements at every stage.
+            </p>
+          )}
+        </div>
+
+        {/* FAQ 5 */}
+        <div
+          className={`faq0-item0 ${open === 5 ? "active" : ""}`}
+          onClick={() => setOpen(open === 5 ? null : 5)}
+        >
+          <div className="faq0-question">
+            <h5><span>5.</span> Does Arvess provide long-term support?</h5>
+            <button className="faq0-toggle">{open === 5 ? "−" : "+"}</button>
+          </div>
+
+          {open === 5 && (
+            <p>
+              Absolutely. We focus on long-term partnerships, offering
+              continuous advisory and operational support as your business
+              grows, evolves, and scales.
+            </p>
+          )}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* ================= WHY CHOOSE US ================= */}
       <section className="home-why reveal">
