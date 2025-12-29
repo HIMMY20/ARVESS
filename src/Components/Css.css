@@ -739,7 +739,13 @@ background-repeat: no-repeat;
   opacity: 1;
   transform: translateY(0);
 }
-
+.home-services p , .home-services h5{
+  text-align: center;
+}
+.home-services h1{
+  font-weight: 900;
+  font-size: 52px;
+}
 /* ============================= */
 /* MOBILE */
 /* ============================= */

@@ -44,59 +44,55 @@ const Home = () => {
             navigating complexity with confidence. We partner with founders to
             establish strong foundations across legal, financial, operational,
             and digital function sensuring their businesses are structured,
-            compliant, and ready to scale. 
+            compliant, and ready to scale.
           </h4>
           <h4>
-            Our approach blends strategic insight
-            with execution excellence. From early-stage setup to long-term
-            growth optimization, Arvess delivers clarity, control, and
-            credibility empowering businesses to make informed decisions,
-            attract opportunities, and grow sustainably in an evolving market.
+            Our approach blends strategic insight with execution excellence.
+            From early-stage setup to long-term growth optimization, Arvess
+            delivers clarity, control, and credibility empowering businesses to
+            make informed decisions, attract opportunities, and grow sustainably
+            in an evolving market.
           </h4>
         </div>
       </section>
 
       {/* ================= STATISTICS SECTION ================= */}
-<section className="home-stats reveal">
-  <div className="stats-bg"></div>
+      <section className="home-stats reveal">
+        <div className="stats-bg"></div>
 
-  <div className="container">
-    <div className="stats-grid">
+        <div className="container">
+          <div className="stats-grid">
+            <div className="stat-card">
+              <Counter end={550} suffix="+" />
+              <span className="stat-line"></span>
+              <p>Startups supported and scaled successfully with Arvess</p>
+            </div>
 
-      <div className="stat-card">
-        <Counter end={550} suffix="+" />
-        <span className="stat-line"></span>
-        <p>Startups supported and scaled successfully with Arvess</p>
-      </div>
+            <div className="stat-card">
+              <Counter end={1500} suffix="+" />
+              <span className="stat-line"></span>
+              <p>Customized funding and grant proposals delivered</p>
+            </div>
 
-      <div className="stat-card">
-        <Counter end={1500} suffix="+" />
-        <span className="stat-line"></span>
-        <p>Customized funding and grant proposals delivered</p>
-      </div>
+            <div className="stat-card">
+              <Counter end={20} suffix="+" />
+              <span className="stat-line"></span>
+              <p>Strategic hubs and nationwide partner agencies</p>
+            </div>
+            <div className="stat-card">
+              <Counter end={79} suffix="%" />
+              <span className="stat-line"></span>
+              <p>Our success rate across schemes</p>
+            </div>
 
-      <div className="stat-card">
-        <Counter end={20} suffix="+" />
-        <span className="stat-line"></span>
-        <p>Strategic hubs and nationwide partner agencies</p>
-      </div>
-      <div className="stat-card">
-        <Counter end={79} suffix="%" />
-        <span className="stat-line"></span>
-        <p>Our success rate across schemes</p>
-      </div>
-
-
-      <div className="stat-card">
-        <Counter end={5} suffix="+" />
-        <span className="stat-line"></span>
-        <p>Year's of Experience</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+            <div className="stat-card">
+              <Counter end={5} suffix="+" />
+              <span className="stat-line"></span>
+              <p>Year's of Experience</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="home-values reveal">
         <div className="container">
@@ -168,45 +164,53 @@ const Home = () => {
       <section className="home-services reveal">
         <div className="container">
           <div className="text-center mb-5">
-            <h2>Our Core Offerings</h2>
+            <h1>Our Core Offerings</h1>
             <p>
-              Comprehensive solutions designed to support compliance, funding,
-              branding, and long-term operational success.
+              Integrated solutions designed to help startups and growing
+              enterprises build strong foundations, secure capital, and scale
+              with confidence.
             </p>
           </div>
 
           <div className="row g-4">
             <div className="col-md-4">
               <div className="service-card">
-                <h5>Legal & Compliance Services</h5>
+                <h5>Legal & Compliance Infrastructure</h5>
                 <p>
-                  Business registrations, statutory compliances, certifications,
-                  and regulatory support to keep your organization secure and
-                  compliant.
+                  We establish and safeguard your business through structured
+                  incorporation, statutory registrations, licenses,
+                  certifications, and ongoing compliances ensuring regulatory
+                  clarity, risk mitigation, and long-term operational stability.
                 </p>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="service-card">
-                <h5>Funding & Financial Advisory</h5>
+                <h5>Funding & Capital Advisory</h5>
                 <p>
-                  Assistance with government schemes, startup funding programs,
-                  investor connections, and financial planning strategies.
+                  We support founders in navigating government schemes, startup
+                  funding programs, investor readiness, and private capital
+                  opportunities through strategic documentation, financial
+                  structuring, and end-to-end application support.
                 </p>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="service-card">
-                <h5>Branding & Digital Growth</h5>
+                <h5>Branding & Digital Acceleration</h5>
                 <p>
-                  Strategic branding, digital marketing, web solutions, and
-                  performance-driven campaigns to strengthen your market
-                  presence.
+                  We create growth-oriented brands with strategic positioning,
+                  digital marketing, website & app solutions, and
+                  performance-driven campaigns helping businesses convert
+                  visibility into measurable results.
                 </p>
               </div>
             </div>
+            <p>
+              From compliance to capital and market presence, Arvess acts as a single strategic partner across your growth journey.
+            </p>
           </div>
         </div>
       </section>
