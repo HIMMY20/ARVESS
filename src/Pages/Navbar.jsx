@@ -25,28 +25,27 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => {
-  const lockScroll = () => {
+useEffect(() => {
+  const lock = () => {
     document.body.style.overflow = "hidden";
   };
 
-  const unlockScroll = () => {
+  const unlock = () => {
     document.body.style.overflow = "";
   };
 
   const dropdowns = document.querySelectorAll(".dropdown");
 
-  dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener("shown.bs.dropdown", lockScroll);
-    dropdown.addEventListener("hidden.bs.dropdown", unlockScroll);
+  dropdowns.forEach((d) => {
+    d.addEventListener("shown.bs.dropdown", lock);
+    d.addEventListener("hidden.bs.dropdown", unlock);
   });
 
   return () => {
-    unlockScroll();
-    dropdowns.forEach((dropdown) => {
-      dropdown.removeEventListener("shown.bs.dropdown", lockScroll);
-      dropdown.removeEventListener("hidden.bs.dropdown", unlockScroll);
+    unlock();
+    dropdowns.forEach((d) => {
+      d.removeEventListener("shown.bs.dropdown", lock);
+      d.removeEventListener("hidden.bs.dropdown", unlock);
     });
   };
 }, []);

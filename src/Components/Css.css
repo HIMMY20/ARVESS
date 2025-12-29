@@ -258,22 +258,28 @@ section:first-child {
 }
 
 /* ============================= */
-/* RESPONSIVE */
+/* MOBILE MEGA MENU – FINAL FIX */
 /* ============================= */
-@media (max-width: 350px) {
+
+@media (max-width: 991px) {
 
   .dropdown-menu.mega-menu,
   .dropdown-menu.more-menu {
-    position: static;        /* 🔥 IMPORTANT */
-    width: 100%;
+    position: fixed;
+    top: 80px;                 /* navbar height */
+    left: 0;
+    right: 0;
 
-    max-height: 100vh;       /* full available height */
-    overflow-y: auto;        /* ✅ scroll allow */
+    width: 100vw;
+    height: calc(100vh - 80px);
 
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
-    padding: 20px;
-    padding-bottom: 100px;   /* 🔥 last items visible */
+    background: #ffffff;
+    padding: 20px 20px 80px;   /* bottom space important */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    border: none;
   }
 
   .mega-menu .row {
@@ -282,7 +288,7 @@ section:first-child {
 
   .mega-menu .col-md-4 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
