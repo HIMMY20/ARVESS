@@ -260,7 +260,7 @@ section:first-child {
 /* ============================= */
 /* RESPONSIVE */
 /* ============================= */
-@media (max-width: 991px) {
+@media (max-width: 900px) {
 
   /* Bootstrap dropdown container */
   .dropdown-menu.mega-menu,
