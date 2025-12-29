@@ -897,22 +897,10 @@ background-repeat: no-repeat;
 }
 
 /* ============================= */
-/* MOBILE */
-/* ============================= */
-@media (max-width: 768px) {
-  .blog-heading {
-    font-size: 30px;
-  }
-
-  .home-blog {
-    padding: 90px 0;
-  }
-}
-/* ============================= */
 /* FAQ SECTION */
 /* ============================= */
 .home0-faq0 {
-  padding: 120px 0;
+  /* padding: 10px 0; */
   background: #f9fafb;
 }
 
