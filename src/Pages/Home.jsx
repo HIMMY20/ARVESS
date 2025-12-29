@@ -284,7 +284,7 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center">
             {/* LEFT SIDE */}
-            <div className="col-lg-5 mb-4">
+            <div className="col-lg-5">
 
               <div className="faq0-heading-image">
                 <img
@@ -292,16 +292,13 @@ const Home = () => {
                   alt="FAQ Title"
                   className="faq0-heading-img"
                 />
-              </div>
-
-              {/* MAIN ILLUSTRATION IMAGE (jo pehle se thi) */}
-              <div className="faq0-illustration0">
                 <img
                   src="./FAQHome.png"
                   alt="FAQ Illustration"
                   className="faq0-illustration-img"
                 />
               </div>
+
             </div>
 
             {/* RIGHT SIDE */}
