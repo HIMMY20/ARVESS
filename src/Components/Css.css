@@ -1072,11 +1072,47 @@ background-repeat: no-repeat;
 }
 
 /* Illustration */
+/* HEADING IMAGE */
+.faq0-heading-image {
+  margin-bottom: 20px;
+}
+
+.faq0-heading-img {
+  width: 100%;
+  max-width: 300px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+  animation: popIn 0.8s ease forwards;
+}
+
+/* EXISTING IMAGE */
 .faq0-illustration0 {
-  margin-top: 40px;
-  font-size: 160px;
-  font-weight: 800;
-  color: rgba(1,45,14,0.08);
+  margin-top: 20px;
+}
+
+.faq0-illustration-img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  filter: drop-shadow(0 25px 35px rgba(0,0,0,0.2));
+  animation: floatFaq 4s ease-in-out infinite;
+}
+
+/* ANIMATIONS */
+@keyframes floatFaq {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* ============================= */

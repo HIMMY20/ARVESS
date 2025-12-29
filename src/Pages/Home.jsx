@@ -209,7 +209,8 @@ const Home = () => {
               </div>
             </div>
             <p>
-              From compliance to capital and market presence, Arvess acts as a single strategic partner across your growth journey.
+              From compliance to capital and market presence, Arvess acts as a
+              single strategic partner across your growth journey.
             </p>
           </div>
         </div>
@@ -246,9 +247,6 @@ const Home = () => {
                       Top 10 Government Grants Every Startup Should Apply for in
                       2025
                     </p>
-                    <a href="#" className="read-more">
-                      ↗ Read More
-                    </a>
                   </div>
                 </div>
 
@@ -258,9 +256,6 @@ const Home = () => {
                     <span className="blog-date">12 Dec, 2024</span>
                     <h5>How To Build An Investor-Ready Pitch Deck</h5>
                     <p>How to Build an Investor-Ready Pitch Deck</p>
-                    <a href="#" className="read-more">
-                      ↗ Read More
-                    </a>
                   </div>
                 </div>
 
@@ -276,9 +271,6 @@ const Home = () => {
                       Angel Investors vs. Venture Capitalists: Key Differences
                       Explained
                     </p>
-                    <a href="#" className="read-more">
-                      ↗ Read More
-                    </a>
                   </div>
                 </div>
               </div>
@@ -293,12 +285,23 @@ const Home = () => {
           <div className="row align-items-center">
             {/* LEFT SIDE */}
             <div className="col-lg-5 mb-4">
-              <span className="faq0-tag0">Popular Questions</span>
-              <h2 className="faq0-heading0">
-                Frequently Asked <br /> Questions
-              </h2>
 
-              <div className="faq0-illustration0">?</div>
+              <div className="faq0-heading-image">
+                <img
+                  src="./FaqHomeQuestion.png"
+                  alt="FAQ Title"
+                  className="faq0-heading-img"
+                />
+              </div>
+
+              {/* MAIN ILLUSTRATION IMAGE (jo pehle se thi) */}
+              <div className="faq0-illustration0">
+                <img
+                  src="./FAQHome.png"
+                  alt="FAQ Illustration"
+                  className="faq0-illustration-img"
+                />
+              </div>
             </div>
 
             {/* RIGHT SIDE */}
@@ -308,49 +311,57 @@ const Home = () => {
                   <span>1.</span> What services does Arvess provide?
                 </h5>
                 <p>
-                  Arvess provides end-to-end startup support including legal
-                  compliance, funding assistance, branding, digital growth, and
-                  strategic consulting.
+                  Arvess offers end-to-end business support, including legal and
+                  regulatory compliance, government schemes and funding
+                  assistance, financial structuring, branding, digital growth,
+                  and strategic consulting to support sustainable business
+                  expansion.
                 </p>
               </div>
 
               <div className="faq0-item0">
                 <h5>
-                  <span>2.</span> Which startups can work with Arvess?
+                  <span>2.</span> Who can work with Arvess?
                 </h5>
                 <p>
-                  From idea-stage founders to scaling businesses, Arvess
-                  supports startups across all growth stages and industries.
+                  Arvess works with idea-stage founders, early-stage startups,
+                  MSMEs, and scaling enterprises across multiple industries,
+                  supporting businesses at every stage of growth.
                 </p>
               </div>
 
               <div className="faq0-item0">
                 <h5>
-                  <span>3.</span> Does Arvess help with government schemes?
+                  <span>3.</span> Does Arvess assist with government schemes
+                  and grants?
                 </h5>
                 <p>
-                  Yes, we specialize in MSME, DPIIT, Startup India, and
-                  state-level government funding and compliance programs.
+                  Yes. We specialize in MSME, DPIIT, Startup India, state and
+                  central government schemes, grants, incentives, and related
+                  compliance and application processes.
                 </p>
               </div>
 
               <div className="faq0-item0">
                 <h5>
-                  <span>4.</span> How does Arvess ensure compliance?
+                  <span>4.</span> How does Arvess ensure legal and financial
+                  compliance?
                 </h5>
                 <p>
-                  Our experts follow structured legal and financial frameworks
-                  to ensure accuracy, transparency, and long-term compliance.
+                  Our team follows structured legal, financial, and regulatory
+                  frameworks, ensuring accuracy, transparency, and adherence to
+                  statutory requirements at every stage.
                 </p>
               </div>
 
               <div className="faq0-item0">
                 <h5>
-                  <span>5.</span> Is long-term support available?
+                  <span>5.</span> Does Arvess provide long-term support?
                 </h5>
                 <p>
-                  Yes, we believe in partnerships, offering continuous support
-                  as your business grows and evolves.
+                  Absolutely. We focus on long-term partnerships, offering
+                  continuous advisory and operational support as your business
+                  grows, evolves, and scales.
                 </p>
               </div>
             </div>
@@ -365,21 +376,26 @@ const Home = () => {
             <div className="col-lg-6">
               <h2>Why Choose Arvess</h2>
               <ul className="why-list">
-                <li>Experienced industry professionals</li>
-                <li>Process-driven and transparent approach</li>
-                <li>Customized solutions for every business</li>
-                <li>Strong compliance and ethical standards</li>
-                <li>Long-term partnership mindset</li>
+                <li> End-to-end business consulting & outsourcing</li>
+                <li> Startup and MSME-focused expertise</li>
+                <li> Strong legal, financial, and compliance foundation</li>
+                <li> Funding, grants, and investor-readiness support</li>
+                <li> Transparent, process-driven execution</li>
+                <li> Tailored solutions for every growth stage</li>
+                <li> Long-term partnership mindset</li>
               </ul>
             </div>
 
             <div className="col-lg-6">
               <div className="why-box">
-                <h4>Your Growth, Our Responsibility</h4>
+                <h4>Your Growth. Our Commitment. </h4>
                 <p>
-                  We believe in building lasting partnerships by delivering
-                  dependable services that add measurable value to your
-                  business.
+                  Arvess partners with founders and leadership teams to create
+                  strong, compliant, and scalable business foundations. Through
+                  strategic consulting and structured execution, we help unlock
+                  growth opportunities, simplify complexity, and provide
+                  dependable support that enables confident decisions and
+                  long-term business success.
                 </p>
               </div>
             </div>
