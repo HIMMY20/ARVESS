@@ -262,22 +262,22 @@ section:first-child {
 /* ============================= */
 @media (max-width: 350px) {
 
-  /* Bootstrap dropdown container */
   .dropdown-menu.mega-menu,
   .dropdown-menu.more-menu {
     position: relative;
     width: 100%;
-height: calc(100vh - 90px);
-overflow-y: auto;
 
+    height: calc(100vh - 90px);
+    overflow-y: auto;
 
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
+    overscroll-behavior-y: contain;
 
     padding: 20px;
+    padding-bottom: 80px; /* 🔥 MOST IMPORTANT */
   }
 
-  /* prevent body bounce through menu */
+  /* scrollbar (optional) */
   .dropdown-menu.mega-menu::-webkit-scrollbar,
   .dropdown-menu.more-menu::-webkit-scrollbar {
     width: 6px;
@@ -289,7 +289,7 @@ overflow-y: auto;
     border-radius: 4px;
   }
 
-  /* ensure columns stack properly */
+  /* stack columns */
   .mega-menu .row {
     margin: 0;
   }
@@ -299,6 +299,7 @@ overflow-y: auto;
     margin-bottom: 20px;
   }
 }
+
 
 /* ============================= */
 /* MEGA MENU – A TAG STYLING */
