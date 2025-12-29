@@ -35,22 +35,19 @@ const Navbar = () => {
     document.body.style.overflow = "";
   };
 
-  const megaMenus = document.querySelectorAll(".mega-menu, .more-menu");
+  const dropdowns = document.querySelectorAll(".dropdown");
 
-  megaMenus.forEach(menu => {
-    menu.addEventListener("touchstart", lockScroll, { passive: true });
-    menu.addEventListener("wheel", lockScroll, { passive: true });
-  });
-
-  // jab dropdown close ho (click outside)
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".mega-menu") && !e.target.closest(".more-menu")) {
-      unlockScroll();
-    }
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("shown.bs.dropdown", lockScroll);
+    dropdown.addEventListener("hidden.bs.dropdown", unlockScroll);
   });
 
   return () => {
     unlockScroll();
+    dropdowns.forEach((dropdown) => {
+      dropdown.removeEventListener("shown.bs.dropdown", lockScroll);
+      dropdown.removeEventListener("hidden.bs.dropdown", unlockScroll);
+    });
   };
 }, []);
 
