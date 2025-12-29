@@ -261,13 +261,41 @@ section:first-child {
 /* RESPONSIVE */
 /* ============================= */
 @media (max-width: 991px) {
-  .mega-menu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    box-shadow: none;
-    padding: 25px;
+
+  /* Bootstrap dropdown container */
+  .dropdown-menu.mega-menu,
+  .dropdown-menu.more-menu {
+    position: relative;
+    width: 100%;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+
+    padding: 20px;
+  }
+
+  /* prevent body bounce through menu */
+  .dropdown-menu.mega-menu::-webkit-scrollbar,
+  .dropdown-menu.more-menu::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .dropdown-menu.mega-menu::-webkit-scrollbar-thumb,
+  .dropdown-menu.more-menu::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  /* ensure columns stack properly */
+  .mega-menu .row {
+    margin: 0;
+  }
+
+  .mega-menu .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
