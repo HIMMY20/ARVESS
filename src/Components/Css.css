@@ -267,8 +267,9 @@ section:first-child {
   .dropdown-menu.more-menu {
     position: relative;
     width: 100%;
-    max-height: calc(100vh - 90px);
-    overflow-y: auto;
+height: calc(100vh - 90px);
+overflow-y: auto;
+
 
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
