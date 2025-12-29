@@ -151,7 +151,7 @@ section:first-child {
 /* Full width dropdown */
 .mega-menu {
   width: 70vw;
-  left: -800px !important;
+  left: -8  00px !important;
   right: 0;
   top: 100%;
   border: none;
@@ -261,13 +261,45 @@ section:first-child {
 /* RESPONSIVE */
 /* ============================= */
 @media (max-width: 991px) {
+
+  /* MEGA MENU MOBILE BEHAVIOUR */
   .mega-menu {
-    position: static;
-    transform: none;
+    position: fixed;
+    top: 70px; /* navbar height ke hisaab se */
+    left: 0 !important;
+    right: 0;
+    width: 100vw;
+
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 25px 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
     opacity: 1;
     visibility: visible;
-    box-shadow: none;
-    padding: 25px;
+    transform: none;
+  }
+
+  /* MORE MENU MOBILE */
+  .more-menu {
+    position: fixed;
+    top: 70px;
+    left: 0 !important;
+    right: 0;
+    width: 100vw;
+
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 25px 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+    opacity: 1;
+    visibility: visible;
+    transform: none;
   }
 }
 
