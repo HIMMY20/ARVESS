@@ -264,32 +264,18 @@ section:first-child {
 
   .dropdown-menu.mega-menu,
   .dropdown-menu.more-menu {
-    position: relative;
+    position: static;        /* 🔥 IMPORTANT */
     width: 100%;
 
-    height: calc(100vh - 90px);
-    overflow-y: auto;
+    max-height: 100vh;       /* full available height */
+    overflow-y: auto;        /* ✅ scroll allow */
 
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: contain;
 
     padding: 20px;
-    padding-bottom: 80px; /* 🔥 MOST IMPORTANT */
+    padding-bottom: 100px;   /* 🔥 last items visible */
   }
 
-  /* scrollbar (optional) */
-  .dropdown-menu.mega-menu::-webkit-scrollbar,
-  .dropdown-menu.more-menu::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .dropdown-menu.mega-menu::-webkit-scrollbar-thumb,
-  .dropdown-menu.more-menu::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  }
-
-  /* stack columns */
   .mega-menu .row {
     margin: 0;
   }
