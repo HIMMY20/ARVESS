@@ -143,29 +143,31 @@ section:first-child {
 /* ============================= */
 
 .mega-dropdown {
-  position: static;
+  position: relative;
 }
 .more-dropdown {
   position: relative;
 }
 /* Full width dropdown */
 .mega-menu {
-  width: 70vw;
-  left: 50%;
-  transform: translateX(-50%);
-  right: 0;
+    position: absolute;
   top: 100%;
+  left: 50%;
+
+  width: 70vw;
+  transform: translateX(-50%) translateY(20px);
+
+  background: #ffffff;
+  padding: 50px 0;
   border: none;
   border-radius: 0;
-  padding: 50px 0;
-  background: #ffffff;
   box-shadow: 0 30px 80px rgba(0,0,0,0.15);
 
   opacity: 0;
-  transform: translateY(20px);
   visibility: hidden;
   transition: all 0.35s ease;
   display: block;
+
 }
 .more-menu {
   width: 13.5vw;
@@ -188,17 +190,16 @@ section:first-child {
 
 
 /* Show on hover */
-.mega-dropdown:hover .mega-menu {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
-}
 .more-dropdown:hover .more-menu {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
 }
-
+.mega-dropdown:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-70%) translateY(0);
+}
 /* ============================= */
 /* TITLES */
 /* ============================= */
@@ -266,26 +267,23 @@ section:first-child {
 
   .dropdown-menu.mega-menu,
   .dropdown-menu.more-menu {
-    position: absolute;   /* 🔥 FIXED → ABSOLUTE */
-    top: 100%;
+    position: fixed;
+    top: 80px;                 /* navbar height */
     left: 0;
     right: 0;
 
-    width: 100%;
-    max-height: calc(100vh - 90px); /* 🔥 FIX */
-    overflow-y: auto;
-    overflow-x: hidden;
+    width: 100vw;
+    height: calc(100vh - 80px);
 
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
 
     background: #ffffff;
-    padding: 20px 16px 40px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    padding: 20px 20px 80px;   /* bottom space important */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
     border: none;
   }
 
-  /* column stack */
   .mega-menu .row {
     margin: 0;
   }
@@ -294,12 +292,13 @@ section:first-child {
     width: 100%;
     margin-bottom: 24px;
   }
-   .mega-dropdown:hover .mega-menu,
-  .more-dropdown:hover .more-menu {
-    opacity: 1;
+
+  .mega-menu {
+    left: 0;
+    width: 100%;
     transform: none;
-    visibility: visible;
-  }
+}
+
 }
 
 
