@@ -1221,6 +1221,10 @@ background-repeat: no-repeat;
   font-size: 13px;
   color: #dc2626;
 }
+.footer-disclaimer p {
+  color: red;
+  font-weight: 600;
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

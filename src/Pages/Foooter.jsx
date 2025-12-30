@@ -43,7 +43,7 @@ const Foooter = () => {
         {/* RIGHT SIDE */}
         <div className="footer-right">
           <p className="footer-disclaimer">
-            Disclaimer: We are an independent startup consultancy firm
+             <p>Disclaimer:</p> We are an independent startup consultancy firm
             operating in India. We do not have any affiliation, authorization,
             or partnership with any government or non-government organization,
             institution, or department.
@@ -67,10 +67,10 @@ const Foooter = () => {
             <div>
               <h4 className="footer-heading">Support Center</h4>
               <ul>
+                <li>Blog</li>
                 <li>Privacy Policy</li>
                 <li>Terms & Conditions</li>
                 <li>Refund Policy</li>
-                <li>Career</li>
               </ul>
             </div>
           </div>
