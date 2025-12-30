@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Pages/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import { Footer } from "./Pages/Footer";
 import Contact from "./Pages/Contact";
 import CompanyIncorporationLeft from "./Pages/HOUSEOFLEGALFOUNDATION/Companyincorporation";
 import Government from "./Pages/HOUSEOFLEGALFOUNDATION/Government";
@@ -17,6 +16,7 @@ import Angel from "./Pages/OfficeOfOpportunity/Angel";
 import Privatefunding from "./Pages/OfficeOfOpportunity/Privatefunding";
 import GovernmentandPrivateloans from "./Pages/OfficeOfOpportunity/GovernmentandPrivateloans";
 import Branding from "./Pages/StudioDigital&branding/Branding";
+import Foooter from "./Pages/Foooter";
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
 
         
       </Routes>
-      <Footer/>
+      <Foooter/>
     </BrowserRouter>
   );
 }
