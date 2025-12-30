@@ -107,7 +107,6 @@ const About = () => {
                 </div>
 
                 <div className="mv-content">
-                  
                   <span className="mv-tag red">Our Vision</span>
                   <h3>Building India’s Most Trusted Startup Partner</h3>
                   <p>
@@ -136,16 +135,20 @@ const About = () => {
               </h2>
 
               <p className="lead-text">
-                Arvess is not just a consultancy it is a structured growth
-                partner built to support startups, MSMEs, and entrepreneurs
-                across every stage of their journey.
+                Arvess is more than a consultancy — we are a structured growth
+                partner designed to support startups, MSMEs, and emerging
+                enterprises at every stage of their journey. From laying strong
+                legal and financial foundations to unlocking funding and driving
+                scalable growth, we work closely with founders to turn vision
+                into execution.
               </p>
 
               <ul className="arvess-points">
-                <li>End-to-end startup & MSME ecosystem</li>
-                <li>Compliance-driven & transparent execution</li>
+                <li>End-to-end startup & MSME ecosystem support</li>
+                <li>Compliance-driven, transparent execution</li>
                 <li>Funding, branding & growth under one roof</li>
-                <li>Founder-first advisory mindset</li>
+                <li>Founder-first advisory and execution mindset</li>
+                <li>We don’t just advise  we build alongside you, ensuring clarity, confidence, and long-term sustainability.</li>
               </ul>
 
               <a href="/contact" className="arvess-btn-primary">
