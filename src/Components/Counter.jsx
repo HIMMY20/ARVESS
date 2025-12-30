@@ -5,7 +5,7 @@ const Counter = ({ end, suffix = "", duration = 2000 }) => {
 
   useEffect(() => {
     let start = 0;
-    const step = end / (duration / 100);
+    const step = end / (duration / 10);
 
     const interval = setInterval(() => {
       start += step;
