@@ -299,7 +299,7 @@ section:first-child {
 
   /* 🔥 BOOTSTRAP COLLAPSE OVERRIDE */
   .navbar-collapse {
-    position: fixed !important;
+    position: relative !important;
     top: 72px !important;
     left: 0 !important;
     right: 0 !important;
