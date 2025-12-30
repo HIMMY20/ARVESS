@@ -25,30 +25,8 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-useEffect(() => {
-  const lock = () => {
-    document.body.style.overflow = "hidden";
-  };
 
-  const unlock = () => {
-    document.body.style.overflow = "";
-  };
 
-  const dropdowns = document.querySelectorAll(".dropdown");
-
-  dropdowns.forEach((d) => {
-    d.addEventListener("shown.bs.dropdown", lock);
-    d.addEventListener("hidden.bs.dropdown", unlock);
-  });
-
-  return () => {
-    unlock();
-    dropdowns.forEach((d) => {
-      d.removeEventListener("shown.bs.dropdown", lock);
-      d.removeEventListener("hidden.bs.dropdown", unlock);
-    });
-  };
-}, []);
 
 
   return (

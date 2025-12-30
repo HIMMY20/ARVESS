@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     initScrollReveal();
   }, []);
-const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(null);
 
   return (
     <>
@@ -99,19 +99,36 @@ const [open, setOpen] = useState(null);
       <section className="home-values reveal">
         <div className="container">
           <div className="value-header text-center">
-            <h2>
-              Empowering Arvess’s Startup Growth <br />
-              Through Insight & Innovation
-            </h2>
+            <h2>Empowering Startup Growth Through Insight & Innovation</h2>
           </div>
 
           <div className="value-grid">
             <div className="value-card big">
               <div className="icon">⚙️</div>
               <h5>Founder-Centric Approach</h5>
-              <p>
-                We focus on founders first. Every solution is tailored to your
-                startup’s stage, vision, and execution needs.
+              <p> ✓ 
+                At Arvess, founders are at the center of everything we do. We
+                don’t believe in generic consulting—our approach is built around
+                your vision, stage, and execution reality. <br /><br />
+                 ✓ We understand your business model, goals, and growth challenges
+                before proposing solutions <br /><br />
+                ✓ Strategies are aligned with your current stage—idea, early
+                traction, or scale-up
+                <br /><br />
+                ✓ Clear guidance on what to do now vs. what to delay, saving time
+                and capital
+                <br /><br />
+                ✓ Hands-on support in compliance, funding, and growth execution
+                <br /><br />
+                ✓ Transparent communication with practical, actionable advice
+                <br /><br />
+                ✓ Long-term partnership mindset, not one-time service delivery
+                <br /><br />
+                ✓ Our role is to simplify decision-making, reduce risk, and help
+                founders move forward with clarity, confidence, and
+                control—while building businesses that are structured,
+                compliant, and ready to scale.
+                
               </p>
             </div>
 
@@ -119,8 +136,9 @@ const [open, setOpen] = useState(null);
               <div className="icon">🏆</div>
               <h5>Data-Driven Strategy</h5>
               <p>
-                Decisions are powered by market data, performance insights, and
-                ecosystem intelligence.
+                Our decisions are guided by market intelligence, performance
+                metrics, and ecosystem insights—ensuring every recommendation is
+                backed by data, not assumptions.
               </p>
             </div>
 
@@ -128,8 +146,9 @@ const [open, setOpen] = useState(null);
               <div className="icon">🏛️</div>
               <h5>Government Scheme Alignment</h5>
               <p>
-                From MSME to DPIIT and state programs, we ensure accurate
-                eligibility.
+                From MSME and DPIIT to state and central programs, we ensure
+                accurate eligibility mapping, compliant documentation, and
+                structured execution across funding and incentive schemes.
               </p>
             </div>
 
@@ -137,8 +156,11 @@ const [open, setOpen] = useState(null);
               <div className="icon">📄</div>
               <h5>Agile Startup Structuring</h5>
               <p>
-                Legal, financial, and operational structures that adapt as you
-                grow.
+                We design flexible legal, financial, and operational frameworks
+                that evolve with your business. From incorporation to compliance
+                and internal systems, our structures are built to support speed
+                today and scalability tomorrow without creating future
+                roadblocks.
               </p>
             </div>
 
@@ -146,7 +168,10 @@ const [open, setOpen] = useState(null);
               <div className="icon">📊</div>
               <h5>Market-Backed Growth Planning</h5>
               <p>
-                We analyze your market deeply to design traction strategies.
+                Our growth strategies are driven by real market insights, not
+                assumptions. We analyze industry trends, customer behavior, and
+                competitive landscapes to help you plan traction, positioning,
+                and expansion with clarity and confidence.
               </p>
             </div>
 
@@ -154,8 +179,10 @@ const [open, setOpen] = useState(null);
               <div className="icon">🌍</div>
               <h5>Sustainable & Scalable Models</h5>
               <p>
-                We help build resilient businesses focused on long-term value
-                creation.
+                We focus on building businesses that last. By aligning revenue
+                models, cost structures, and capital planning, we help founders
+                create resilient, scalable operations that deliver long-term
+                value—not short-term hype.
               </p>
             </div>
           </div>
@@ -218,120 +245,136 @@ const [open, setOpen] = useState(null);
         </div>
       </section>
 
+      {/* ================= FAQ SECTION ================= */}
+      <section className="home0-faq0 reveal">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* LEFT SIDE */}
+            <div className="col-lg-5">
+              <div className="faq0-heading-image">
+                <img src="./FaqHomeQuestion.png" className="faq0-heading-img" />
+                <img src="./FAQHome.png" className="faq0-illustration-img" />
+              </div>
+            </div>
 
-{/* ================= FAQ SECTION ================= */}
-<section className="home0-faq0 reveal">
-  <div className="container">
-    <div className="row align-items-center">
+            {/* RIGHT SIDE */}
+            <div className="col-lg-7">
+              {/* FAQ 1 */}
+              <div
+                className={`faq0-item0 ${open === 1 ? "active" : ""}`}
+                onClick={() => setOpen(open === 1 ? null : 1)}
+              >
+                <div className="faq0-question">
+                  <h5>
+                    <span>1.</span> What services does Arvess provide?
+                  </h5>
+                  <button className="faq0-toggle">
+                    {open === 1 ? "−" : "+"}
+                  </button>
+                </div>
 
-      {/* LEFT SIDE */}
-      <div className="col-lg-5">
-        <div className="faq0-heading-image">
-          <img src="./FaqHomeQuestion.png" className="faq0-heading-img" />
-          <img src="./FAQHome.png" className="faq0-illustration-img" />
-        </div>
-      </div>
+                {open === 1 && (
+                  <p>
+                    Arvess offers end-to-end business support, including legal
+                    and regulatory compliance, government schemes and funding
+                    assistance, financial structuring, branding, digital growth,
+                    and strategic consulting.
+                  </p>
+                )}
+              </div>
 
-      {/* RIGHT SIDE */}
-      <div className="col-lg-7">
+              {/* FAQ 2 */}
+              <div
+                className={`faq0-item0 ${open === 2 ? "active" : ""}`}
+                onClick={() => setOpen(open === 2 ? null : 2)}
+              >
+                <div className="faq0-question">
+                  <h5>
+                    <span>2.</span> Who can work with Arvess?
+                  </h5>
+                  <button className="faq0-toggle">
+                    {open === 2 ? "−" : "+"}
+                  </button>
+                </div>
 
-        {/* FAQ 1 */}
-        <div
-          className={`faq0-item0 ${open === 1 ? "active" : ""}`}
-          onClick={() => setOpen(open === 1 ? null : 1)}
-        >
-          <div className="faq0-question">
-            <h5><span>1.</span> What services does Arvess provide?</h5>
-            <button className="faq0-toggle">{open === 1 ? "−" : "+"}</button>
+                {open === 2 && (
+                  <p>
+                    Arvess works with idea-stage founders, early-stage startups,
+                    MSMEs, and scaling enterprises across multiple industries.
+                  </p>
+                )}
+              </div>
+
+              {/* FAQ 3 */}
+              <div
+                className={`faq0-item0 ${open === 3 ? "active" : ""}`}
+                onClick={() => setOpen(open === 3 ? null : 3)}
+              >
+                <div className="faq0-question">
+                  <h5>
+                    <span>3.</span> Does Arvess assist with government schemes?
+                  </h5>
+                  <button className="faq0-toggle">
+                    {open === 3 ? "−" : "+"}
+                  </button>
+                </div>
+
+                {open === 3 && (
+                  <p>
+                    Yes. We specialize in MSME, DPIIT, Startup India, and
+                    government grants and incentives.
+                  </p>
+                )}
+              </div>
+              <div
+                className={`faq0-item0 ${open === 4 ? "active" : ""}`}
+                onClick={() => setOpen(open === 4 ? null : 4)}
+              >
+                <div className="faq0-question">
+                  <h5>
+                    <span>4.</span> How does Arvess ensure legal and financial
+                    compliance?
+                  </h5>
+                  <button className="faq0-toggle">
+                    {open === 4 ? "−" : "+"}
+                  </button>
+                </div>
+
+                {open === 4 && (
+                  <p>
+                    Our team follows structured legal, financial, and regulatory
+                    frameworks, ensuring accuracy, transparency, and adherence
+                    to statutory requirements at every stage.
+                  </p>
+                )}
+              </div>
+
+              {/* FAQ 5 */}
+              <div
+                className={`faq0-item0 ${open === 5 ? "active" : ""}`}
+                onClick={() => setOpen(open === 5 ? null : 5)}
+              >
+                <div className="faq0-question">
+                  <h5>
+                    <span>5.</span> Does Arvess provide long-term support?
+                  </h5>
+                  <button className="faq0-toggle">
+                    {open === 5 ? "−" : "+"}
+                  </button>
+                </div>
+
+                {open === 5 && (
+                  <p>
+                    Absolutely. We focus on long-term partnerships, offering
+                    continuous advisory and operational support as your business
+                    grows, evolves, and scales.
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
-
-          {open === 1 && (
-            <p>
-              Arvess offers end-to-end business support, including legal and
-              regulatory compliance, government schemes and funding assistance,
-              financial structuring, branding, digital growth, and strategic
-              consulting.
-            </p>
-          )}
         </div>
-
-        {/* FAQ 2 */}
-        <div
-          className={`faq0-item0 ${open === 2 ? "active" : ""}`}
-          onClick={() => setOpen(open === 2 ? null : 2)}
-        >
-          <div className="faq0-question">
-            <h5><span>2.</span> Who can work with Arvess?</h5>
-            <button className="faq0-toggle">{open === 2 ? "−" : "+"}</button>
-          </div>
-
-          {open === 2 && (
-            <p>
-              Arvess works with idea-stage founders, early-stage startups, MSMEs,
-              and scaling enterprises across multiple industries.
-            </p>
-          )}
-        </div>
-
-        {/* FAQ 3 */}
-        <div
-          className={`faq0-item0 ${open === 3 ? "active" : ""}`}
-          onClick={() => setOpen(open === 3 ? null : 3)}
-        >
-          <div className="faq0-question">
-            <h5><span>3.</span> Does Arvess assist with government schemes?</h5>
-            <button className="faq0-toggle">{open === 3 ? "−" : "+"}</button>
-          </div>
-
-          {open === 3 && (
-            <p>
-              Yes. We specialize in MSME, DPIIT, Startup India, and government
-              grants and incentives.
-            </p>
-          )}
-        </div>
-         <div
-          className={`faq0-item0 ${open === 4 ? "active" : ""}`}
-          onClick={() => setOpen(open === 4 ? null : 4)}
-        >
-          <div className="faq0-question">
-            <h5><span>4.</span> How does Arvess ensure legal and financial compliance?</h5>
-            <button className="faq0-toggle">{open === 4 ? "−" : "+"}</button>
-          </div>
-
-          {open === 4 && (
-            <p>
-              Our team follows structured legal, financial, and regulatory
-              frameworks, ensuring accuracy, transparency, and adherence
-              to statutory requirements at every stage.
-            </p>
-          )}
-        </div>
-
-        {/* FAQ 5 */}
-        <div
-          className={`faq0-item0 ${open === 5 ? "active" : ""}`}
-          onClick={() => setOpen(open === 5 ? null : 5)}
-        >
-          <div className="faq0-question">
-            <h5><span>5.</span> Does Arvess provide long-term support?</h5>
-            <button className="faq0-toggle">{open === 5 ? "−" : "+"}</button>
-          </div>
-
-          {open === 5 && (
-            <p>
-              Absolutely. We focus on long-term partnerships, offering
-              continuous advisory and operational support as your business
-              grows, evolves, and scales.
-            </p>
-          )}
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* ================= WHY CHOOSE US ================= */}
       <section className="home-why reveal">

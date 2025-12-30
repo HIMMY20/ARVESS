@@ -151,7 +151,8 @@ section:first-child {
 /* Full width dropdown */
 .mega-menu {
   width: 70vw;
-  left: -8  00px !important;
+  left: 50%;
+  transform: translateX(-50%);
   right: 0;
   top: 100%;
   border: none;
@@ -265,23 +266,26 @@ section:first-child {
 
   .dropdown-menu.mega-menu,
   .dropdown-menu.more-menu {
-    position: fixed;
-    top: 80px;                 /* navbar height */
+    position: absolute;   /* 🔥 FIXED → ABSOLUTE */
+    top: 100%;
     left: 0;
     right: 0;
 
-    width: 100vw;
-    height: calc(100vh - 80px);
-
+    width: 100%;
+    max-height: calc(100vh - 90px); /* 🔥 FIX */
     overflow-y: auto;
+    overflow-x: hidden;
+
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 
     background: #ffffff;
-    padding: 20px 20px 80px;   /* bottom space important */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    padding: 20px 16px 40px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     border: none;
   }
 
+  /* column stack */
   .mega-menu .row {
     margin: 0;
   }
@@ -289,6 +293,12 @@ section:first-child {
   .mega-menu .col-md-4 {
     width: 100%;
     margin-bottom: 24px;
+  }
+   .mega-dropdown:hover .mega-menu,
+  .more-dropdown:hover .more-menu {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
   }
 }
 
@@ -895,6 +905,7 @@ background-repeat: no-repeat;
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* ============================= */
 /* FAQ SECTION */
