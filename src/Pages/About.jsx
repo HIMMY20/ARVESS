@@ -54,7 +54,7 @@ const About = () => {
                 <br />
                 Our work spans across business incorporation, compliance
                 management, funding assistance, investor readiness, branding,
-                and digital growth. With a process-driven and transparent
+                and digital growth. With a process driven and transparent
                 approach, Arvess enables businesses to scale with confidence,
                 clarity, and long-term vision.
                 <br />
@@ -89,7 +89,7 @@ const About = () => {
                     startup journey through a unified support ecosystem. We
                     provide founders and businesses with legal clarity,
                     financial structure, funding guidance, and digital growth
-                    strategies—so they can focus on building, scaling, and
+                    strategies so they can focus on building, scaling, and
                     sustaining impactful ventures with confidence.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ const About = () => {
                   <h3>Building India’s Most Trusted Startup Partner</h3>
                   <p>
                     Our vision is to become India’s most trusted startup growth
-                    partner—where strategy meets execution. We aim to empower
+                    partner where strategy meets execution. We aim to empower
                     founders with the right frameworks, insights, and long-term
                     support to transform bold ideas into scalable, compliant,
                     and sustainable businesses across industries.
@@ -136,7 +136,7 @@ const About = () => {
               </h2>
 
               <p className="lead-text">
-                Arvess is not just a consultancy — it is a structured growth
+                Arvess is not just a consultancy it is a structured growth
                 partner built to support startups, MSMEs, and entrepreneurs
                 across every stage of their journey.
               </p>
