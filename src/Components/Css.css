@@ -285,83 +285,101 @@ section:first-child {
 /* ================= MOBILE MENU FIX ================= */
 @media (max-width: 768px) {
 
-  /* MENU CONTAINER */
-  .mobile-menu,
+  /* 🔒 BODY SCROLL FIX (optional but recommended) */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR FIX */
+  .custom-navbar {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  /* 🔥 MAIN FIX: COLLAPSE FULL WIDTH */
   .navbar-collapse {
+    position: fixed !important;
+    top: 70px;               /* navbar height ke niche */
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+
     background: #ffffff;
-    padding: 20px 18px;
+    padding: 18px 16px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+    transform: none !important;
   }
 
-  /* MAIN LINKS */
-  .mobile-menu a,
-  .navbar-collapse a {
-    display: block;
-    padding: 14px 12px;
+  /* NAV LINKS */
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    gap: 6px;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 14px 14px;
     font-size: 16px;
-    font-weight: 500;
-    color: #012D0E;
-    text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
   }
 
-  .mobile-menu a:hover {
-    background: rgba(1, 45, 14, 0.06);
+  /* DROPDOWN / MEGA MENU FIX */
+  .mega-menu,
+  .more-menu {
+    position: static !important;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px 0 0;
+    margin: 0;
+    border: none;
   }
 
-  /* SECTION TITLE (Our Services, Capital, Brand etc.) */
-  .mobile-menu .menu-section-title {
+  .mega-menu .row {
+    margin: 0;
+  }
+
+  .mega-menu .col-md-4 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  /* MEGA TITLES */
+  .mega-title {
     font-size: 15px;
     font-weight: 700;
     color: #A00A20;
-    margin: 20px 0 10px;
-    padding-left: 6px;
-    position: relative;
+    margin: 16px 0 8px;
   }
 
-  .mobile-menu .menu-section-title::after {
-    content: "";
-    width: 30px;
-    height: 3px;
-    background: #012D0E;
+  /* MEGA LIST */
+  .mega-list {
+    padding-left: 0;
+  }
+
+  .mega-list li a {
     display: block;
-    margin-top: 6px;
-    border-radius: 3px;
-  }
-
-  /* SUB MENU LIST */
-  .mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 12px;
-  }
-
-  .mobile-menu ul li {
-    margin-bottom: 6px;
-  }
-
-  /* SUB MENU ITEMS */
-  .mobile-menu ul li a {
-    font-size: 14px;
     padding: 10px 14px;
     background: #f7f9f8;
-    border-radius: 6px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 14px;
     color: #012D0E;
   }
 
-  .mobile-menu ul li a::before {
+  .mega-list li a::before {
     content: "–";
     margin-right: 8px;
     color: #A00A20;
     font-weight: 700;
   }
-
-  /* ACTIVE / OPEN SECTION */
-  .mobile-menu .active > a {
-    background: rgba(160, 10, 32, 0.08);
-    color: #A00A20;
-    font-weight: 600;
-  }
-
 }
 
 /* ============================= */
