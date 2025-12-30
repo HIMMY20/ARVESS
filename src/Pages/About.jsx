@@ -148,7 +148,10 @@ const About = () => {
                 <li>Compliance-driven, transparent execution</li>
                 <li>Funding, branding & growth under one roof</li>
                 <li>Founder-first advisory and execution mindset</li>
-                <li>We don’t just advise  we build alongside you, ensuring clarity, confidence, and long-term sustainability.</li>
+                <li>
+                  We don’t just advise we build alongside you, ensuring clarity,
+                  confidence, and long-term sustainability.
+                </li>
               </ul>
 
               <a href="/contact" className="arvess-btn-primary">
@@ -180,8 +183,10 @@ const About = () => {
               Powering Growth Across <span>Key Sectors</span>
             </h2>
             <p>
-              Arvess supports startups and MSMEs across high-impact industries
-              with funding, compliance, branding, and strategic execution.
+              Arvess partners with startups and MSMEs across high-impact
+              industries, delivering structured support in funding, compliance,
+              branding, and strategic execution to help businesses scale with
+              confidence.
             </p>
           </div>
 
@@ -189,63 +194,92 @@ const About = () => {
           <div className="industries-grid">
             <div className="industry-card">
               <div className="icon">🩺</div>
-              <h5>MedTech & Devices</h5>
+              <h5>MedTech & Medical Devices</h5>
               <p>
-                Healthcare innovation, diagnostics, and medical technologies.
+                Supporting healthcare innovators with regulatory readiness,
+                certifications, funding access, and go-to-market strategy for
+                diagnostics, devices, and health technologies.
               </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">🧬</div>
               <h5>BioTech & Life Sciences</h5>
-              <p>Research-driven ventures in life sciences and healthcare.</p>
+              <p>
+                Enabling research-driven ventures through compliance
+                structuring, grant alignment, investor readiness, and strategic
+                advisory across life sciences and healthcare innovation.
+              </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">🌾</div>
               <h5>AgriTech & Food Processing</h5>
-              <p>Technology-led agriculture and sustainable food systems.</p>
+              <p>
+                Empowering technology-led agriculture and food enterprises with
+                scheme facilitation, compliance frameworks, branding, and
+                scalable growth strategies.
+              </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">🤖</div>
               <h5>AI & Deep Tech</h5>
               <p>
-                Artificial Intelligence, automation, and deep technology
-                startups.
+                Supporting startups in artificial intelligence, automation, and
+                deep technology with compliance structuring, funding readiness,
+                and scalable growth strategy.
               </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">💳</div>
               <h5>FinTech & InsurTech</h5>
-              <p>Financial innovation, digital payments, and insurance tech.</p>
+              <p>
+                Enabling financial innovation through regulatory support,
+                investor alignment, and strategic execution across digital
+                payments, lending, and insurance technologies.
+              </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">🎓</div>
               <h5>EdTech & Skilling</h5>
-              <p>Education platforms and workforce skilling solutions.</p>
+              <p>
+                Partnering with education and workforce skilling platforms to
+                build compliant, scalable solutions aligned with market demand
+                and government programs.
+              </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">⚡</div>
               <h5>Green & Renewable Energy</h5>
-              <p>Sustainable energy, climate tech, and green solutions.</p>
+              <p>
+                Empowering climate-tech and clean energy ventures with funding
+                facilitation, compliance advisory, and long-term
+                sustainability-focused growth planning.
+              </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">🚗</div>
               <h5>EV & Mobility</h5>
               <p>
-                Electric vehicles, mobility platforms, and transport innovation.
+                Supporting electric vehicle and mobility startups through scheme
+                alignment, regulatory readiness, and investor-focused business
+                structuring.
               </p>
             </div>
 
             <div className="industry-card">
               <div className="icon">♻️</div>
-              <h5>Sustainability & Waste</h5>
-              <p>Waste management, recycling "and" circular economy models.</p>
+              <h5>Sustainability & Waste Management</h5>
+              <p>
+                Helping circular economy and waste management ventures scale
+                through structured compliance, funding access, and impact-driven
+                growth strategies.
+              </p>
             </div>
           </div>
         </div>

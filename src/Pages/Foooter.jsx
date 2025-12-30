@@ -47,9 +47,7 @@ const Foooter = () => {
             operating in India. We do not have any affiliation, authorization,
             or partnership with any government or non-government organization,
             institution, or department.
-            <br /><br />
-            Payments for services are accepted only in the official name of
-            Arvess through approved banking and digital payment channels.
+            
           </p>
 
           <div className="footer-links-grid">
