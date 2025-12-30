@@ -91,9 +91,29 @@ section:first-child {
     font-size: 14px;
     padding: 4px 0;
   }
+  .custom-navbar.navbar-blur {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+  }
 
 }
 
+/* ============================= */
+/* NAVBAR BLUR EFFECT */
+/* ============================= */
+
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.9); /* default */
+  transition: all 0.3s ease;
+}
+
+/* SCROLL PE BLUR */
+.custom-navbar.navbar-blur {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
 
 
 /* ============================= */
@@ -262,49 +282,87 @@ section:first-child {
 /* ============================= */
 /* MOBILE MEGA MENU – FINAL FIX */
 /* ============================= */
+/* ================= MOBILE MENU FIX ================= */
+@media (max-width: 768px) {
 
-@media (max-width: 991px) {
-
-  /* MOBILE DROPDOWN CONTAINER */
-  .dropdown-menu.mega-menu,
-  .dropdown-menu.more-menu {
-    position: fixed;
-    top: 80px;              /* navbar height */
-    left: 0;
-    right: 0;
-
-    width: 100vw;
-    height: calc(100vh - 80px);
-
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-
+  /* MENU CONTAINER */
+  .mobile-menu,
+  .navbar-collapse {
     background: #ffffff;
-    padding: 15px 12px 50px;
-    border: none;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    padding: 20px 18px;
   }
 
-  /* CONTENT WIDTH CENTER (TEXT LEFT HI RAHEGA) */
-  .mega-menu .row {
-    max-width: 720px;   /* 👈 CONTENT CENTER */
-    margin: 0 auto;
+  /* MAIN LINKS */
+  .mobile-menu a,
+  .navbar-collapse a {
+    display: block;
+    padding: 14px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #012D0E;
+    text-decoration: none;
+    border-radius: 8px;
   }
 
-  .mega-menu .col-md-4 {
-    width: 100%;
-    margin-bottom: 24px;
-    text-align: left;   /* ❗ TEXT LEFT */
+  .mobile-menu a:hover {
+    background: rgba(1, 45, 14, 0.06);
   }
+
+  /* SECTION TITLE (Our Services, Capital, Brand etc.) */
+  .mobile-menu .menu-section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #A00A20;
+    margin: 20px 0 10px;
+    padding-left: 6px;
+    position: relative;
+  }
+
+  .mobile-menu .menu-section-title::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #012D0E;
+    display: block;
+    margin-top: 6px;
+    border-radius: 3px;
+  }
+
+  /* SUB MENU LIST */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+  }
+
+  .mobile-menu ul li {
+    margin-bottom: 6px;
+  }
+
+  /* SUB MENU ITEMS */
+  .mobile-menu ul li a {
+    font-size: 14px;
+    padding: 10px 14px;
+    background: #f7f9f8;
+    border-radius: 6px;
+    color: #012D0E;
+  }
+
+  .mobile-menu ul li a::before {
+    content: "–";
+    margin-right: 8px;
+    color: #A00A20;
+    font-weight: 700;
+  }
+
+  /* ACTIVE / OPEN SECTION */
+  .mobile-menu .active > a {
+    background: rgba(160, 10, 32, 0.08);
+    color: #A00A20;
+    font-weight: 600;
+  }
+
 }
-
-
 
 /* ============================= */
 /* MEGA MENU – A TAG STYLING */

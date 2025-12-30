@@ -6,25 +6,22 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const Navbar = () => {
 
   useEffect(() => {
-    const navbar = document.querySelector(".custom-navbar");
-    if (!navbar) return;
+  const navbar = document.querySelector(".custom-navbar");
+  if (!navbar) return;
 
-    const onScroll = () => {
-      if (window.scrollY > 0) {
-        navbar.style.backgroundColor = "transparent";
-        navbar.style.boxShadow = "none";
-      } else {
-        navbar.style.backgroundColor = "#ffffff";
-        navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
-      }
-    };
+  const onScroll = () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add("navbar-blur");
+    } else {
+      navbar.classList.remove("navbar-blur");
+    }
+  };
 
+  window.addEventListener("scroll", onScroll);
+  onScroll();
 
-    window.addEventListener("scroll", onScroll);
-    onScroll();
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
 
 
 
