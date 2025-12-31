@@ -1461,12 +1461,12 @@ background-repeat: no-repeat;
 }
 
 .mv-tag.green {
-  background: rgba(22,163,74,0.1);
-  color: 012D0E;
+  background: #012D0E;
+  color: #012D0E;
 }
 
 .mv-tag.red {
-  background: rgba(160,10,32,0.1);
+  background: #A00A20;
   color: #A00A20;
 }
 
