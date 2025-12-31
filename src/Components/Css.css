@@ -1462,7 +1462,7 @@ background-repeat: no-repeat;
 
 .mv-tag.green {
   background: rgba(22,163,74,0.1);
-  color: 012D0E;
+  color: #012D0E;
 }
 
 .mv-tag.red {
@@ -1487,7 +1487,7 @@ background-repeat: no-repeat;
 
 /* BORDER ACCENTS */
 .mission-card {
-  border-top: 6px solid #16a34a;
+  border-top: 6px solid #012D0E;
 }
 
 .vision-card {
