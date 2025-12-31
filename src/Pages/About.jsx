@@ -194,7 +194,7 @@ const About = () => {
           <div className="industries-grid">
             <div className="industry-card">
               <div className="icon">🩺</div>
-              <h5>MedTech & Medical Devices</h5>
+              <h5 className="grid-red">MedTech & Medical Devices</h5>
               <p>
                 Supporting healthcare innovators with regulatory readiness,
                 certifications, funding access, and go-to-market strategy for
@@ -204,7 +204,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">🧬</div>
-              <h5>BioTech & Life Sciences</h5>
+              <h5 className="grid-green">BioTech & Life Sciences</h5>
               <p>
                 Enabling research-driven ventures through compliance
                 structuring, grant alignment, investor readiness, and strategic
@@ -214,7 +214,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">🌾</div>
-              <h5>AgriTech & Food Processing</h5>
+              <h5 className="grid-red">AgriTech & Food Processing</h5>
               <p>
                 Empowering technology-led agriculture and food enterprises with
                 scheme facilitation, compliance frameworks, branding, and
@@ -224,7 +224,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">🤖</div>
-              <h5>AI & Deep Tech</h5>
+              <h5 className="grid-green">AI & Deep Tech</h5>
               <p>
                 Supporting startups in artificial intelligence, automation, and
                 deep technology with compliance structuring, funding readiness,
@@ -234,7 +234,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">💳</div>
-              <h5>FinTech & InsurTech</h5>
+              <h5 className="grid-red">FinTech & InsurTech</h5>
               <p>
                 Enabling financial innovation through regulatory support,
                 investor alignment, and strategic execution across digital
@@ -244,7 +244,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">🎓</div>
-              <h5>EdTech & Skilling</h5>
+              <h5 className="grid-green">EdTech & Skilling</h5>
               <p>
                 Partnering with education and workforce skilling platforms to
                 build compliant, scalable solutions aligned with market demand
@@ -254,7 +254,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">⚡</div>
-              <h5>Green & Renewable Energy</h5>
+              <h5 className="grid-red">Green & Renewable Energy</h5>
               <p>
                 Empowering climate-tech and clean energy ventures with funding
                 facilitation, compliance advisory, and long-term
@@ -264,7 +264,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">🚗</div>
-              <h5>EV & Mobility</h5>
+              <h5 className="grid-green">EV & Mobility</h5>
               <p>
                 Supporting electric vehicle and mobility startups through scheme
                 alignment, regulatory readiness, and investor-focused business
@@ -274,7 +274,7 @@ const About = () => {
 
             <div className="industry-card">
               <div className="icon">♻️</div>
-              <h5>Sustainability & Waste Management</h5>
+              <h5 className="grid-red">Sustainability & Waste Management</h5>
               <p>
                 Helping circular economy and waste management ventures scale
                 through structured compliance, funding access, and impact-driven

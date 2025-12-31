@@ -1326,7 +1326,7 @@ background-repeat: no-repeat;
 }
 
 .grid-text h2 span {
-  color: #A00A20;
+  color: #012D0E;
 }
 
 .grid-text p {
@@ -1361,6 +1361,12 @@ background-repeat: no-repeat;
 .about-btn:hover {
   background: #7a0718;
   transform: translateX(6px);
+}
+.grid-green{
+  color: #012D0E;
+}
+.grid-red{
+  color: #A00A20;
 }
 
 /* ============================= */
