@@ -65,10 +65,10 @@ const Foooter = () => {
             <div>
               <h4 className="footer-heading">Support Center</h4>
               <ul>
-                <li>Blog</li>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
-                <li>Refund Policy</li>
+                <li><a href="/">Blog</a></li>
+                <li> <a href="/privacypolicy">Privacy Policy</a></li>
+                <li><a href="/refundpolicy">Refund Policy</a></li>
+                <li> <a href="/termscondition">Terms & Condition</a></li>
               </ul>
             </div>
           </div>

@@ -129,9 +129,9 @@ const Navbar = () => {
                     <div className="col-md">
                       <ul className="more-list">
                         <li><a href="/">Blog</a></li>
-                        <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Refund Policy</a></li>
-                        <li><a href="/">Term & Condition</a></li>
+                        <li><a href="/privacypolicy">Privacy Policy</a></li>
+                        <li><a href="/refundpolicy">Refund Policy</a></li>
+                        <li><a href="/termscondition">Term & Condition</a></li>
                       </ul>
                     </div>
                   </div>

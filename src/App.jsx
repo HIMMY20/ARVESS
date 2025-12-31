@@ -17,6 +17,9 @@ import Privatefunding from "./Pages/OfficeOfOpportunity/Privatefunding";
 import GovernmentandPrivateloans from "./Pages/OfficeOfOpportunity/GovernmentandPrivateloans";
 import Branding from "./Pages/StudioDigital&branding/Branding";
 import Foooter from "./Pages/Foooter";
+import TermsCondition from "./Pages/Moree/TermsCondition";
+import PrivacyPolicy from "./Pages/Moree/PrivacyPolicy";
+import RefundPolicy from "./Pages/Moree/RefundPolicy";
 
 function App() {
   return (
@@ -40,6 +43,9 @@ function App() {
         <Route path="/privatefunding" element={<Privatefunding/>} />
         <Route path="/governmentandprivateloans" element={<GovernmentandPrivateloans/>} />
         <Route path="/branding" element={<Branding/>} />
+        <Route path="/termscondition" element={<TermsCondition/>} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+        <Route path="/refundpolicy" element={<RefundPolicy/>} />
 
         
       </Routes>
