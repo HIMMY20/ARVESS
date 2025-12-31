@@ -7,7 +7,7 @@ const TermsCondition = () => {
         <h1>Terms & Conditions</h1>
 
         <p className="terms-date">
-          <strong>Effective Date:</strong> 11th December, 2025
+          <strong>Effective Date: 11th December, 2025</strong>
         </p>
 
         <p>
@@ -114,7 +114,7 @@ const TermsCondition = () => {
         <p>
           📧 info.arvess@gmail.com <br />
           📞 +91 96623 47619 <br />
-          🌐 www.arvess.official.com
+          🌐<a href="</https://www.arvessofficial.com/">www.arvess.official.com</a> 
         </p>
       </div>
     </section>

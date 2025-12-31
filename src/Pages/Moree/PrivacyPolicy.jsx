@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <h1>Privacy Policy</h1>
 
         <p className="terms-date">
-          <strong>Effective Date:</strong> 11th December, 2025
+          <strong>Effective Date: 11th December, 2025</strong>
         </p>
 
         <p>
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
         <p>
           📧 info.arvess@gmail.com <br />
           📞 +91 96623 47619 <br />
-          🌐 www.arvess.official.com
+          🌐<a href="</https://www.arvessofficial.com/">www.arvess.official.com</a> 
         </p>
 
       </div>
