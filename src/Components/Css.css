@@ -1143,11 +1143,11 @@ background-repeat: no-repeat;
 .footer-desc {
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 18px;
+  margin-bottom: 18px;  
 }
 
 .footer-heading {
-  color: #dc2626; /* RED */
+  color: #A00A20; /* RED */
   font-size: 18px;
   margin: 25px 0 12px;
 }
@@ -1193,13 +1193,13 @@ background-repeat: no-repeat;
 
 /* HOVER EFFECT */
 .footer-links-grid li a:hover {
-  color: #dc2626;          /* RED */
+  color: #A00A20;          /* RED */
   transform: translateX(4px);
 }
 
 /* ACTIVE (OPTIONAL) */
 .footer-links-grid li a.active {
-  color: #dc2626;
+  color: #A00A20;
   font-weight: 600;
 }
 
@@ -1211,7 +1211,7 @@ background-repeat: no-repeat;
 }
 
 .footer-links-grid li:hover {
-  color: #dc2626;
+  color: #A00A20;
 }
 
 /* BOTTOM */
@@ -1219,10 +1219,10 @@ background-repeat: no-repeat;
   text-align: center;
   margin-top: 35px;
   font-size: 13px;
-  color: #dc2626;
+  color: #A00A20;
 }
 .footer-disclaimer p {
-  color: red;
+  color: #A00A20 ;
   font-weight: 600;
 }
 
@@ -1694,7 +1694,6 @@ background-repeat: no-repeat;
   max-width: 700px;
   margin: 0 auto 70px;
 }
-
 .industries-header .pill {
   display: inline-block;
   background: rgba(160, 10, 32, 0.08);
