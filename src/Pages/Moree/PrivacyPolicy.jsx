@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
         <p>
           📧 info.arvess@gmail.com <br />
           📞 +91 96623 47619 <br />
-          🌐<a href="</https://www.arvessofficial.com/">www.arvess.official.com</a> 
+          🌐 www.arvess.official.com
         </p>
 
       </div>
