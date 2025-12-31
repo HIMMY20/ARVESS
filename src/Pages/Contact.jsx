@@ -54,16 +54,6 @@ const Contact = () => {
             <span>Quick startup queries</span>
           </div>
 
-          {/* BOTTOM FULL */}
-          <div className="contact-block wide">
-            <h5>📍 Location</h5>
-            <p>
-              Ahmedabad, Gujarat <br />
-              India
-            </p>
-            <span>Strategy calls by appointment</span>
-          </div>
-
         </div>
       </div>
     </section>
