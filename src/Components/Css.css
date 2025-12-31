@@ -1718,7 +1718,7 @@ background-repeat: no-repeat;
 }
 
 .industries-header h2 span {
-  color: #065f46;
+  color: #012D0E;
 }
 
 .industries-header p {
@@ -1762,7 +1762,7 @@ background-repeat: no-repeat;
   inset: 0;
   border-radius: 18px;
   padding: 1px;
-  background: linear-gradient(135deg, #065f46, #A00A20);
+  background: linear-gradient(135deg, #012D0E, #A00A20);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
