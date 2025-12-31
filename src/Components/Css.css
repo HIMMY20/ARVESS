@@ -378,6 +378,9 @@ section:first-child {
     font-size: 14px !important;
     color: #012D0E !important;
   }
+  .home-hero h1{
+    font-size: 40px;
+  }
 
 }
 
@@ -677,9 +680,7 @@ background-repeat: no-repeat;
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .home-hero h1{
-    font-size: 40px;
-  }
+  
 }
 
 @media (max-width: 576px) {
