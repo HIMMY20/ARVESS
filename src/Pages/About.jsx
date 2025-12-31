@@ -135,7 +135,7 @@ const About = () => {
               </h2>
 
               <p className="lead-text">
-                Arvess is more than a consultancy — we are a structured growth
+                Arvess is more than a consultancy  we are a structured growth
                 partner designed to support startups, MSMEs, and emerging
                 enterprises at every stage of their journey. From laying strong
                 legal and financial foundations to unlocking funding and driving
