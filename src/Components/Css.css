@@ -1889,7 +1889,7 @@ background-repeat: no-repeat;
   padding: 6px 18px;
   background: #eef2ff;
   color: #0b1b4d;
-  font-size: 13px;
+  font-size: 23px;
   font-weight: 600;
   border-radius: 30px;
   margin-bottom: 18px;
@@ -1915,13 +1915,21 @@ background-repeat: no-repeat;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
 /* CARD */
-.contact-block {
-  background: #ffffff;
+.contact-blockred {
+  background: #a00a20;
+  border-radius: 16px;
+  padding: 40px 30px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+.contact-blockgreen{
+    background: #012D0E;
   border-radius: 16px;
   padding: 40px 30px;
   border: 1px solid #e5e7eb;
@@ -1936,43 +1944,35 @@ background-repeat: no-repeat;
 }
 
 /* TITLE */
-.contact-block h5 {
+.contact-blockred h5 , .contact-blockgreen h5 {
   font-size: 18px;
   font-weight: 700;
-  color: #020617;
+  color: white;
   margin-bottom: 8px;
 }
 
 /* MAIN TEXT */
-.contact-block p {
+.contact-blockgreen p ,.contact-blockred p {
   font-size: 16px;
   font-weight: 500;
-  color: #0b1b4d;
+  color: white;
   margin-bottom: 6px;
 }
 
 /* SUB TEXT */
-.contact-block span {
+.contact-blockred span ,.contact-blockgreen span {
   font-size: 14px;
-  color: #64748b;
+  color: white;
 }
 
 /* HOVER (SUBTLE BUSINESS) */
-.contact-block:hover {
+.contact-blockred:hover,.contact-blockgreen:hover {
   border-color: #c7d2fe;
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.08);
 }
 
-/* REMOVE OLD VARIANTS EFFECT */
-.contact-block.big,
-.contact-block.wide,
-.contact-block.accent {
-  grid-column: auto;
-  grid-row: auto;
-  background: #ffffff;
-  color: inherit;
-}
+
 
 /* MOBILE */
 @media (max-width: 900px) {

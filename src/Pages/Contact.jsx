@@ -25,7 +25,7 @@ const Contact = () => {
           <span className="contact-chip">Contact Arvess</span>
           <h2>Let’s Start a Meaningful Conversation</h2>
           <p>
-            Not just messages — real discussions, real guidance, and
+            Not just messages  real discussions, real guidance, and
             real startup clarity.
           </p>
         </div>
@@ -34,24 +34,17 @@ const Contact = () => {
         <div className="contact-layout">
 
           {/* BIG LEFT */}
-          <div className="contact-block big">
+          <div className="contact-blockred ">
             <h5>📞 Talk To Us</h5>
             <p className="main">+91 9662347619</p>
             <span>Mon – Sat · 9:00 AM – 7:00 PM</span>
           </div>
 
           {/* TOP RIGHT */}
-          <div className="contact-block">
+          <div className="contact-blockgreen">
             <h5>✉️ Email</h5>
             <p>info.arvess@gmail.com</p>
             <span>We reply within 24 hours</span>
-          </div>
-
-          {/* MIDDLE RIGHT */}
-          <div className="contact-block accent">
-            <h5>💬 Chat With Us</h5>
-            <p>ARVESS</p>
-            <span>Quick startup queries</span>
           </div>
 
         </div>
