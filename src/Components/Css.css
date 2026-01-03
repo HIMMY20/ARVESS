@@ -1261,24 +1261,69 @@ background-repeat: no-repeat;
     font-size: 16px;
   }
 }
+/* ================= MOBILE FIX ONLY ================= */
+@media (max-width: 768px) {
 
-/* ================= SMALL MOBILE ================= */
-@media (max-width: 480px) {
-
-  .arvess-footer {
-    padding: 45px 14px 22px;
+  .footer-container {
+    display: block;        /* grid tod ke simple block */
   }
 
-  .footer-desc,
-  .footer-contact,
-  .footer-disclaimer p,
-  .footer-links-grid li a {
-    font-size: 13px;
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-logo {
+    height: 85px;
+    margin-bottom: 18px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
     line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .footer-contact {
+    font-size: 14px;
+  }
+
+  .footer-divider {
+    display: none;         /* phone me divider hata */
+  }
+
+  .footer-right {
+    margin-top: 30px;      /* left aur right ke beech gap */
+  }
+
+  .footer-disclaimer {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .footer-links-grid {
+    display: block;        /* grid hata */
+  }
+
+  .footer-links-grid > div {
+    margin-bottom: 25px;
+  }
+
+  .footer-heading {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links-grid li a {
+    font-size: 14px;
+    padding: 4px 0;
   }
 
   .footer-bottom {
+    margin-top: 30px;
     font-size: 12px;
+    text-align: center;
   }
 }
 
