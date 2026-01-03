@@ -1,14 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const Foooter = () => {
+const Footer = () => {
   return (
-    <>
-         <footer className="arvess-footer">
+    <footer className="arvess-footer">
       <div className="footer-container">
 
-        {/* LEFT SIDE */}
+        {/* LEFT SECTION */}
         <div className="footer-left">
-          <img src="./ARVESSLOGO.svg" alt="Arvess" className="footer-logo" />
+          <img
+            src="./ARVESSLOGO.svg"
+            alt="Arvess"
+            className="footer-logo"
+          />
 
           <p className="footer-desc">
             Arvess Service Private Limited is a startup consultancy firm in
@@ -37,28 +40,32 @@ const Foooter = () => {
           </p>
         </div>
 
-        {/* DIVIDER */}
+        {/* DIVIDER (DESKTOP ONLY) */}
         <div className="footer-divider"></div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT SECTION */}
         <div className="footer-right">
-          <p className="footer-disclaimer">
-             <p>Disclaimer:</p> We are an independent startup consultancy firm
-            operating in India. We do not have any affiliation, authorization,
-            or partnership with any government or non-government organization,
-            institution, or department.
-            
-          </p>
 
+          {/* DISCLAIMER */}
+          <div className="footer-disclaimer">
+            <h4 className="footer-heading">Disclaimer</h4>
+            <p>
+              We are an independent startup consultancy firm operating in India.
+              We do not have any affiliation, authorization, or partnership with
+              any government or non-government organization, institution, or
+              department.
+            </p>
+          </div>
+
+          {/* LINKS */}
           <div className="footer-links-grid">
+
             <div>
               <h4 className="footer-heading">Navigation</h4>
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/">Contact Us</a></li>
-                {/* <li><a href="/"></a></li> */}
-                {/* <li><a href="/"></a></li> */}
+                <li><a href="/contact">Contact Us</a></li>
               </ul>
             </div>
 
@@ -66,22 +73,23 @@ const Foooter = () => {
               <h4 className="footer-heading">Support Center</h4>
               <ul>
                 <li><a href="/">Blog</a></li>
-                <li> <a href="/privacypolicy">Privacy Policy</a></li>
+                <li><a href="/privacypolicy">Privacy Policy</a></li>
                 <li><a href="/refundpolicy">Refund Policy</a></li>
-                <li> <a href="/termscondition">Terms & Condition</a></li>
+                <li><a href="/termscondition">Terms & Condition</a></li>
               </ul>
             </div>
+
           </div>
         </div>
 
       </div>
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
         © 2025 Arvess. All Rights Reserved.
       </div>
     </footer>
-    </>
-  )
-}
+  );
+};
 
-export default Foooter
+export default Footer;

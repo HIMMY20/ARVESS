@@ -88,12 +88,6 @@ const Contact = () => {
 
         </div>
 
-        {/* CTA */}
-        <div className="map-cta">
-          <a href="#" className="cta-btn">
-            Book A Strategy Call →
-          </a>
-        </div>
 
       </div>
     </section>
