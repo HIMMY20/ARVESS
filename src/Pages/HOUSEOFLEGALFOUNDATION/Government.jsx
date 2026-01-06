@@ -13,7 +13,7 @@ const Government = () => {
             <p>
               Get your business officially recognized under the MSME (Micro,
               Small & Medium Enterprise) framework with Arvess. We manage the
-              complete Udyam registration process with precision—helping you
+              complete Udyam registration process with precision helping you
               access government benefits, subsidies, priority lending, and
               MSME-specific opportunities. Our structured approach ensures a
               fast, accurate, and fully compliant registration with zero hassle.
