@@ -2424,7 +2424,7 @@ background-repeat: no-repeat;
 
 .min-req-list li {
   font-size: 18.5px;
-  color: #333;
+  color: #012D0E;
   padding: 14px 16px 14px 42px;
   margin-bottom: 16px;
   border: 1px solid #e0e0e0;
@@ -2449,7 +2449,7 @@ background-repeat: no-repeat;
 /* HOVER */
 .min-req-list li:hover {
   transform: translateY(-6px);
-  border-color: #c62828;
+  border-color: #A00A20;
   box-shadow: 0 8px 18px rgba(198,40,40,0.18);
   background: #ffffff;
 }
@@ -2476,13 +2476,13 @@ background-repeat: no-repeat;
 .process-title {
   font-size: 36px;
   font-weight: 800;
-  color: #c62828;
+  color: #A00A20;
   margin-bottom: 60px;
   animation: fadeDown 0.7s ease;
 }
 
 .process-title span {
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 /* FLOW */
@@ -2510,7 +2510,7 @@ background-repeat: no-repeat;
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   display: flex;
@@ -2523,7 +2523,7 @@ background-repeat: no-repeat;
 /* TEXT */
 .process-step p {
   font-size: 14.5px;
-  color: #333;
+  color: #012D0E;
   line-height: 1.6;
   font-weight: 500;
 }
@@ -2531,7 +2531,7 @@ background-repeat: no-repeat;
 /* HOVER */
 .process-step:hover {
   transform: translateY(-10px);
-  border-color: #c62828;
+  border-color: #A00A20;
   box-shadow: 0 12px 25px rgba(198,40,40,0.18);
 }
 
@@ -2561,7 +2561,7 @@ background-repeat: no-repeat;
 
 /* TITLE */
 .faq1-flip1-title1 {
-  font-size: 38px;
+  font-size: 52px;
   font-weight: 800;
   color: #012D0E;
   margin-bottom: 70px;
@@ -2611,12 +2611,12 @@ background-repeat: no-repeat;
 .faq1-front1 h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 /* BACK */
 .faq1-back1 {
-  background: #c62828;
+  background: #A00A20;
   color: #ffffff;
   transform: rotateY(180deg);
 }
