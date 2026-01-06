@@ -2167,6 +2167,9 @@ background-repeat: no-repeat;
   font-weight: 600;
   color: #A00A20;
 }
+.ci-free-box h4 span{
+  color: #012D0E;
+}
 /* CENTER CONTAINER */
 .ci-container {
   max-width: 1100px;
@@ -2815,7 +2818,7 @@ background-repeat: no-repeat;
 /* HOVER */
 .msme-req-item:hover {
   transform: translateX(10px);
-  border-color: #c62828;
+  border-color: #A00A20;
   box-shadow: 0 8px 18px rgba(198, 40, 40, 0.18);
 }
 
@@ -2841,12 +2844,12 @@ background-repeat: no-repeat;
 .msme-flow-title {
   font-size: 36px;
   font-weight: 800;
-  color: #0b2d4f;
+  color: #A00A20;
   margin-bottom: 80px;
 }
 
 .msme-flow-title span {
-  color: #c62828;
+  color: #012D0E;
 }
 
 /* FLOW WRAPPER */
@@ -2886,7 +2889,7 @@ background-repeat: no-repeat;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   display: flex;
@@ -2919,13 +2922,13 @@ background-repeat: no-repeat;
 .flow-step p {
   font-size: 15px;
   font-weight: 500;
-  color: #333;
+  color: #012D0E;
   margin: 0;
 }
 
 /* HOVER */
 .flow-step:hover {
-  border-color: #c62828;
+  border-color: #A00A20;
   box-shadow: 0 10px 22px rgba(198,40,40,0.2);
 }
 
