@@ -2664,12 +2664,12 @@ background-repeat: no-repeat;
 .udyam-impact-left h2 {
   font-size: 36px;
   font-weight: 800;
-  color: #0b2d4f;
+  color: #012D0E;
   margin-bottom: 40px;
 }
 
 .udyam-impact-left span {
-  color: #c62828;
+  color: #A00A20;
 }
 
 /* POINTS */
@@ -2687,7 +2687,7 @@ background-repeat: no-repeat;
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   display: flex;
@@ -2697,8 +2697,8 @@ background-repeat: no-repeat;
 
 .impact-point p {
   font-size: 16px;
-  font-weight: 600;
-  color: #333;
+  font-weight: 600; 
+  color: #A00A20;
 }
 
 .impact-point:hover {
@@ -2716,21 +2716,27 @@ background-repeat: no-repeat;
   padding: 28px;
   border-radius: 16px;
   background: #f9f9f9;
-  border-left: 6px solid #c62828;
+  border-left: 6px solid #A00A20;
   animation: fadeUp 0.7s ease;
+}
+.ci-content h1 span {
+  color: #012D0E;
 }
 
 .impact-box h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #2e7d32;
+  color: #012D0E;
   margin-bottom: 10px;
+}
+.impact-box h4 span{
+  color: #A00A20;
 }
 
 .impact-box p {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #444;
+  color: #A00A20;
 }
 
 /* RESPONSIVE */
@@ -2755,12 +2761,12 @@ background-repeat: no-repeat;
 .msme-req-title {
   font-size: 34px;
   font-weight: 800;
-  color: #0b2d4f;
+  color: #A00A20;
   margin-bottom: 50px;
 }
 
 .msme-req-title span {
-  color: #c62828;
+  color: #012D0E;
 }
 
 /* WRAP */
@@ -2789,7 +2795,7 @@ background-repeat: no-repeat;
   min-width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   display: flex;
@@ -2799,9 +2805,9 @@ background-repeat: no-repeat;
 
 /* TEXT */
 .msme-req-item p {
-  font-size: 15px;
-  font-weight: 500;
-  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  color: #A00A20;
   margin: 0;
   text-align: left;
 }
