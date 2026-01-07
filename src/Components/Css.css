@@ -2920,8 +2920,8 @@ background-repeat: no-repeat;
 
 /* TEXT */
 .flow-step p {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #012D0E;
   margin: 0;
 }
@@ -3063,7 +3063,7 @@ background-repeat: no-repeat;
 
 .startup-benefits-section {
   padding: 100px 20px;
-  background: #c62828; /* RED */
+  background: #A00A20; 
   animation: sectionFade 0.8s ease forwards;
 }
 
@@ -3076,9 +3076,6 @@ background-repeat: no-repeat;
   margin-bottom: 70px;
 }
 
-.startup-benefits-title span {
-  color: #2e7d32; /* GREEN */
-}
 
 /* GRID */
 .startup-benefits-wrap {
@@ -3113,7 +3110,7 @@ background-repeat: no-repeat;
   position: absolute;
   top: -18px;
   right: 20px;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   padding: 8px 14px;
@@ -3125,14 +3122,14 @@ background-repeat: no-repeat;
 .startup-benefit h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #c62828;
+  color: #A00A20;
   margin-bottom: 12px;
 }
 
 .startup-benefit p {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 /* HOVER */
@@ -3189,12 +3186,8 @@ background-repeat: no-repeat;
   text-align: center;
   font-size: 34px;
   font-weight: 800;
-  color: #c62828;
+  color: #A00A20;
   margin-bottom: 50px;
-}
-
-.si-title span {
-  color: #2e7d32;
 }
 
 .si-req-grid {
@@ -3210,7 +3203,7 @@ background-repeat: no-repeat;
   gap: 14px;
   align-items: center;
   padding: 18px 22px;
-  border: 2px solid #2e7d32;
+  border: 2px solid #012D0E;
   border-radius: 14px;
   background: #ffffff;
   opacity: 0;
@@ -3225,7 +3218,7 @@ background-repeat: no-repeat;
 
 .si-req-item span {
   color: #ffffff;
-  background: #2e7d32;
+  background: #012D0E;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -3238,8 +3231,8 @@ background-repeat: no-repeat;
 .si-req-item p {
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
-  color: #c62828;
+  font-weight: 600;
+  color: #A00A20;
 }
 
 @keyframes reqFade {
@@ -3256,24 +3249,29 @@ background-repeat: no-repeat;
 
 .si-process {
   padding: 100px 20px;
-  background: #c62828;
+  background: #A00A20;
 }
 
 .si-process .si-title {
   color: #ffffff;
 }
 
-.si-process .si-title span {
-  color: #2e7d32;
-}
 
 .si-process-track {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 60px auto 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
 }
+
+/* 🔥 LAST (7th) ITEM CENTER */
+.si-process-track .si-step:last-child {
+  grid-column: 1 / -1;        
+  justify-self: center;       
+  max-width: 420px;           
+}
+
 
 .si-step {
   background: #ffffff;
@@ -3281,12 +3279,16 @@ background-repeat: no-repeat;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  color: #c62828;
+  color: #A00A20;
   border-radius: 14px;
   position: relative;
   opacity: 0;
   transform: translateY(30px);
   animation: stepUp 0.6s ease forwards;
+}
+.si-step h5{
+  color: #012D0E;
+  font-weight: 600;
 }
 
 .si-step:nth-child(1){animation-delay:.1s}
@@ -3305,7 +3307,7 @@ background-repeat: no-repeat;
   transform: translateX(-50%);
   width: 10px;
   height: 10px;
-  background: #2e7d32;
+  background: #012D0E;
   border-radius: 50%;
 }
 
@@ -3326,108 +3328,11 @@ background-repeat: no-repeat;
     grid-template-columns:1fr
   }
 }
-/* ========== STARTUP INDIA FAQ ========== */
-
-.si3-faq3 {
-  padding: 100px 20px;
-  background: #ffffff;
-}
-
-.si3-title3 {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 800;
-  color: #c62828;
-  margin-bottom: 60px;
-}
-
-.si3-title3 span {
-  color: #2e7d32;
-}
-
-/* WRAP */
-.si3-faq3-wrap3 {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 40px;
-}
-
-/* QUESTION LIST */
-.si3-faq3-list3 {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.si3-faq3-q3 {
-  padding: 16px 20px;
-  border-radius: 14px;
-  border: 2px solid #2e7d32;
-  background: #ffffff;
-  color: #c62828;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.si3-faq3-q3:hover {
-  transform: translateX(8px);
-}
-
-.si3-faq3-q3.active {
-  background: #2e7d32;
-  color: #ffffff;
-}
-
-/* ANSWER PANEL */
-.si3-faq3-answer3 {
-  background: #ffffff;
-  border-left: 6px solid #c62828;
-  padding: 32px 36px;
-  border-radius: 18px;
-  animation: faqFade 0.6s ease;
-}
-
-.si3-faq3-answer3 h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #c62828;
-  margin-bottom: 12px;
-}
-
-.si3-faq3-answer3 p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #2e7d32;
-}
-
-/* ANIMATION */
-@keyframes faqFade {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .si3-faq3-wrap3 {
-    grid-template-columns: 1fr;
-  }
-}
 /* ========== ANNUAL COMPLIANCES BENEFITS ========== */
 
 .ac-benefits {
   padding: 100px 20px;
-  background: #c62828; /* RED */
+  background: #A00A20; 
 }
 
 .ac-title {
@@ -3438,9 +3343,6 @@ background-repeat: no-repeat;
   margin-bottom: 70px;
 }
 
-.ac-title span {
-  color: #2e7d32; /* GREEN */
-}
 
 /* GRID */
 .ac-benefits-grid {
@@ -3475,7 +3377,7 @@ background-repeat: no-repeat;
   position: absolute;
   top: -18px;
   right: 20px;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   font-weight: 700;
   padding: 8px 14px;
@@ -3487,14 +3389,14 @@ background-repeat: no-repeat;
 .ac-card h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #c62828;
+  color: #A00A20;
   margin-bottom: 12px;
 }
 
 .ac-card p {
   font-size: 14.5px;
   line-height: 1.7;
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 /* HOVER */
@@ -3543,7 +3445,7 @@ background-repeat: no-repeat;
 }
 
 .ac-process-wrap h2 span {
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 /* REQUIREMENTS */
@@ -3560,7 +3462,7 @@ background-repeat: no-repeat;
 }
 
 .ac-req-grid div {
-  background: #c62828;
+  background: #A00A20;
   color: #ffffff;
   padding: 18px 22px;
   border-radius: 12px;
@@ -3577,7 +3479,7 @@ background-repeat: no-repeat;
 
 /* PROCESS */
 .ac-process {
-  background: #c62828;
+  background: #A00A20;
   padding: 80px 30px;
   border-radius: 30px;
 }
@@ -3617,7 +3519,7 @@ background-repeat: no-repeat;
   position: absolute;
   top: -18px;
   left: 25px;
-  background: #2e7d32;
+  background: #012D0E;
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 20px;
@@ -3629,7 +3531,7 @@ background-repeat: no-repeat;
   margin-top: 15px;
   font-size: 15px;
   font-weight: 600;
-  color: #c62828;
+  color: #A00A20;
 }
 
 /* HOVER */
@@ -3668,12 +3570,12 @@ background-repeat: no-repeat;
   text-align: center;
   font-size: 38px;
   font-weight: 800;
-  color: #c4161c;
+  color: #A00A20;
   margin-bottom: 60px;
 }
 
 .ac4-faq4-title4 span {
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 .ac4-faq4-list4 {
@@ -3686,7 +3588,7 @@ background-repeat: no-repeat;
 
 .ac4-faq4-card4 {
   background: #ffffff;
-  border-left: 6px solid #c4161c;
+  border-left: 6px solid #A00A20;
   padding: 28px 30px 28px 80px;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -3695,20 +3597,20 @@ background-repeat: no-repeat;
 }
 
 .ac4-faq4-card4:nth-child(even) {
-  border-left-color: #2e7d32;
+  border-left-color: #012D0E;
 }
 
 .ac4-faq4-card4 h4 {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
-  color: #1b1b1b;
+  color: #A00A20;
 }
 
 .ac4-faq4-card4 p {
   font-size: 15px;
   line-height: 1.7;
-  color: #444;
+  color: #012D0E;
 }
 
 /* NUMBER CIRCLE */
@@ -3719,7 +3621,7 @@ background-repeat: no-repeat;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #c4161c;
+  background: #A00A20;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -3728,7 +3630,7 @@ background-repeat: no-repeat;
 }
 
 .ac4-faq4-card4:nth-child(even) .faq-no4 {
-  background: #2e7d32;
+  background: #012D0E;
 }
 
 /* ANIMATION */
@@ -3753,82 +3655,7 @@ background-repeat: no-repeat;
     font-size: 30px;
   }
 }
-.tax-hero {
-  background: #c4161c;
-  padding: 100px 0;
-  color: #ffffff;
-}
 
-.tax-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-.tax-left {
-  width: 55%;
-  animation: fadeLeft 0.9s ease forwards;
-}
-
-.tax-left h1 {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.tax-left h1 span {
-  color: #2e7d32;
-}
-
-.tax-left p {
-  font-size: 16px;
-  line-height: 1.8;
-  max-width: 520px;
-  margin-bottom: 35px;
-}
-
-.tax-benefits {
-  background: #ffffff;
-  color: #000;
-  padding: 25px;
-  border-radius: 14px;
-}
-
-.tax-benefits h4 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: #c4161c;
-}
-
-.tax-icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.tax-item {
-  text-align: center;
-  flex: 1;
-  transition: transform 0.3s ease;
-}
-
-.tax-item span {
-  font-size: 30px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.tax-item p {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.tax-item:hover {
-  transform: translateY(-6px);
-}
 
 /* ANIMATION */
 @keyframes fadeLeft {
@@ -3853,7 +3680,7 @@ background-repeat: no-repeat;
   }
 }
 .tax-perks {
-  background: #c4161c;
+  background: #A00A20;
   padding: 90px 0;
   margin-top: 50px;
 }
@@ -3867,7 +3694,7 @@ background-repeat: no-repeat;
 }
 
 .tax-perks-title span {
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 .tax-perks-grid {
@@ -3901,14 +3728,14 @@ background-repeat: no-repeat;
 .tax-perk-card h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #c4161c;
+  color: #A00A20;
   margin-bottom: 10px;
 }
 
 .tax-perk-card p {
   font-size: 14px;
   line-height: 1.6;
-  color: #333;
+  color: #012D0E;
 }
 
 /* ANIMATION */
@@ -3944,12 +3771,12 @@ background-repeat: no-repeat;
   text-align: center;
   font-size: 34px;
   font-weight: 800;
-  color: #c4161c;
+  color: #A00A20;
   margin-bottom: 50px;
 }
 
 .tax-req-title span {
-  color: #2e7d32;
+  color: #012D0E;
 }
 
 .tax-req-grid {
@@ -3963,7 +3790,7 @@ background-repeat: no-repeat;
 .tax-req-item {
   background: #f9f9f9;
   padding: 22px;
-  border-left: 5px solid #2e7d32;
+  border-left: 5px solid #012D0E;
   font-size: 16px;
   font-weight: 600;
   animation: fadeUp 0.6s ease forwards;
@@ -3989,11 +3816,11 @@ background-repeat: no-repeat;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #0a2540;
+  color: #A00A20;
 }
 
 .tax-steps-title span {
-  color: #c4161c;
+  color: #012D0E;
 }
 
 .tax-steps-grid {
@@ -4028,11 +3855,11 @@ background-repeat: no-repeat;
 
 /* COLORS */
 .tax-box.navy {
-  background: #0a2540;
+  background: #012D0E;
 }
 
 .tax-box.red {
-  background: #c4161c;
+  background: #A00A20;
 }
 
 /* HOVER */
@@ -4063,11 +3890,11 @@ background-repeat: no-repeat;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #000;
+  color: #012D0E;
 }
 
 .process-title span {
-  color: #138808; /* GREEN */
+  color: #A00A20; /* GREEN */
 }
 
 .process-grid {
@@ -4102,11 +3929,11 @@ background-repeat: no-repeat;
 
 /* COLORS */
 .process-box.green {
-  background: #138808;
+  background: #012D0E;
 }
 
 .process-box.red {
-  background: #c4161c;
+  background: #A00A20;
 }
 
 /* HOVER ANIMATION */
@@ -4137,11 +3964,11 @@ background-repeat: no-repeat;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #000;
+  color: #A00A20;
 }
 
 .faq5-heading5 span {
-  color: #138808; /* GREEN */
+  color: #012D0E; /* GREEN */
 }
 
 .faq5-container5 {
@@ -4153,7 +3980,7 @@ background-repeat: no-repeat;
 }
 
 .faq5-card5 {
-  border: 2px solid #c4161c; /* RED */
+  border: 2px solid #A00A20; /* RED */
   padding: 22px 26px;
   border-radius: 12px;
   background: #ffffff;
@@ -4162,19 +3989,19 @@ background-repeat: no-repeat;
 }
 
 .faq5-card5 h4 {
-  color: #138808; /* GREEN */
+  color: #012D0E; /* GREEN */
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 .faq5-card5 p {
-  color: #000;
+  color: #012D0E;
   font-size: 15px;
   line-height: 1.7;
 }
 
 .faq5-card5:hover {
-  background: #c4161c; /* RED */
+  background: #A00A20; /* RED */
 }
 
 .faq5-card5:hover h4,
@@ -4208,18 +4035,19 @@ background-repeat: no-repeat;
 .fm-wrap h1 {
   font-size: 44px;
   font-weight: 700;
-  color: #000;
+  color: #A00A20;
 }
-
-.fm-wrap h1 span {
-  color: #138808; /* GREEN */
+.fm-wrap h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #012D0E;
 }
 
 .fm-wrap p {
   margin-top: 18px;
   font-size: 16px;
   line-height: 1.7;
-  color: #000;
+  color: white;
 }
 
 /* FEATURES */
@@ -4240,11 +4068,11 @@ background-repeat: no-repeat;
 }
 
 .fm-box.red {
-  background: #c4161c; /* RED */
+  background: #A00A20; /* RED */
 }
 
 .fm-box.green {
-  background: #138808; /* GREEN */
+  background: #012D0E; /* GREEN */
 }
 
 /* ANIMATION */
@@ -4290,11 +4118,11 @@ background-repeat: no-repeat;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #000;
+  color: #A00A20;
 }
 
 .fm-benefits h2 span {
-  color: #138808; /* GREEN */
+  color: #012D0E; /* GREEN */
 }
 
 /* GRID */
@@ -4308,7 +4136,7 @@ background-repeat: no-repeat;
 
 /* CARD */
 .fm-card {
-  border: 2px solid #138808; /* GREEN */
+  border: 2px solid #012D0E; /* GREEN */
   padding: 30px 22px;
   border-radius: 14px;
   background: #ffffff;
@@ -4319,20 +4147,20 @@ background-repeat: no-repeat;
 .fm-card h4 {
   font-size: 18px;
   margin-bottom: 12px;
-  color: #000;
+  color: #012D0E;
 }
 
 .fm-card p {
   font-size: 14.5px;
   line-height: 1.6;
-  color: #000;
+  color: #012D0E;
 }
 
 /* HOVER EFFECT */
 .fm-card:hover {
-  background: #c4161c; /* RED */
+  background: #A00A20; /* RED */
   transform: translateY(-8px);
-  border-color: #c4161c;
+  border-color: #A00A20;
 }
 
 .fm-card:hover h4,
@@ -4385,11 +4213,11 @@ background-repeat: no-repeat;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #000;
+  color: #A00A20;
 }
 
 .fm-req-heading span {
-  color: #138808; /* GREEN */
+  color: #012D0E; /* GREEN */
 }
 
 /* LIST */
@@ -4407,14 +4235,14 @@ background-repeat: no-repeat;
   align-items: center;
   gap: 22px;
   padding: 22px 26px;
-  border-left: 5px solid #138808;
+  border-left: 5px solid #012D0E;
   background: #ffffff;
   box-shadow: 0 8px 22px rgba(0,0,0,0.08);
   animation: fmSlide 0.7s ease forwards;
 }
 
 .fm-req-row:nth-child(even) {
-  border-left-color: #c4161c; /* RED */
+  border-left-color: #A00A20; /* RED */
 }
 
 /* DOT */
@@ -4426,11 +4254,11 @@ background-repeat: no-repeat;
 }
 
 .fm-dot.green {
-  background: #138808;
+  background: #012D0E;
 }
 
 .fm-dot.red {
-  background: #c4161c;
+  background: #A00A20;
 }
 
 /* TEXT */
@@ -4486,11 +4314,11 @@ background-repeat: no-repeat;
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 70px;
-  color: #000;
+  color: #A00A20;
 }
 
 .fm-steps-title span {
-  color: #138808;
+  color: #012D0E;
 }
 
 /* FLOW WRAPPER */
@@ -4539,24 +4367,24 @@ background-repeat: no-repeat;
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: #000;
+  color: #A00A20;
 }
 
 /* COLORS */
 .fm-step.green {
-  border-left: 6px solid #138808;
+  border-left: 6px solid #012D0E;
 }
 
 .fm-step.green .step-no {
-  background: #138808;
+  background: #012D0E;
 }
 
 .fm-step.red {
-  border-left: 6px solid #c4161c;
+  border-left: 6px solid #A00A20;
 }
 
 .fm-step.red .step-no {
-  background: #c4161c;
+  background: #A00A20;
 }
 
 /* HOVER */
@@ -4608,19 +4436,19 @@ background-repeat: no-repeat;
 .fm6-faq6-left6 h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #000;
+  color: #A00A20;
   margin-bottom: 25px;
 }
 
 .fm6-faq6-left6 h2 span {
-  color: #138808;
+  color: #012D0E;
 }
 
 .faq6-tag6 {
   display: inline-block;
   margin-bottom: 14px;
   font-size: 14px;
-  color: #138808;
+  color: #012D0E;
   font-weight: 600;
 }
 
@@ -4628,12 +4456,12 @@ background-repeat: no-repeat;
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 4px solid #c4161c;
+  border: 4px solid #A00A20;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 120px;
-  color: #c4161c;
+  color: #A00A20;
   opacity: 0.15;
 }
 
@@ -4647,7 +4475,7 @@ background-repeat: no-repeat;
 /* FAQ BOX */
 .faq6-box6 {
   border-radius: 14px;
-  border: 2px solid #138808;
+  border: 2px solid #012D0E;
   padding: 18px 22px;
   background: #ffffff;
   cursor: pointer;
@@ -4657,7 +4485,7 @@ background-repeat: no-repeat;
 .faq6-box6 summary {
   font-size: 16px;
   font-weight: 600;
-  color: #138808;
+  color: #012D0E;
   list-style: none;
 }
 
@@ -4669,14 +4497,14 @@ background-repeat: no-repeat;
   margin-top: 14px;
   font-size: 15px;
   line-height: 1.7;
-  color: #000;
+  color: #A00A20;
   animation: fadeIn 0.4s ease;
 }
 
 /* OPEN STATE */
 .faq6-box6[open] {
-  background: #c4161c;
-  border-color: #c4161c;
+  background: #A00A20;
+  border-color: #A00A20;
 }
 
 .faq6-box6[open] summary,

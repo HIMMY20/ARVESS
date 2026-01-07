@@ -1,204 +1,251 @@
-import React from 'react'
+import React from "react";
 
 export const Financialmodeling = () => {
   return (
     <>
-    <section className="fm-center">
-  <div className="fm-wrap">
+      <section className="fm-center">
+        <div className="fm-wrap">
+          <h1>
+            Make smarter decisions with
+            <br />
+            <span>data-driven financial planning</span>
+          </h1>
 
-    <h1>
-      Make informed decisions with <br />
-      <span>robust financial plans</span>
-    </h1>
+          <p>
+            Our Chartered Accountants design tailored financial models that help
+            you project cash flows, plan budgets, and build a clear roadmap for
+            long-term business growth.
+          </p>
 
-    <p>
-      Our CA experts build custom financial models to help you forecast,
-      budget, and plan for sustainable business growth.
-    </p>
+            <h2>What you get with Arvess Financial Planning</h2>
+          <div className="fm-features">
+            <div className="fm-box red">
+              📊 Tailored Financial Models{" "}
+              <p>
+                Custom-built models aligned with your business structure,
+                revenue streams, and growth goals.
+              </p>
+            </div>
+            <div className="fm-box green">
+              📈 Scenario & Sensitivity Analysis{" "}
+              <p>
+                Evaluate multiple business scenarios to understand risks,
+                opportunities, and financial impact before making key decisions.
+              </p>
+            </div>
+            <div className="fm-box red">
+              📑 Investor-Focused Reports{" "}
+              <p>
+                Clear, structured financial reports designed to meet investor,
+                lender, and stakeholder expectations.
+              </p>
+            </div>
+            <div className="fm-box green">
+              🔁 Continuous Review & Updates{" "}
+              <p>
+                Ongoing support to refine assumptions, update projections, and
+                adjust plans as your business evolves.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="fm-benefits">
+        <h2>
+          Perks & Benefits of <span>Financial Modelling</span>
+        </h2>
 
-    <div className="fm-features">
-      <div className="fm-box red">📊 Custom Financial Model</div>
-      <div className="fm-box green">📈 Scenario Analysis</div>
-      <div className="fm-box red">📑 Investor-Ready Reports</div>
-      <div className="fm-box green">🔁 Ongoing Revision Support</div>
-    </div>
+        <div className="fm-benefit-grid">
+          <div className="fm-card">
+            <h4>Reliable Financial Projections</h4>
+            <p>
+              Gain a clear view of future revenues, expenses, and cash flows
+              with well-structured financial estimates.
+            </p>
+          </div>
 
-  </div>
-</section>
-<section className="fm-benefits">
-  <h2>
-    Perks & Benefits of <span>Financial Modelling</span>
-  </h2>
+          <div className="fm-card">
+            <h4>Smarter, Data-Backed Decisions</h4>
+            <p>
+              Make confident business decisions supported by numbers, logic, and
+              realistic assumptions.
+            </p>
+          </div>
 
-  <div className="fm-benefit-grid">
-    <div className="fm-card">
-      <h4>Accurate Business Forecasting</h4>
-      <p>Predict revenues, costs, and cash flows with clarity.</p>
-    </div>
+          <div className="fm-card">
+            <h4>Stronger Investor & Lender Trust</h4>
+            <p>
+              Present polished financial models that build credibility with
+              investors, banks, and financial institutions.
+            </p>
+          </div>
 
-    <div className="fm-card">
-      <h4>Data-Driven Decision Making</h4>
-      <p>Make strategic decisions backed by solid numbers.</p>
-    </div>
+          <div className="fm-card">
+            <h4>Scenario & What-If Planning</h4>
+            <p>
+              Test multiple business situations to understand outcomes, risks,
+              and opportunities before committing resources.
+            </p>
+          </div>
 
-    <div className="fm-card">
-      <h4>Investor & Lender Confidence</h4>
-      <p>Present clear, professional financial projections.</p>
-    </div>
+          <div className="fm-card">
+            <h4>Funding-Optimized Financial Reports</h4>
+            <p>
+              Models designed specifically for fundraising, loans, grants, and
+              strategic partnerships.
+            </p>
+          </div>
 
-    <div className="fm-card">
-      <h4>Scenario & Sensitivity Analysis</h4>
-      <p>Understand risks through multiple what-if scenarios.</p>
-    </div>
+          <div className="fm-card">
+            <h4>Early Risk Identification</h4>
+            <p>
+              Spot financial gaps and potential challenges in advance to protect
+              profitability and growth.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="fm-req-new">
+        <h2 className="fm-req-heading">
+          Minimum <span>Requirements</span>
+        </h2>
 
-    <div className="fm-card">
-      <h4>Funding-Ready Reports</h4>
-      <p>Structured models suitable for banks & investors.</p>
-    </div>
+        <div className="fm-req-list">
+          <div className="fm-req-row">
+            <span className="fm-dot green"></span>
+            <p>Business vision & growth goals</p>
+          </div>
 
-    <div className="fm-card">
-      <h4>Risk Assessment</h4>
-      <p>Identify financial risks before they impact growth.</p>
-    </div>
-  </div>
-</section>
-<section className="fm-req-new">
-  <h2 className="fm-req-heading">
-    Minimum <span>Requirements</span>
-  </h2>
+          <div className="fm-req-row">
+            <span className="fm-dot red"></span>
+            <p>Core assumptions & projected numbers</p>
+          </div>
 
-  <div className="fm-req-list">
+          <div className="fm-req-row">
+            <span className="fm-dot green"></span>
+            <p>Past financial performance (if available)</p>
+          </div>
 
-    <div className="fm-req-row">
-      <span className="fm-dot green"></span>
-      <p>Business plan and objectives</p>
-    </div>
+          <div className="fm-req-row">
+            <span className="fm-dot red"></span>
+            <p>Revenue streams, cost framework & cash flow insights</p>
+          </div>
+        </div>
+      </section>
+      <section className="fm-steps-new">
+        <h2 className="fm-steps-title">
+          Step-by-Step Process for <span>Financial Modelling</span>
+        </h2>
 
-    <div className="fm-req-row">
-      <span className="fm-dot red"></span>
-      <p>Key assumptions and financial projections</p>
-    </div>
+        <div className="fm-steps-flow">
+          <div className="fm-step green">
+            <div className="step-no">01</div>
+            <p>Clarify Business Goals</p>
+          </div>
 
-    <div className="fm-req-row">
-      <span className="fm-dot green"></span>
-      <p>Historical financial data (if available)</p>
-    </div>
+          <div className="fm-step red shift">
+            <div className="step-no">02</div>
+            <p>Gather Core Data & Assumptions</p>
+          </div>
 
-    <div className="fm-req-row">
-      <span className="fm-dot red"></span>
-      <p>Revenue, cost structure & cash flow details</p>
-    </div>
+          <div className="fm-step green">
+            <div className="step-no">03</div>
+            <p>Design the Financial Structure</p>
+          </div>
 
-  </div>
-</section>
-<section className="fm-steps-new">
-  <h2 className="fm-steps-title">
-    Step-by-Step Process for <span>Financial Modelling</span>
-  </h2>
+          <div className="fm-step red shift">
+            <div className="step-no">04</div>
+            <p>Populate Financial Inputs</p>
+          </div>
 
-  <div className="fm-steps-flow">
+          <div className="fm-step green">
+            <div className="step-no">05</div>
+            <p>Develop Projections & Forecasts</p>
+          </div>
 
-    <div className="fm-step green">
-      <div className="step-no">01</div>
-      <p>Define objectives and scope of the model.</p>
-    </div>
+          <div className="fm-step red shift">
+            <div className="step-no">06</div>
+            <p>Conduct Risk & Sensitivity Testing</p>
+          </div>
 
-    <div className="fm-step red shift">
-      <div className="step-no">02</div>
-      <p>Collect historical financial data and assumptions.</p>
-    </div>
+          <div className="fm-step green">
+            <div className="step-no">07</div>
+            <p>Validate & Refine the Model</p>
+          </div>
 
-    <div className="fm-step green">
-      <div className="step-no">03</div>
-      <p>Structure revenue, expenses, and cash flow framework.</p>
-    </div>
+          <div className="fm-step red shift">
+            <div className="step-no">08</div>
+            <p>Deliver Insights & Strategic Outputs</p>
+          </div>
+        </div>
+      </section>
+      <section className="fm6-faq6">
+        <div className="fm6-faq6-wrap6">
+          {/* LEFT */}
+          <div className="fm6-faq6-left6">
+            <span className="faq6-tag6">Popular Questions</span>
+            <h2>
+              Frequently Asked <span>Questions</span>
+            </h2>
 
-    <div className="fm-step red shift">
-      <div className="step-no">04</div>
-      <p>Input financial statements and operational data.</p>
-    </div>
+            <div className="faq6-icon6">?</div>
+          </div>
 
-    <div className="fm-step green">
-      <div className="step-no">05</div>
-      <p>Build forecast scenarios and projections.</p>
-    </div>
+          {/* RIGHT */}
+          <div className="fm6-faq6-right6">
+            <details className="faq6-box6" open>
+              <summary>1. What is Financial Modelling?</summary>
+              <p>
+                Financial modelling involves building structured financial
+                frameworks that help businesses project future performance,
+                evaluate outcomes, and make informed strategic decisions.
+              </p>
+            </details>
 
-    <div className="fm-step red shift">
-      <div className="step-no">06</div>
-      <p>Perform sensitivity and risk analysis.</p>
-    </div>
+            <details className="faq6-box6">
+              <summary>
+                2. Who should opt for Financial Modelling services?
+              </summary>
+              <p>
+                Financial modelling is ideal for startups, SMEs, corporates,
+                founders, and investors who need reliable projections for
+                planning, funding, or business growth.
+              </p>
+            </details>
 
-    <div className="fm-step green">
-      <div className="step-no">07</div>
-      <p>Review and validate model accuracy.</p>
-    </div>
+            <details className="faq6-box6">
+              <summary>3. Why is Financial Modelling important?</summary>
+              <p>
+                It enhances forecast accuracy, supports fundraising efforts,
+                minimizes financial risks, and enables long-term business
+                planning based on data-backed insights.
+              </p>
+            </details>
 
-    <div className="fm-step red shift">
-      <div className="step-no">08</div>
-      <p>Present insights and findings to stakeholders.</p>
-    </div>
+            <details className="faq6-box6">
+              <summary>
+                4. What information is required to create a financial model?
+              </summary>
+              <p>
+                Key inputs include historical financial data (if available),
+                business assumptions, revenue streams, cost structures, and
+                future growth plans.
+              </p>
+            </details>
 
-  </div>
-</section>
-<section className="fm6-faq6">
-  <div className="fm6-faq6-wrap6">
-
-    {/* LEFT */}
-    <div className="fm6-faq6-left6">
-      <span className="faq6-tag6">Popular Questions</span>
-      <h2>Frequently Asked <span>Questions</span></h2>
-
-      <div className="faq6-icon6">?</div>
-    </div>
-
-    {/* RIGHT */}
-    <div className="fm6-faq6-right6">
-
-      <details className="faq6-box6" open>
-        <summary>1. What is Financial Modelling?</summary>
-        <p>
-          Financial Modelling is the process of creating structured financial
-          representations to forecast performance and support decision-making.
-        </p>
-      </details>
-
-      <details className="faq6-box6">
-        <summary>2. Who needs Financial Modelling services?</summary>
-        <p>
-          Startups, SMEs, corporates, founders, and investors who require
-          data-driven financial planning and projections.
-        </p>
-      </details>
-
-      <details className="faq6-box6">
-        <summary>3. What are the benefits of Financial Modelling?</summary>
-        <p>
-          It improves forecasting accuracy, supports fundraising, reduces
-          financial risks, and enables strategic planning.
-        </p>
-      </details>
-
-      <details className="faq6-box6">
-        <summary>4. What documents are required?</summary>
-        <p>
-          Historical financials, assumptions, revenue models, cost structures,
-          and business plans.
-        </p>
-      </details>
-
-      <details className="faq6-box6">
-        <summary>5. How does Financial Modelling help in fundraising?</summary>
-        <p>
-          Investor-ready models build confidence by clearly showcasing growth,
-          cash flows, and return potential.
-        </p>
-      </details>
-
-    </div>
-
-  </div>
-</section>
-
+            <details className="faq6-box6">
+              <summary>
+                5. How does Financial Modelling support fundraising?
+              </summary>
+              <p>
+                Well-structured, investor-ready financial models clearly
+                demonstrate growth potential, cash flow visibility, and expected
+                returns—helping build investor confidence.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
