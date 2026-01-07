@@ -10,12 +10,6 @@ export const Financialmodeling = () => {
             <span>data-driven financial planning</span>
           </h1>
 
-          <p>
-            Our Chartered Accountants design tailored financial models that help
-            you project cash flows, plan budgets, and build a clear roadmap for
-            long-term business growth.
-          </p>
-
             <h1>What you get with Arvess Financial Planning</h1>
           <div className="fm-features">
             <div className="fm-box red">
