@@ -1,265 +1,179 @@
-import React from 'react'
+import React from "react";
 
 const Industryfunding = () => {
   return (
     <>
-        <section className="rgw-hero-text">
-  <h1 className="rgw-hero-title">
-    Funding Pathways for Entrepreneurs
-  </h1>
+      <section className="rgw-hero-text">
+        <h1 className="rgw-hero-title">Funding Pathways for Entrepreneurs</h1>
 
-  <p className="rgw-hero-desc">
-    This is where startup stories meet structured funding. At The House of
-    Startups, we’ve built the Office of Opportunity to help early stage ventures
-    secure equity-free capital through India’s leading government grants. From
-    DPIIT certification to fund disbursement we manage it all with precision,
-    speed, and startup-first empathy.
-  </p>
-</section>
-    <section className="grants-section">
-  <div className="grants-container">
+        <p className="rgw-hero-desc">
+          Where innovative ideas connect with structured capital. At Arvess,
+          we’ve built a dedicated ecosystem to help early-stage startups access
+          equity-free government funding with clarity and confidence. From DPIIT
+          recognition to final grant disbursement, our team manages the entire
+          journey with speed, accuracy, and a founder-first approach.
+        </p>
+      </section>
+      <section className="grants-section">
+        <div className="grants-container">
+          <h2 className="grants-title">What Are Government Grants?</h2>
 
-    <h2 className="grants-title">
-      What Are Government Grants?
-    </h2>
+          <p className="grants-desc">
+            Government grants are non-dilutive, non-repayable financial support
+            provided by central and state authorities to help early-stage
+            startups build, test, and scale innovative ideas. These programs are
+            designed to support founders during critical phases such as
+            prototype development, market validation, and early
+            commercialization.
+          </p>
 
-    <p className="grants-desc">
-      Government grants are non-repayable, equity-free funds offered by central
-      and state ministries to support early-stage startups working on innovative
-      solutions. These schemes are especially targeted at founders developing
-      prototypes, validating product-market fit, or planning commercialization.
-    </p>
+          <h2>Typically suited for:</h2>
+          <div className="grants-cards">
+            <div className="grant-card">
+              DPIIT-recognized startups demonstrating strong innovation and
+              scalability
+            </div>
 
-    <div className="grants-cards">
-      <div className="grant-card">
-        DPIIT-recognized startups with strong innovation potential
-      </div>
+            <div className="grant-card">
+              Sector-focused ventures in areas like biotech, agriculture,
+              hardware, AI, and IoT
+            </div>
 
-      <div className="grant-card">
-        Sector-specific ventures in biotech, agri, hardware, or AI/IoT
-      </div>
+            <div className="grant-card">
+              Women-led, rural, and impact-driven startups creating measurable
+              social or economic value
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="workflow-section">
+        <div className="workflow-container">
+          <h3 className="workflow-heading"> Grant Application Workflow </h3>
 
-      <div className="grant-card">
-        Women-led, rural, or impact-focused startups
-      </div>
-    </div>
+          <div className="workflow-grid-areas">
+            <div className="workflow-card card1">
+              <div className="workflow-step">01</div>
+              <p>Discovery Call & Grant Alignment</p>
+              <p>
+                We begin with a free consultation to understand your startup and
+                map the most suitable government grant schemes based on
+                eligibility and sector fit.
+              </p>
+            </div>
 
-  </div>
-</section>
-<section className="workflow-section">
-  <div className="workflow-container">
+            <div className="workflow-card card2">
+              <div className="workflow-step">02</div>
+              <p>Application & Financial Documentation</p>
+              <p>
+                Our team prepares end-to-end documentation including pitch deck,
+                financial projections, and founder/startup profile aligned with
+                grant guidelines.
+              </p>
+            </div>
 
-    <h3 className="workflow-heading">
-      – Grant Application Workflow –
-    </h3>
+            <div className="workflow-card card3">
+              <div className="workflow-step">03</div>
+              <p>Incubator or Portal Submission</p>
+              <p>
+                We handle submission through the relevant incubator or official
+                government portal, ensuring accuracy and compliance at every
+                step.
+              </p>
+            </div>
 
-    <div className="workflow-grid-areas">
+            <div className="workflow-card card4">
+              <div className="workflow-step">04</div>
+              <p>Pitch & Interview Readiness</p>
+              <p>
+                Founders receive structured support for demo days, interviews,
+                and evaluation rounds, including mock pitches and Q&A
+                preparation.
+              </p>
+            </div>
 
-      <div className="workflow-card card1">
-        <div className="workflow-step">01</div>
-        <p>Free Consultation & Scheme Mapping</p>
-      </div>
+            <div className="workflow-card card5">
+              <div className="workflow-step">05</div>
+              <p>Evaluation & Query Resolution</p>
+              <p>
+                We assist during the review phase by addressing evaluator
+                queries, clarifications, and follow-ups to keep your application
+                moving forward
+              </p>
+            </div>
 
-      <div className="workflow-card card2">
-        <div className="workflow-step">02</div>
-        <p>Document Preparation (Deck + Financials + Profile)</p>
-      </div>
+            <div className="workflow-card card6">
+              <div className="workflow-step">06</div>
+              <p>Approval & Fund Disbursement Support</p>
+              <p>
+                Once approved, we guide you through sanction documentation and
+                coordinate the final handover for smooth grant disbursement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="workflow-card card3">
-        <div className="workflow-step">03</div>
-        <p>Incubator Submission / Scheme Portal Upload</p>
-      </div>
+      <section className="approach-section">
+        <div className="approach-container">
+          <h2 className="approach-heading">
+            Our Approach to Helping Startups Secure Grants
+          </h2>
 
-      <div className="workflow-card card4">
-        <div className="workflow-step">04</div>
-        <p>Live Pitch or Interview Round Support</p>
-      </div>
+          <div className="approach-grid">
+            <div className="approach-card">
+              <h3>
+                Scheme Identification & Eligibility Review
+                </h3>
+              <p>
+                We assess your startup profile and align it with the most
+                relevant government grant opportunities.
+              </p>
+            </div>
 
-      <div className="workflow-card card5">
-        <div className="workflow-step">05</div>
-        <p>Evaluation Round & Clarification Filling</p>
-      </div>
+            <div className="approach-card">
+              <h3>
+                Pitch Deck & Financial Structuring{" "}
+                </h3>
+              <p>
+                Creation of grant-ready pitch decks and financial projections
+                tailored to evaluation criteria.
+              </p>
+            </div>
 
-      <div className="workflow-card card6">
-        <div className="workflow-step">06</div>
-        <p>Grant Sanction Letter + Disbursement Handoff</p>
-      </div>
+            <div className="approach-card">
+              <h3>
+                Incubator Coordination & Application Handling{" "}
+                </h3>
+              <p>
+                End-to-end management of incubator onboarding and grant
+                application submissions.
+              </p>
+            </div>
 
-    </div>
-  </div>
-</section>
+            <div className="approach-card">
+              <h3>
+                Pitch Readiness & Interview Support{" "}
+                </h3>
+              <p>
+                Focused preparation for presentations, demo days, and evaluator
+                interactions.
+              </p>
+            </div>
 
-<section className="approach-section">
-  <div className="approach-container">
-
-    <h2 className="approach-heading">
-      Our Approach to Securing Startup Grants
-    </h2>
-
-    <div className="approach-grid">
-
-      <div className="approach-card">
-        Grant Matching & Eligibility Check
-      </div>
-
-      <div className="approach-card">
-        Deck & Financials Creation
-      </div>
-
-      <div className="approach-card">
-        Incubator & Application Management
-      </div>
-
-      <div className="approach-card">
-        Pitch & Interview Preparation
-      </div>
-
-      <div className="approach-card">
-        Disbursement Follow-through
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section className="scheme-section">
-  <div className="scheme-container">
-
-    <h2 className="scheme-heading">
-      Explore Popular Government Grant Schemes
-    </h2>
-
-    <div className="scheme-grid">
-
-      <div className="scheme-card">
-        Startup India Seed Fund <br />(SISFS)
-      </div>
-
-      <div className="scheme-card">
-        PRAYAS <br /> DST
-      </div>
-
-      <div className="scheme-card">
-        TIDE 2.0 <br /> MeitY
-      </div>
-
-      <div className="scheme-card">
-        BIRAC BIG <br /> Grant
-      </div>
-
-      <div className="scheme-card">
-        MSME Innovation <br /> Grant
-      </div>
-
-      <div className="scheme-card highlight">
-        Ready to Find <br /> Your Fit?
-      </div>
-
-    </div>
-
-<section className="docs-v2">
-  <div className="docs-v2-container">
-
-    <div className="docs-v2-left">
-      <h2>Documents & Grant Deliverables</h2>
-      <p>
-        We prepare every document required across screening,
-        evaluation, and final grant disbursement stages.
-      </p>
-    </div>
-
-    <div className="docs-v2-right">
-      <div className="docs-v2-card">Company Documents</div>
-      <div className="docs-v2-card">Founder & Team Credentials</div>
-      <div className="docs-v2-card">Financials & Forecasts</div>
-      <div className="docs-v2-card">Product & Market Assets</div>
-      <div className="docs-v2-card">Application & Compliance Kit</div>
-    </div>
-
-  </div>
-</section>
-<section className="ministry-v2">
-  <h3 className="ministry-v2-title">The Grant Ministries</h3>
-
-  <div className="ministry-v2-flow">
-    <span>DPIIT</span>
-    <span>MeitY</span>
-    <span>DST</span>
-    <span>DBT</span>
-    <span>Ministry of MSME</span>
-    <span>NABARD</span>
-    <span>NITI Aayog</span>
-    <span>Karnataka Startup Mission</span>
-    <span>Startup Odisha</span>
-    <span>Kerala Startup Mission</span>
-  </div>
-</section>
-<section className="faq8-v28">
-  <h2 className="faq8-v28-title8">Frequently Asked Questions</h2>
-
-  <div className="faq8-v28-list8">
-
-    <details className="faq8-v28-item8" open>
-      <summary>
-        Who is eligible for government startup grants?
-      </summary>
-      <p>
-        Registered startups under Startup India with innovative ideas and
-        compliance with scheme guidelines are eligible.
-      </p>
-    </details>
-
-    <details className="faq8-v28-item8">
-      <summary>
-        Can I apply for multiple grants at once?
-      </summary>
-      <p>
-        Yes, startups can apply for multiple grants if eligibility criteria
-        are met for each scheme.
-      </p>
-    </details>
-
-    <details className="faq8-v28-item8">
-      <summary>
-        Is the funding equity-free?
-      </summary>
-      <p>
-        Most government grants are equity-free and do not require ownership
-        dilution.
-      </p>
-    </details>
-
-    <details className="faq8-v28-item8">
-      <summary>
-        How long does the grant process take?
-      </summary>
-      <p>
-        Timelines vary by scheme but usually range from 3 to 9 months.
-      </p>
-    </details>
-
-    <details className="faq8-v28-item8">
-      <summary>
-        What’s the success rate?
-      </summary>
-      <p>
-        Success depends on documentation quality, innovation strength,
-        and evaluation readiness.
-      </p>
-    </details>
-
-  </div>
-</section>
-
-
-  </div>
-</section>
-
-
-
+            <div className="approach-card">
+              <h3>
+                Funds Release & Post-Approval Assistance{" "}
+                </h3>
+              <p>
+                Continuous follow-up until sanction completion and smooth grant
+                disbursement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Industryfunding
+export default Industryfunding;

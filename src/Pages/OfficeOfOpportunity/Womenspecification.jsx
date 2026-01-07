@@ -8,9 +8,10 @@ const Womenspecification = () => {
         <div className="hero-box">
           <h1>Funding Pathways for Entrepreneurs</h1>
           <p>
-            This is where startup stories meet structured funding. At The House
-            of Startups, we help early-stage ventures secure equity-free capital
-            through India’s leading government grants.
+            Where early-stage ideas connect with structured capital. At The
+            House of Startups, we support founders in accessing equity-free
+            funding by navigating India’s most impactful government grant
+            programs with clarity and precision
           </p>
         </div>
       </section>
@@ -18,69 +19,107 @@ const Womenspecification = () => {
       {/* GRANTS INFO */}
       <section className="grants-alt-section">
         <div className="grants-alt-container">
-
           <div className="grants-alt-left">
             <h2>What Are Government Grants?</h2>
             <p>
-              Government grants are non-repayable, equity-free funds offered by
-              central and state ministries to support early-stage startups
-              working on innovative solutions.
+              Government grants are non-dilutive, non-repayable funds provided
+              by central and state authorities to encourage early-stage startups
+              building innovative and scalable solutions. These grants are
+              designed to help founders move from idea to execution without
+              giving up equity.
             </p>
             <div className="grants-alt-line"></div>
           </div>
 
           <div className="grants-alt-right">
             <div className="grants-alt-card green">
-              DPIIT-recognized startups with strong innovation potential
+              DPIIT-Recognized Startups{" "}
+              <p>
+                Early-stage startups officially recognized by DPIIT with a
+                strong innovation-driven business model.
+              </p>
             </div>
 
             <div className="grants-alt-card red">
-              Sector-specific ventures in biotech, agri, hardware, or AI/IoT
+              Sector-Focused Ventures{" "}
+              <p>
+                Startups operating in priority sectors such as Biotech,
+                Agriculture, Hardware, AI, and IoT.
+              </p>
             </div>
 
             <div className="grants-alt-card white">
-              Women-led, rural, or impact-focused startups
+              Impact-Led Founders{" "}
+              <p>
+                Women-led startups, rural enterprises, and ventures creating
+                measurable social or economic impact.
+              </p>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* WORKFLOW */}
       <section className="workflow-alt-section">
-        <h3 className="workflow-alt-heading">
-          – Grant Application Workflow –
-        </h3>
+        <h3 className="workflow-alt-heading">Grant Application Workflow</h3>
 
         <div className="workflow-alt-timeline">
           <div className="workflow-alt-step left">
             <span className="step-no">01</span>
-            <p>Free Consultation & Scheme Mapping</p>
+            <p>Initial Consultation & Scheme Mapping</p>
+            <p>
+              We begin with a detailed discussion to understand your startup,
+              sector, and stage. Based on this, we identify the most suitable
+              government grant schemes for you.
+            </p>
           </div>
 
           <div className="workflow-alt-step right">
             <span className="step-no">02</span>
-            <p>Document Preparation (Deck + Financials + Profile)</p>
+            <p>Documentation & Proposal Development</p>
+            <p>
+              Our team prepares all required documents including pitch deck,
+              financial projections, and startup profile aligned with grant
+              evaluation criteria.
+            </p>
           </div>
 
           <div className="workflow-alt-step left">
             <span className="step-no">03</span>
-            <p>Incubator Submission / Scheme Portal Upload</p>
+            <p>Incubator / Portal Submission</p>
+            <p>
+              Applications are submitted through the relevant incubator or
+              official scheme portal, ensuring accuracy and compliance with
+              submission guidelines.
+            </p>
           </div>
 
           <div className="workflow-alt-step right">
             <span className="step-no">04</span>
-            <p>Live Pitch or Interview Round Support</p>
+            <p>Pitch & Interview Assistance</p>
+            <p>
+              We provide end-to-end support for demo days, presentations, and
+              interviews to help you confidently present your startup to
+              evaluators.
+            </p>
           </div>
 
           <div className="workflow-alt-step left">
             <span className="step-no">05</span>
-            <p>Evaluation Round & Clarification Filling</p>
+            <p>Evaluation Support & Clarifications</p>
+            <p>
+              During the review process, we assist with queries, clarifications,
+              and additional information requested by the authorities.
+            </p>
           </div>
 
           <div className="workflow-alt-step right">
             <span className="step-no">06</span>
-            <p>Grant Sanction Letter + Disbursement Handoff</p>
+            <p>Grant Approval & Fund Disbursement</p>
+            <p>
+              Once approved, we support you through sanction documentation and
+              ensure a smooth handover until grant funds are disbursed.
+            </p>
           </div>
         </div>
       </section>
@@ -93,72 +132,114 @@ const Womenspecification = () => {
           </h2>
 
           <div className="approach-clean-grid">
-            <div className="approach-item"><span>01</span><p>Grant Matching & Eligibility Check</p></div>
-            <div className="approach-item"><span>02</span><p>Deck & Financials Creation</p></div>
-            <div className="approach-item"><span>03</span><p>Incubator & Application Management</p></div>
-            <div className="approach-item"><span>04</span><p>Pitch & Interview Preparation</p></div>
-            <div className="approach-item"><span>05</span><p>Disbursement Follow-through</p></div>
+            <div className="approach-item">
+              <span>01</span>
+              <p>Grant Discovery & Eligibility Assessment</p>
+              <p>
+                We evaluate your startup’s stage, sector, and compliance to
+                identify the most relevant grant opportunities and confirm
+                eligibility before moving forward.
+              </p>
+            </div>
+            <div className="approach-item">
+              <span>02</span>
+              <p>Pitch Deck & Financial Model Development</p>
+              <p>
+                Our team crafts compelling pitch decks and structured financial
+                projections tailored to government and incubator evaluation
+                frameworks.
+              </p>
+            </div>
+            <div className="approach-item">
+              <span>03</span>
+              <p>Incubator Coordination & Application Handling</p>
+              <p>
+                We manage end-to-end application workflows, including incubator
+                onboarding and portal submissions, ensuring accuracy and timely
+                filing.
+              </p>
+            </div>
+            <div className="approach-item">
+              <span>04</span>
+              <p>Pitch Readiness & Interview Coaching</p>
+              <p>
+                Founders receive focused preparation for presentations and
+                interviews, with guidance on storytelling, impact articulation,
+                and evaluator expectations.
+              </p>
+            </div>
+            <div className="approach-item">
+              <span>05</span>
+              <p>Grant Disbursement & Post-Approval Support</p>
+              <p>
+                After approval, we assist with sanction formalities, compliance
+                requirements, and smooth coordination until funds are
+                successfully disbursed.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* GRANT SCHEMES */}
-      <section className="grant-flow-strip">
-        <h2 className="grant-flow-title">
-          Explore Popular Government Grant Schemes
-        </h2>
-
-        <div className="grant-flow">
-          <div className="flow-item"><span>01</span>Startup India Seed Fund (SISFS)</div>
-          <div className="flow-item"><span>02</span>PRAYAS – DST</div>
-          <div className="flow-item"><span>03</span>TIDE 2.0 – MeitY</div>
-          <div className="flow-item"><span>04</span>BIRAC BIG Grant</div>
-          <div className="flow-item"><span>05</span>MSME Innovation Grant</div>
-          <div className="flow-item highlight"><span>06</span>Ready to Find Your Fit?</div>
-        </div>
-      </section>
-
       {/* DOCUMENTS */}
-      <section className="grant-new-section">
+      <section className="  ">
         <h2 className="grant-title">Documents & Grant Deliverables</h2>
 
         <div className="grant-split">
           <div className="grant-docs">
-            <div className="doc-item"><span>01</span>Company Documents</div>
-            <div className="doc-item"><span>02</span>Founder & Team Credentials</div>
-            <div className="doc-item"><span>03</span>Financials & Forecasts</div>
-            <div className="doc-item"><span>04</span>Product & Market Assets</div>
-            <div className="doc-item"><span>05</span>Application & Compliance Kit</div>
+            <div className="doc-item">
+              <span>01</span>Corporate & Legal Records{" "}
+              <p>
+                Incorporation documents, registrations, statutory certificates,
+                and compliance-related company records.
+              </p>
+            </div>
+            <div className="doc-item">
+              <span>02</span>Founder & Team Profiles{" "}
+              <p>
+                Detailed credentials of founders and core team members,
+                including experience, roles, and relevant achievements.
+              </p>
+            </div>
+            <div className="doc-item">
+              <span>03</span>Financial Models & Projections{" "}
+              <p>
+                Structured financial statements, assumptions, and forecasts
+                aligned with grant evaluation frameworks.
+              </p>
+            </div>
+            <div className="doc-item">
+              <span>04</span>Product, Market & Impact Materials{" "}
+              <p>
+                Product details, market validation, traction metrics, use cases,
+                and impact narratives tailored to scheme requirements
+              </p>
+            </div>
+            <div className="doc-item">
+              <span>05</span>Application & Compliance Documentation{" "}
+              <p>
+                Complete application kits including forms, declarations,
+                annexures, and post-approval compliance support.
+              </p>
+            </div>
           </div>
 
           <div className="grant-ministry">
             <h3>The Grant Ministries</h3>
             <div className="ministry-tags">
               <span>DPIIT</span>
-              <span>MeitY</span>
-              <span>DST</span>
-              <span>DBT</span>
+              <span>Ministry of Electronics & Information Technology (MeitY)</span>
+              <span>Department of Science & Technology (DST)</span>
+              <span>Department of Biotechnology (DBT)</span>
               <span>Ministry of MSME</span>
               <span>NABARD</span>
               <span>NITI Aayog</span>
               <span>Karnataka Startup Mission</span>
               <span>Startup Odisha</span>
               <span>Kerala Startup Mission</span>
+              <span>Complete application kits including forms, declarations, annexures, and post-approval compliance support.</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="faq9-clean9">
-        <h2 className="faq9-heading9">Frequently Asked Questions</h2>
-
-        <div className="faq9-grid9">
-          <div className="faq9-box9"><span className="faq9-no9">01</span><h4>Who is eligible?</h4><p>DPIIT-recognized startups with innovative ideas.</p></div>
-          <div className="faq9-box9"><span className="faq9-no9">02</span><h4>Multiple grants?</h4><p>Yes, if eligibility criteria are met.</p></div>
-          <div className="faq9-box9"><span className="faq9-no9">03</span><h4>Equity free?</h4><p>Yes, most grants are non-repayable.</p></div>
-          <div className="faq9-box9"><span className="faq9-no9">04</span><h4>Timeline?</h4><p>Usually 3–9 months.</p></div>
-          <div className="faq9-box9"><span className="faq9-no9">05</span><h4>Success rate?</h4><p>Strong documentation improves chances.</p></div>
         </div>
       </section>
     </>
