@@ -7703,7 +7703,8 @@ background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 140px 0px;
+  /* padding: 140px 0px; */
+  margin-top: 140px;
   animation: fadeUp 1.2s ease forwards;
 }
 
