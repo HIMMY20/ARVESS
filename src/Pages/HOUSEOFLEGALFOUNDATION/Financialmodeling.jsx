@@ -13,28 +13,36 @@ export const Financialmodeling = () => {
             <h1>What you get with Arvess Financial Planning</h1>
           <div className="fm-features">
             <div className="fm-box red">
-              📊 Tailored Financial Models{" "}
+              <h3>
+                📊 Tailored Financial Models{" "}
+                </h3>
               <p>
                 Custom-built models aligned with your business structure,
                 revenue streams, and growth goals.
               </p>
             </div>
             <div className="fm-box green">
-              📈 Scenario & Sensitivity Analysis{" "}
+              <h3>
+                📈 Scenario & Sensitivity Analysis{" "}
+                </h3>
               <p>
                 Evaluate multiple business scenarios to understand risks,
                 opportunities, and financial impact before making key decisions.
               </p>
             </div>
             <div className="fm-box red">
-              📑 Investor-Focused Reports{" "}
+              <h3>
+                📑 Investor-Focused Reports{" "}
+                </h3>
               <p>
                 Clear, structured financial reports designed to meet investor,
                 lender, and stakeholder expectations.
               </p>
             </div>
             <div className="fm-box green">
-              🔁 Continuous Review & Updates{" "}
+              <h3>
+                🔁 Continuous Review & Updates{" "}
+                </h3>
               <p>
                 Ongoing support to refine assumptions, update projections, and
                 adjust plans as your business evolves.
