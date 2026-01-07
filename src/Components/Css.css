@@ -4546,7 +4546,7 @@ background-repeat: no-repeat;
 
 /* ===== HERO SECTION ===== */
 .funding-hero {
-  padding: 80px 0 90px;
+  padding: 120px 0 90px;
   background: #ffffff;
 }
 
@@ -7703,7 +7703,7 @@ background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: 140px 0px;
   animation: fadeUp 1.2s ease forwards;
 }
 
@@ -7778,7 +7778,7 @@ background-repeat: no-repeat;
 
 .pf-equity-wrap {
   background: #012D0E; /* EXACT GREEN */
-  padding: 100px 20px 120px;
+  padding: 100px  120px;
 }
 
 /* TEXT PART */
@@ -7895,7 +7895,7 @@ background-repeat: no-repeat;
 
 .pf-workflow {
   background: #012D0E; /* EXACT GREEN */
-  padding: 100px 20px;
+  /* padding: 20px 20px; */
 }
 
 .pf-workflow-title {
