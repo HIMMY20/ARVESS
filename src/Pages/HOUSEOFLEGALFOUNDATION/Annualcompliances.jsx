@@ -211,14 +211,13 @@ const AnnualCompliances = () => {
           </div>
 
           <div className="ac4-faq4-card4">
-            <span className="faq-no">04</span>
+            <span className="faq4-no4">04</span>
             <h4>What documents are needed for annual compliance?</h4>
             <p>
               Typically required documents include financial statements, bank statements,
               director or partner details, past ROC filings, and relevant tax records.
             </p>
           </div>
-
           <div className="ac4-faq4-card4">
             <span className="faq4-no4">05</span>
             <h4>What are the consequences of missing annual compliances?</h4>

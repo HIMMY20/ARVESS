@@ -80,8 +80,8 @@ const LegalCertification = () => {
             <span>02</span>
             <h4>Income Tax Relief (Section 80-IAC)</h4>
             <p>
-              Eligible startups can claim income tax exemptions under Section 80-
-              IAC, improving cash flow during critical growth years.
+              Eligible startups can claim income tax exemptions under Section
+              80- IAC, improving cash flow during critical growth years.
             </p>
           </div>
 
@@ -89,8 +89,8 @@ const LegalCertification = () => {
             <span>03</span>
             <h4>Simplified IP Protection</h4>
             <p>
-              Benefit from fast-track patent and trademark filing with reduced fees
-              and simplified intellectual property procedures.
+              Benefit from fast-track patent and trademark filing with reduced
+              fees and simplified intellectual property procedures.
             </p>
           </div>
 
@@ -98,8 +98,8 @@ const LegalCertification = () => {
             <span>04</span>
             <h4>Reduced Compliance Burden</h4>
             <p>
-              Operate with ease through self-certification under select labor and 
-              environmental regulations, minimizing regulatory overhead.
+              Operate with ease through self-certification under select labor
+              and environmental regulations, minimizing regulatory overhead.
             </p>
           </div>
 
@@ -107,8 +107,8 @@ const LegalCertification = () => {
             <span>05</span>
             <h4>Preference in Public Tenders</h4>
             <p>
-              Gain eligibility for government tenders with relaxed criteria, even 
-              without prior turnover or experience benchmarks.
+              Gain eligibility for government tenders with relaxed criteria,
+              even without prior turnover or experience benchmarks.
             </p>
           </div>
 
@@ -116,99 +116,129 @@ const LegalCertification = () => {
             <span>06</span>
             <h4>Stronger Funding Credibility</h4>
             <p>
-              Startup India recognition enhances trust among investors, venture 
+              Startup India recognition enhances trust among investors, venture
               capital firms, banks, and financial institutions.
             </p>
           </div>
         </div>
       </section>
+      <section className="si-min-req">
+        <h2 className="si-title">Basic Eligibility Criteria</h2>
+
+        <div className="si-req-grid">
+          <div className="si-req-item">
+            <span>✔</span>
+            <p>
+              Incorporated as a Private Limited Company, LLP, or Partnership
+              Firm
+            </p>
+          </div>
+
+          <div className="si-req-item">
+            <span>✔</span>
+            <p>The business should be operational for less than 10 years</p>
+          </div>
+
+          <div className="si-req-item">
+            <span>✔</span>
+            <p>Annual turnover must not exceed ₹100 Crore</p>
+          </div>
+
+          <div className="si-req-item">
+            <span>✔</span>
+            <p>
+              Actively focused on innovation, technology-driven solutions, or
+              improvement of products/services
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="si-process">
-  <h2 className="si-title">
-    Step-by-Step Journey for <span>Startup India Registration</span>
-  </h2>
+        <h2 className="si-title">
+          Step-by-Step Journey for <span>Startup India Registration</span>
+        </h2>
 
-  <div className="si-process-track">
+        <div className="si-process-track">
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">1</span>
+              <h5>Set up your business entity</h5>
+            </div>
+            <p className="si-step-desc">
+              Ensure your company is legally incorporated as per Indian
+              regulations such as Private Limited, LLP, or Partnership.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">1</span>
-        <h5>Set up your business entity</h5>
-      </div>
-      <p className="si-step-desc">
-        Ensure your company is legally incorporated as per Indian regulations
-        such as Private Limited, LLP, or Partnership.
-      </p>
-    </div>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">2</span>
+              <h5>Access the Startup India platform</h5>
+            </div>
+            <p className="si-step-desc">
+              Visit the official Startup India portal to begin your registration
+              journey.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">2</span>
-        <h5>Access the Startup India platform</h5>
-      </div>
-      <p className="si-step-desc">
-        Visit the official Startup India portal to begin your registration
-        journey.
-      </p>
-    </div>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">3</span>
+              <h5>Create your Startup India account</h5>
+            </div>
+            <p className="si-step-desc">
+              Register your account and complete the startup profile with
+              accurate business information.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">3</span>
-        <h5>Create your Startup India account</h5>
-      </div>
-      <p className="si-step-desc">
-        Register your account and complete the startup profile with accurate
-        business information.
-      </p>
-    </div>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">4</span>
+              <h5>Submit recognition application</h5>
+            </div>
+            <p className="si-step-desc">
+              Apply online for Startup India recognition by submitting required
+              business and founder details.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">4</span>
-        <h5>Submit recognition application</h5>
-      </div>
-      <p className="si-step-desc">
-        Apply online for Startup India recognition by submitting required
-        business and founder details.
-      </p>
-    </div>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">5</span>
+              <h5>Upload supporting documents</h5>
+            </div>
+            <p className="si-step-desc">
+              Upload incorporation certificates, innovation proof, and other
+              mandatory supporting documents.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">5</span>
-        <h5>Upload supporting documents</h5>
-      </div>
-      <p className="si-step-desc">
-        Upload incorporation certificates, innovation proof, and other
-        mandatory supporting documents.
-      </p>
-    </div>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">6</span>
+              <h5>DPIIT evaluation & verification</h5>
+            </div>
+            <p className="si-step-desc">
+              Your application is reviewed by DPIIT authorities for eligibility
+              and compliance verification.
+            </p>
+          </div>
 
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">6</span>
-        <h5>DPIIT evaluation & verification</h5>
-      </div>
-      <p className="si-step-desc">
-        Your application is reviewed by DPIIT authorities for eligibility
-        and compliance verification.
-      </p>
-    </div>
-
-    <div className="si-step">
-      <div className="si-step-head">
-        <span className="si-step-no">7</span>
-        <h5>Startup India Certificate issued</h5>
-      </div>
-      <p className="si-step-desc">
-        Receive official Startup India recognition and certification after
-        successful approval.
-      </p>
-    </div>
-
-  </div>
-</section>
-          </>
+          <div className="si-step">
+            <div className="si-step-head">
+              <span className="si-step-no">7</span>
+              <h5>Startup India Certificate issued</h5>
+            </div>
+            <p className="si-step-desc">
+              Receive official Startup India recognition and certification after
+              successful approval.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
