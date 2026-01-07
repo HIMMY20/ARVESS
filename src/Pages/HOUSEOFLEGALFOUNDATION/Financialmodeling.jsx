@@ -7,7 +7,6 @@ export const Financialmodeling = () => {
         <div className="fm-wrap">
           <h1>
             Make smarter decisions with
-            <br />
             <span>data-driven financial planning</span>
           </h1>
 
@@ -17,7 +16,7 @@ export const Financialmodeling = () => {
             long-term business growth.
           </p>
 
-            <h2>What you get with Arvess Financial Planning</h2>
+            <h1>What you get with Arvess Financial Planning</h1>
           <div className="fm-features">
             <div className="fm-box red">
               📊 Tailored Financial Models{" "}
@@ -51,9 +50,9 @@ export const Financialmodeling = () => {
         </div>
       </section>
       <section className="fm-benefits">
-        <h2>
+        <h1>
           Perks & Benefits of <span>Financial Modelling</span>
-        </h2>
+        </h1>
 
         <div className="fm-benefit-grid">
           <div className="fm-card">

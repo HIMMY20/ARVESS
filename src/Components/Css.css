@@ -3070,7 +3070,7 @@ background-repeat: no-repeat;
 /* TITLE */
 .startup-benefits-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 70px;
@@ -3337,7 +3337,7 @@ background-repeat: no-repeat;
 
 .ac-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 70px;
@@ -3688,7 +3688,7 @@ background-repeat: no-repeat;
 .tax-perks-title {
   text-align: center;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
   margin-bottom: 60px;
 }
@@ -4026,7 +4026,7 @@ background-repeat: no-repeat;
 }
 
 .fm-wrap {
-  max-width: 900px;
+  max-width: 1500px;
   margin: auto;
   text-align: center;
   animation: fadeUp 0.8s ease;
@@ -4062,7 +4062,7 @@ background-repeat: no-repeat;
   padding: 22px;
   border-radius: 12px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 22px;
   color: #fff;
   animation: pop 0.6s ease;
 }
@@ -4114,8 +4114,8 @@ background-repeat: no-repeat;
   text-align: center;
 }
 
-.fm-benefits h2 {
-  font-size: 36px;
+.fm-benefits h1 {
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 50px;
   color: #A00A20;
@@ -4145,9 +4145,10 @@ background-repeat: no-repeat;
 }
 
 .fm-card h4 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 12px;
   color: #012D0E;
+  font-weight: 600;
 }
 
 .fm-card p {

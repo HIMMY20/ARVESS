@@ -53,7 +53,7 @@ export const CACS = () => {
       </section>
       <section className="tax-perks">
         <h2 className="tax-perks-title">
-          Perks & Benefits of <span>Tax Advisory</span>
+          Perks & Benefits of Tax Advisory
         </h2>
 
         <div className="tax-perks-grid">
