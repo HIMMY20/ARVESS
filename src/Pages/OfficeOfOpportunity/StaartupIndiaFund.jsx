@@ -398,68 +398,6 @@ const StaartupIndiaFund = () => {
           </div>
         </div>
       </section>
-
-      
-      <section className="faq7-section7-rgw7">
-        <h2 className="faq7-heading7-rgw7">Frequently Asked Questions</h2>
-
-        <div className="faq7-wrapper7-rgw7">
-          <div className="faq7-item7-rgw7 active">
-            <div className="faq7-question7-rgw7">
-              Who is eligible for government startup grants?
-              <span>−</span>
-            </div>
-            <div className="faq7-answer7-rgw7">
-              Registered startups under Startup India with innovative ideas and
-              compliance with scheme guidelines are eligible.
-            </div>
-          </div>
-
-          <div className="faq7-item7-rgw7">
-            <div className="faq7-question7-rgw7">
-              Can I apply for multiple grants at once?
-              <span>+</span>
-            </div>
-            <div className="faq7-answer7-rgw7">
-              Yes, startups can apply for multiple grants if eligibility
-              criteria are met for each scheme.
-            </div>
-          </div>
-
-          <div className="faq7-item7-rgw7">
-            <div className="faq7-question7-rgw7">
-              Is the funding equity-free?
-              <span>+</span>
-            </div>
-            <div className="faq7-answer7-rgw7">
-              Most government grants are equity-free and do not dilute
-              ownership.
-            </div>
-          </div>
-
-          <div className="faq7-item7-rgw7">
-            <div className="faq7-question7-rgw7">
-              How long does the grant process take?
-              <span>+</span>
-            </div>
-            <div className="faq7-answer7-rgw7">
-              The process usually takes between 3 to 9 months depending on the
-              scheme.
-            </div>
-          </div>
-
-          <div className="faq7-item7-rgw7">
-            <div className="faq7-question7-rgw7">
-              What is the success rate?
-              <span>+</span>
-            </div>
-            <div className="faq7-answer7-rgw7">
-              Success depends on eligibility, documentation quality, and
-              evaluation performance.
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
