@@ -102,11 +102,11 @@ const Navbar = () => {
                       <h6 className="mega-title">Brand, Digital & Growth Studio</h6>
                       <ul className="mega-list">
                         <li><a href="/branding">Brand Identity & Creative Design</a></li>
-                        <li><a href="#">Website & App Development</a></li>
-                        <li><a href="#">Demand & Lead Generation</a></li>
-                        <li><a href="#">Performance Marketing </a></li>
-                        <li><a href="#">SEO, Content & Growth Strategy</a></li>
-                        <li><a href="#">Social Media & Community Building</a></li>
+                        <li><a href="/websiteaap-development">Website & App Development</a></li>
+                        <li><a href="/demand-lead ">Demand & Lead Generation</a></li>
+                        <li><a href="/performance-marketing">Performance Marketing </a></li>
+                        <li><a href="/seo">SEO, Content & Growth Strategy</a></li>
+                        <li><a href="/social-media">Social Media & Community Building</a></li>
                       </ul>
                     </div>
 
