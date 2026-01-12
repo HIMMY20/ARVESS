@@ -30,7 +30,7 @@ import SocialMedia from "./Pages/StudioDigital&branding/SocialMedia";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -61,7 +61,7 @@ function App() {
 
         
       </Routes>
-      <Foooter/>
+      {/* <Foooter/> */}
     </BrowserRouter>
   );
 }
