@@ -34,7 +34,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/companyincorporation" element={<CompanyIncorporationLeft/>} />
         <Route path="/government" element={<Government/>} />
@@ -56,7 +56,7 @@ function App() {
         <Route path="/social-media" element={<SocialMedia/>} />
         <Route path="/termscondition" element={<TermsCondition/>} />
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
-        <Route path="/refundpolicy" element={<RefundPolicy/>} />
+        <Route path="/refundpolicy" element={<RefundPolicy/>} /> */}
         
 
         
