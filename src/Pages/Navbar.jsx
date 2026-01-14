@@ -89,6 +89,17 @@ const Navbar = () => {
                     <div className="col-md-4">
                       <h6 className="mega-title">Capital, Grants & Growth Access</h6>
                       <ul className="mega-list">
+                        <li><a href="/">Startup India & Seed Fund Assistance</a></li>
+                        <li><a href="/">Central & State Grant Programs</a></li>
+                        <li><a href="/">Women Entrepreneur Schemes</a></li>
+                        <li><a href="/">Angel & Venture Capital Access</a></li>
+                        <li><a href="/">Strategic Private Funding</a></li>
+                        <li><a href="/">Government & Institutional Loans</a></li>
+                      </ul>
+                    </div>
+                    {/* <div className="col-md-4">
+                      <h6 className="mega-title">Capital, Grants & Growth Access</h6>
+                      <ul className="mega-list">
                         <li><a href="/startup">Startup India & Seed Fund Assistance</a></li>
                         <li><a href="/industryfund">Central & State Grant Programs</a></li>
                         <li><a href="/womenspecific">Women Entrepreneur Schemes</a></li>
@@ -96,9 +107,20 @@ const Navbar = () => {
                         <li><a href="/privatefunding">Strategic Private Funding</a></li>
                         <li><a href="/governmentandprivateloans">Government & Institutional Loans</a></li>
                       </ul>
-                    </div>
+                    </div> */}
 
                     <div className="col-md-4">
+                      <h6 className="mega-title">Brand, Digital & Growth Studio</h6>
+                      <ul className="mega-list">
+                        <li><a href="/">Brand Identity & Creative Design</a></li>
+                        <li><a href="/">Website & App Development</a></li>
+                        <li><a href="/ ">Demand & Lead Generation</a></li>
+                        <li><a href="/">Performance Marketing </a></li>
+                        <li><a href="/">SEO, Content & Growth Strategy</a></li>
+                        <li><a href="/">Social Media & Community Building</a></li>
+                      </ul>
+                    </div>
+                    {/* <div className="col-md-4">
                       <h6 className="mega-title">Brand, Digital & Growth Studio</h6>
                       <ul className="mega-list">
                         <li><a href="/branding">Brand Identity & Creative Design</a></li>
@@ -108,7 +130,7 @@ const Navbar = () => {
                         <li><a href="/seo">SEO, Content & Growth Strategy</a></li>
                         <li><a href="/social-media">Social Media & Community Building</a></li>
                       </ul>
-                    </div>
+                    </div> */}
 
                   </div>
                 </div>
