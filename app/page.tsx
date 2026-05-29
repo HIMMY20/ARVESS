@@ -1,65 +1,994 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/Footer";
+
+
+export default function HomePage() {
+  const titleRef = useRef(null);
+  const lineRef = useRef(null);
+  const subRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // LINE ENTRY
+
+    gsap.fromTo(
+      lineRef.current,
+      {
+        scaleX: 0,
+      },
+      {
+        scaleX: 1,
+        duration: 1.8,
+        ease: "power4.inOut",
+      },
+    );
+
+    // LOGO ENTRY
+
+    gsap.fromTo(
+      titleRef.current,
+      {
+        y: 220,
+        opacity: 0,
+        scale: 0.9,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 2,
+        delay: 0.2,
+        ease: "power4.out",
+      },
+    );
+
+    // SUBTITLE ENTRY
+
+    gsap.fromTo(
+      subRef.current,
+      {
+        y: 40,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        delay: 1,
+        ease: "power4.out",
+      },
+    );
+
+    // SCROLL EFFECT
+
+    gsap.to(".hero-logo img", {
+      scale: 0.22,
+      y: -260,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-wrapper",
+        start: "top top",
+        end: "+=600",
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="relative overflow-x-hidden bg-white text-black">
+
+      {/* NAVBAR */}
+
+      <Navbar />
+
+      {/* GLOW */}
+
+      <div className="absolute left-[-180px] top-[5%] h-[450px] w-[450px] rounded-full bg-[#A00A20]/10 blur-[140px]" />
+
+      <div className="absolute right-[-180px] bottom-[5%] h-[450px] w-[450px] rounded-full bg-[#064e3b]/10 blur-[140px]" />
+
+      {/* HERO WRAPPER */}
+
+      <section className="hero-wrapper relative h-[100vh]">
+
+        {/* STICKY HERO */}
+
+        <div className="sticky top-0 flex h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+
+          {/* LINE */}
+
+          <div className="absolute left-0 top-[61%] w-full -translate-y-1/2 z-0">
+
+            <div
+              ref={lineRef}
+              className="h-[2px] w-full bg-black origin-left"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          </div>
+
+          {/* CENTER SVG */}
+
+          <div
+            ref={titleRef}
+            className="hero-logo relative z-20 flex items-center justify-center"
           >
-            Documentation
-          </a>
+
+            <img
+              src="/arvess.svg"
+              alt="logo"
+              className="w-[320px] sm:w-[500px] md:w-[700px] lg:w-[700px] object-contain"
+            />
+
+          </div>
+
+          {/* SUBTITLE */}
+
+          <p
+            ref={subRef}
+            className="absolute top-[63%] max-w-[700px] text-[10px] md:text-[13px] uppercase tracking-[4px] text-black/45"
+          >
+
+            Where Strategy Meets Execution For Sustainable Growth
+
+          </p>
+
         </div>
-      </main>
+
+      </section>
+
+      {/* ABOUT SECTION */}
+
+      <section className="relative overflow-hidden bg-white py-24 md:py-36">
+
+        {/* BACKGROUND LIGHT */}
+
+        <div className="absolute left-[-250px] top-[10%] h-[500px] w-[500px] rounded-full bg-[#A00A20]/10 blur-[170px]" />
+
+        <div className="absolute right-[-250px] bottom-[10%] h-[500px] w-[500px] rounded-full bg-[#064e3b]/10 blur-[170px]" />
+
+        {/* HUGE BACK TEXT */}
+
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+
+          <h1 className="text-[90px] md:text-[240px] font-black uppercase tracking-[-12px] text-black/[0.03]">
+
+            ARVESS
+
+          </h1>
+
+        </div>
+
+        {/* CONTENT */}
+
+        <div className="relative z-20 mx-auto max-w-[1600px] px-6">
+
+          {/* TOP */}
+
+          <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] items-start">
+
+            {/* LEFT SIDE */}
+
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1400"
+              className="sticky top-32"
+            >
+
+              {/* MINI TAG */}
+
+              <div className="mb-7 flex items-center gap-4">
+
+                <div className="h-[2px] w-[60px] bg-[#A00A20]" />
+
+                <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+
+                  About Arvess
+
+                </span>
+
+              </div>
+
+              {/* TITLE */}
+
+              <h2 className="text-[54px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+
+                We Build
+
+                <span className="block text-[#A00A20]">
+
+                  Powerful
+
+                </span>
+
+                Businesses
+
+              </h2>
+
+            </div>
+
+            {/* RIGHT SIDE */}
+
+            <div className="space-y-8">
+
+              {/* CARD 1 */}
+
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                className="group relative overflow-hidden rounded-[40px] border border-black/5 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2"
+              >
+
+                <span className="absolute right-8 top-5 text-[70px] font-black text-[#A00A20]/10 transition-all duration-700 group-hover:scale-125">
+
+                  01
+
+                </span>
+
+                <h3 className="text-[26px] md:text-[40px] font-semibold tracking-[-2px] text-black">
+
+                  Strategic Foundation
+
+                </h3>
+
+                <div className="mt-5 h-[2px] w-[90px] bg-[#A00A20] transition-all duration-700 group-hover:w-[140px]" />
+
+                <p className="mt-7 text-[15px] md:text-[18px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black">
+
+                  Arvess is a strategic business consulting and outsourcing firm built to support ambitious startups and growth-stage enterprises in navigating complexity with confidence. We partner with founders to establish strong foundations across legal, financial, operational, and digital functions ensuring businesses remain scalable, compliant, and future-ready.
+
+                </p>
+
+              </div>
+
+              {/* CARD 2 */}
+
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1400"
+                className="group relative overflow-hidden rounded-[40px] border border-black/5 bg-black p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
+              >
+
+                <span className="absolute right-8 top-5 text-[70px] font-black text-white/10 transition-all duration-700 group-hover:scale-125">
+
+                  02
+
+                </span>
+
+                <h3 className="text-[26px] md:text-[40px] font-semibold tracking-[-2px] text-white">
+
+                  Execution Excellence
+
+                </h3>
+
+                <div className="mt-5 h-[2px] w-[90px] bg-[#064e3b] transition-all duration-700 group-hover:w-[140px]" />
+
+                <p className="mt-7 text-[15px] md:text-[18px] leading-[2] text-white/60 transition-all duration-700 group-hover:text-white/90">
+
+                  Our approach blends strategic insight with execution excellence helping startups optimize growth, build credibility, attract opportunities, and achieve sustainable expansion.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      
+      {/* SERVICES SECTION */}
+
+<section className="relative overflow-hidden bg-white py-24 md:py-36">
+
+  <div className="relative z-20 mx-auto max-w-[1600px] px-6">
+
+    <div className="mb-20 text-center">
+
+      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+
+        Our Services
+
+      </span>
+
+      <h2 className="mt-5 text-[55px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+
+        What We
+
+        <span className="block text-[#A00A20]">
+
+          Deliver
+
+        </span>
+
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2">
+
+      <div className="group rounded-[40px] border border-black/5 bg-white p-10 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
+
+        <h3 className="text-[34px] font-semibold">
+
+          Startup Consulting
+
+        </h3>
+
+        <div className="mt-5 h-[2px] w-[90px] bg-[#A00A20] transition-all duration-700 group-hover:w-[150px]" />
+
+        <p className="mt-7 text-black/60 leading-[2]">
+
+          Strategic planning, business setup,
+          compliance support and growth frameworks
+          for startups and emerging businesses.
+
+        </p>
+
+      </div>
+
+      <div className="group rounded-[40px] bg-[#A00A20] p-10 transition-all duration-700 hover:-translate-y-2">
+
+        <h3 className="text-[34px] font-semibold text-white">
+
+          Funding Support
+
+        </h3>
+
+        <div className="mt-5 h-[2px] w-[90px] bg-white transition-all duration-700 group-hover:w-[150px]" />
+
+        <p className="mt-7 text-white/80 leading-[2]">
+
+          Investor readiness, grant applications,
+          government schemes and fundraising assistance.
+
+        </p>
+
+      </div>
+
+      <div className="group rounded-[40px] bg-[#064e3b] p-10 transition-all duration-700 hover:-translate-y-2">
+
+        <h3 className="text-[34px] font-semibold text-white">
+
+          Digital Growth
+
+        </h3>
+
+        <div className="mt-5 h-[2px] w-[90px] bg-white transition-all duration-700 group-hover:w-[150px]" />
+
+        <p className="mt-7 text-white/80 leading-[2]">
+
+          Branding, websites, digital marketing,
+          automation and performance-driven growth.
+
+        </p>
+
+      </div>
+
+      <div className="group rounded-[40px] border border-black/5 bg-white p-10 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
+
+        <h3 className="text-[34px] font-semibold">
+
+          Business Expansion
+
+        </h3>
+
+        <div className="mt-5 h-[2px] w-[90px] bg-[#064e3b] transition-all duration-700 group-hover:w-[150px]" />
+
+        <p className="mt-7 text-black/60 leading-[2]">
+
+          Operational excellence, scaling strategy,
+          partnerships and sustainable business growth.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* WHY CHOOSE ARVESS */}
+
+<section className="relative overflow-hidden bg-white py-24 md:py-36">
+
+  {/* BACK TEXT */}
+
+  <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+
+    <h1 className="text-[90px] md:text-[240px] font-black uppercase tracking-[-12px] text-black/[0.03]">
+
+      ARVESS
+
+    </h1>
+
+  </div>
+
+  <div className="relative z-20 mx-auto max-w-[1600px] px-6">
+
+    {/* HEADING */}
+
+    <div className="mb-24 text-center">
+
+      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+
+        Why Choose Us
+
+      </span>
+
+      <h2 className="mt-5 text-[55px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+
+        Why
+
+        <span className="block text-[#A00A20]">
+
+          Arvess
+
+        </span>
+
+      </h2>
+
+    </div>
+
+    {/* ITEMS */}
+
+    <div className="space-y-8">
+
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] border border-black/5 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
+
+        <div>
+
+          <span className="text-[#A00A20] text-sm tracking-[4px] uppercase">
+
+            01
+
+          </span>
+
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px]">
+
+            Founder First Approach
+
+          </h3>
+
+        </div>
+
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2]">
+
+          Every strategy is tailored around the founder's vision,
+          business goals and long-term growth roadmap.
+
+        </p>
+
+      </div>
+
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#A00A20] p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
+
+        <div>
+
+          <span className="text-white text-sm tracking-[4px] uppercase">
+
+            02
+
+          </span>
+
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-white">
+
+            Execution Driven
+
+          </h3>
+
+        </div>
+
+        <p className="mt-6 md:mt-0 max-w-[650px] text-white/80 leading-[2]">
+
+          We focus on implementation and measurable outcomes,
+          not just recommendations and presentations.
+
+        </p>
+
+      </div>
+
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#064e3b] p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
+
+        <div>
+
+          <span className="text-white text-sm tracking-[4px] uppercase">
+
+            03
+
+          </span>
+
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-white">
+
+            Growth Focused
+
+          </h3>
+
+        </div>
+
+        <p className="mt-6 md:mt-0 max-w-[650px] text-white/80 leading-[2]">
+
+          From funding to expansion, every initiative is designed
+          to create scalable and sustainable growth.
+
+        </p>
+
+      </div>
+
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] border border-black/5 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
+
+        <div>
+
+          <span className="text-[#064e3b] text-sm tracking-[4px] uppercase">
+
+            04
+
+          </span>
+
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px]">
+
+            Future Ready Systems
+
+          </h3>
+
+        </div>
+
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2]">
+
+          We help businesses build strong legal, operational,
+          financial and digital foundations for long-term success.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* EXPERTISE SECTION */}
+
+<section className="relative overflow-hidden bg-white py-32 md:py-44">
+
+  <div className="mx-auto max-w-[1600px] px-6">
+
+    {/* TITLE */}
+
+    <div className="mb-24">
+
+      <span className="text-[12px] uppercase tracking-[6px] text-[#064e3b]">
+
+        Core Expertise
+
+      </span>
+
+      <h2 className="mt-5 text-[55px] md:text-[120px] font-light leading-[0.9] tracking-[-6px] text-black">
+
+        What We
+        <span className="block font-black text-[#A00A20]">
+          Specialize In
+        </span>
+
+      </h2>
+
+    </div>
+
+    {/* ITEMS */}
+
+    <div className="space-y-10">
+
+      <div className="group flex items-center justify-between border-b border-black/10 pb-10">
+
+        <div>
+
+          <span className="text-[14px] tracking-[5px] text-[#A00A20]">
+            01
+          </span>
+
+          <h3 className="mt-2 text-[45px] md:text-[90px] font-black tracking-[-4px] text-black">
+            GRANTS
+          </h3>
+
+        </div>
+
+        <p className="max-w-[500px] text-right text-black/60 leading-[2]">
+          Government schemes, startup grants, subsidy programs and strategic funding opportunities.
+        </p>
+
+      </div>
+
+      <div className="group flex items-center justify-between border-b border-black/10 pb-10">
+
+        <div>
+
+          <span className="text-[14px] tracking-[5px] text-[#064e3b]">
+            02
+          </span>
+
+          <h3 className="mt-2 text-[45px] md:text-[90px] font-black tracking-[-4px] text-black">
+            INVESTORS
+          </h3>
+
+        </div>
+
+        <p className="max-w-[500px] text-right text-black/60 leading-[2]">
+          Investor readiness, pitch support, fundraising strategy and capital access.
+        </p>
+
+      </div>
+
+      <div className="group flex items-center justify-between pb-10">
+
+        <div>
+
+          <span className="text-[14px] tracking-[5px] text-[#A00A20]">
+            03
+          </span>
+
+          <h3 className="mt-2 text-[45px] md:text-[90px] font-black tracking-[-4px] text-black">
+            DEPTH
+          </h3>
+
+        </div>
+
+        <p className="max-w-[500px] text-right text-black/60 leading-[2]">
+          Deep business analysis, execution support and long-term growth planning.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* PROCESS SECTION */}
+
+<section className="relative overflow-hidden bg-white py-32 md:py-44">
+
+  <div className="mx-auto max-w-[1600px] px-6">
+
+    {/* TITLE */}
+
+    <div className="mb-24">
+
+      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+
+        Our Process
+
+      </span>
+
+      <h2 className="mt-4 text-[60px] md:text-[120px] font-black tracking-[-6px] leading-[0.9]">
+
+        How We
+        <span className="block text-[#A00A20]">
+          Work
+        </span>
+
+      </h2>
+
+    </div>
+
+    {/* STEP 1 */}
+
+    <div className="grid lg:grid-cols-[0.3fr_1fr] items-start gap-10 border-t border-black/10 py-16">
+
+      <h1 className="text-[90px] md:text-[180px] font-black leading-none text-[#A00A20]/15">
+
+        01
+
+      </h1>
+
+      <div>
+
+        <h3 className="text-[40px] md:text-[70px] font-black tracking-[-3px]">
+
+          Discover
+
+        </h3>
+
+        <p className="mt-6 max-w-[700px] text-black/60 leading-[2]">
+
+          We deeply understand your business model,
+          market position, opportunities and growth vision
+          before creating any strategic roadmap.
+
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* STEP 2 */}
+
+    <div className="grid lg:grid-cols-[0.3fr_1fr] items-start gap-10 border-t border-black/10 py-16">
+
+      <h1 className="text-[90px] md:text-[180px] font-black leading-none text-[#064e3b]/15">
+
+        02
+
+      </h1>
+
+      <div>
+
+        <h3 className="text-[40px] md:text-[70px] font-black tracking-[-3px]">
+
+          Strategize
+
+        </h3>
+
+        <p className="mt-6 max-w-[700px] text-black/60 leading-[2]">
+
+          Our experts create structured plans covering
+          funding, compliance, operations and growth
+          opportunities aligned with your goals.
+
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* STEP 3 */}
+
+    <div className="grid lg:grid-cols-[0.3fr_1fr] items-start gap-10 border-y border-black/10 py-16">
+
+      <h1 className="text-[90px] md:text-[180px] font-black leading-none text-[#A00A20]/15">
+
+        03
+
+      </h1>
+
+      <div>
+
+        <h3 className="text-[40px] md:text-[70px] font-black tracking-[-3px]">
+
+          Execute & Scale
+
+        </h3>
+
+        <p className="mt-6 max-w-[700px] text-black/60 leading-[2]">
+
+          We support execution, monitor progress and
+          continuously optimize strategies to ensure
+          long-term sustainable growth.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* PRICING SECTION */}
+
+<section className="relative overflow-hidden bg-white py-32 md:py-44">
+
+  <div className="mx-auto max-w-[1800px] px-6">
+
+    {/* HEADING */}
+
+    <div className="mb-24 text-center">
+
+      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+        Pricing Plans
+      </span>
+
+      <h2 className="mt-5 text-[60px] md:text-[120px] font-black tracking-[-6px] leading-[0.9]">
+
+        Growth
+        <span className="block text-[#A00A20]">
+          Packages
+        </span>
+
+      </h2>
+
+    </div>
+
+    {/* CARDS */}
+
+    <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+      {/* CARD 1 */}
+
+      <div className="rounded-[40px] border border-black/10 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2">
+
+        <p className="uppercase tracking-[4px] text-black/40 text-xs">
+          3 Months
+        </p>
+
+        <h3 className="mt-6 text-[42px] font-black tracking-[-2px]">
+          Grant Basic
+        </h3>
+
+        <h4 className="mt-8 text-[55px] font-black tracking-[-3px] text-[#A00A20]">
+          ₹15K
+        </h4>
+
+        <p className="mt-4 text-black/60 leading-[1.9]">
+          Perfect for startups looking for grant opportunities.
+        </p>
+
+        <button className="mt-8 w-full rounded-full border border-black/10 py-4 font-semibold hover:border-[#A00A20] transition">
+          Get Started →
+        </button>
+
+        <div className="mt-10 space-y-4 text-black/70">
+
+          <p>✓ Grant Assessment</p>
+          <p>✓ Startup Roadmap</p>
+          <p>✓ 3 Grant Applications</p>
+          <p>✓ Email Support</p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 2 */}
+
+      <div className="rounded-[40px] border border-black/10 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2">
+
+        <p className="uppercase tracking-[4px] text-black/40 text-xs">
+          6 Months
+        </p>
+
+        <h3 className="mt-6 text-[42px] font-black tracking-[-2px]">
+          Grant Plus
+        </h3>
+
+        <h4 className="mt-8 text-[55px] font-black tracking-[-3px] text-[#064e3b]">
+          ₹25K
+        </h4>
+
+        <p className="mt-4 text-black/60 leading-[1.9]">
+          Enhanced grant and funding preparation support.
+        </p>
+
+        <button className="mt-8 w-full rounded-full border border-black/10 py-4 font-semibold hover:border-[#064e3b] transition">
+          Get Started →
+        </button>
+
+        <div className="mt-10 space-y-4 text-black/70">
+
+          <p>✓ Financial Report</p>
+          <p>✓ 5 Grant Applications</p>
+          <p>✓ Funding Strategy</p>
+          <p>✓ Priority Support</p>
+
+        </div>
+
+      </div>
+
+      {/* FEATURED CARD */}
+
+      <div className="relative rounded-[40px] bg-[#A00A20] p-8 text-white shadow-[0_25px_80px_rgba(160,10,32,0.25)] scale-[1.03]">
+
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#064e3b] px-6 py-2 text-sm font-semibold">
+
+          Most Popular
+
+        </div>
+
+        <p className="uppercase tracking-[4px] text-white/70 text-xs mt-4">
+          9 Months
+        </p>
+
+        <h3 className="mt-6 text-[42px] font-black tracking-[-2px]">
+          Investor Ready
+        </h3>
+
+        <h4 className="mt-8 text-[55px] font-black tracking-[-3px]">
+          ₹45K
+        </h4>
+
+        <p className="mt-4 text-white/80 leading-[1.9]">
+          Complete investor readiness and funding package.
+        </p>
+
+        <button className="mt-8 w-full rounded-full bg-white py-4 font-semibold text-[#A00A20]">
+          Book Now →
+        </button>
+
+        <div className="mt-10 space-y-4 text-white/90">
+
+          <p>✓ Investor Pitch Deck</p>
+          <p>✓ 10 Investor Connections</p>
+          <p>✓ Funding Readiness</p>
+          <p>✓ Dedicated Advisor</p>
+          <p>✓ Executive Summary</p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 4 */}
+
+      <div className="rounded-[40px] border border-black/10 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2">
+
+        <p className="uppercase tracking-[4px] text-black/40 text-xs">
+          12 Months
+        </p>
+
+        <h3 className="mt-6 text-[42px] font-black tracking-[-2px]">
+          Growth Advisory
+        </h3>
+
+        <h4 className="mt-8 text-[55px] font-black tracking-[-3px] text-[#A00A20]">
+          ₹75K
+        </h4>
+
+        <p className="mt-4 text-black/60 leading-[1.9]">
+          Strategic planning and long-term growth consulting.
+        </p>
+
+        <button className="mt-8 w-full rounded-full border border-black/10 py-4 font-semibold hover:border-[#A00A20] transition">
+          Get Started →
+        </button>
+
+        <div className="mt-10 space-y-4 text-black/70">
+
+          <p>✓ Growth Strategy</p>
+          <p>✓ Investor Relations</p>
+          <p>✓ Expansion Planning</p>
+          <p>✓ Dedicated Consultant</p>
+
+        </div>
+
+      </div>
+
+      {/* CARD 5 */}
+
+      <div className="rounded-[40px] border border-black/10 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2">
+
+        <p className="uppercase tracking-[4px] text-black/40 text-xs">
+          Enterprise
+        </p>
+
+        <h3 className="mt-6 text-[42px] font-black tracking-[-2px]">
+          Custom
+        </h3>
+
+        <h4 className="mt-8 text-[55px] font-black tracking-[-3px] text-[#064e3b]">
+          Quote
+        </h4>
+
+        <p className="mt-4 text-black/60 leading-[1.9]">
+          Fully customized solutions for enterprises.
+        </p>
+
+        <button className="mt-8 w-full rounded-full bg-[#064e3b] text-white py-4 font-semibold">
+          Contact Us →
+        </button>
+
+        <div className="mt-10 space-y-4 text-black/70">
+
+          <p>✓ End-to-End Execution</p>
+          <p>✓ Strategic Partnerships</p>
+          <p>✓ Dedicated Team</p>
+          <p>✓ Premium Support</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<Footer />
     </div>
   );
 }
