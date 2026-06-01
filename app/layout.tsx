@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Arvess Services ",
-  description: "Building Modern Businesses Through Strategic Growth",
+  description: "Arvess Service Private Limited",
 };
 
 export default function RootLayout({
