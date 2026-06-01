@@ -131,7 +131,7 @@ export default function HomePage() {
 
           <p
             ref={subRef}
-            className="absolute top-[63%] max-w-[700px] text-[10px] md:text-[13px] uppercase tracking-[4px] text-black/45"
+            className="absolute top-[63%] max-w-[700px] text-[30px] md:text-[16px] uppercase tracking-[3px] text-black"
           >
 
             Where Strategy Meets Execution For Sustainable Growth
@@ -144,7 +144,7 @@ export default function HomePage() {
 
       {/* ABOUT SECTION */}
 
-      <section className="relative overflow-hidden bg-white py-24 md:py-36">
+      <section className="relative overflow-hidden bg-white py-0 md:py-0">
 
         {/* BACKGROUND LIGHT */}
 
@@ -184,9 +184,9 @@ export default function HomePage() {
 
               <div className="mb-7 flex items-center gap-4">
 
-                <div className="h-[2px] w-[60px] bg-[#A00A20]" />
+                <div className="h-[2px] w-[60px] bg-[#012D0E]" />
 
-                <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+                <span className="text-[20px] font-bold uppercase tracking-[6px] text-[#A00A20]">
 
                   About Arvess
 
@@ -196,7 +196,7 @@ export default function HomePage() {
 
               {/* TITLE */}
 
-              <h2 className="text-[54px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+              <h2 className="text-[54px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-[#012D0E]">
 
                 We Build
 
@@ -205,8 +205,11 @@ export default function HomePage() {
                   Powerful
 
                 </span>
+                <span className="block text-[#012D0E]">
+                  Business
 
-                Businesses
+                </span>
+
 
               </h2>
 
@@ -221,16 +224,16 @@ export default function HomePage() {
               <div
                 data-aos="fade-up"
                 data-aos-duration="1200"
-                className="group relative overflow-hidden rounded-[40px] border border-black/5 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2"
+                className="group relative overflow-hidden rounded-[30px] border border-white bg-[#A00A20]/25 p-8 md:p-3 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2"
               >
 
-                <span className="absolute right-8 top-5 text-[70px] font-black text-[#A00A20]/10 transition-all duration-700 group-hover:scale-125">
+                <span className="absolute right-8 top-5 text-[60px] font-black text-black/50 transition-all duration-700 group-hover:scale-125">
 
                   01
 
                 </span>
 
-                <h3 className="text-[26px] md:text-[40px] font-semibold tracking-[-2px] text-black">
+                <h3 className="text-[24px] md:text-[30px] font-semibold tracking-[-2px] text-black">
 
                   Strategic Foundation
 
@@ -238,10 +241,9 @@ export default function HomePage() {
 
                 <div className="mt-5 h-[2px] w-[90px] bg-[#A00A20] transition-all duration-700 group-hover:w-[140px]" />
 
-                <p className="mt-7 text-[15px] md:text-[18px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black">
+                <p className="mt-7 text-[10px] md:text-[15px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black">
 
-                  Arvess is a strategic business consulting and outsourcing firm built to support ambitious startups and growth-stage enterprises in navigating complexity with confidence. We partner with founders to establish strong foundations across legal, financial, operational, and digital functions ensuring businesses remain scalable, compliant, and future-ready.
-
+                  Arvess is a leading business consulting, startup advisory, and growth solutions firm helping entrepreneurs, startups, SMEs, and enterprises build strong, scalable, and future-ready businesses. From company registration, government certifications, legal compliance, and financial structuring to strategic planning and business expansion, we create the foundation required for sustainable growth. Our mission is to simplify complex business processes and empower founders to focus on innovation, profitability, and long-term success
                 </p>
 
               </div>
@@ -252,27 +254,85 @@ export default function HomePage() {
                 data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="1400"
-                className="group relative overflow-hidden rounded-[40px] border border-black/5 bg-black p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
+                className="group relative overflow-hidden rounded-[30px] border border-black/5 bg-white p-8 md:p-3 shadow-[0_20px_80px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
               >
 
-                <span className="absolute right-8 top-5 text-[70px] font-black text-white/10 transition-all duration-700 group-hover:scale-125">
+                <span className="absolute right-8 top-5 text-[60px] font-black text-black/50 transition-all duration-700 group-hover:scale-125">
 
                   02
 
                 </span>
 
-                <h3 className="text-[26px] md:text-[40px] font-semibold tracking-[-2px] text-white">
+                <h3 className="text-[26px] md:text-[30px] font-semibold tracking-[-2px] text-black">
 
                   Execution Excellence
 
                 </h3>
 
-                <div className="mt-5 h-[2px] w-[90px] bg-[#064e3b] transition-all duration-700 group-hover:w-[140px]" />
+                <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[140px]" />
 
-                <p className="mt-7 text-[15px] md:text-[18px] leading-[2] text-white/60 transition-all duration-700 group-hover:text-white/90">
+                <p className="mt-7 text-[10px] md:text-[15px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black/90">
 
-                  Our approach blends strategic insight with execution excellence helping startups optimize growth, build credibility, attract opportunities, and achieve sustainable expansion.
+                  At Arvess, strategy means nothing without execution. We work as an extension of your team to implement high-impact solutions that drive measurable business outcomes. Our expertise spans startup consulting, compliance management, operational optimization, digital transformation, business process outsourcing, and growth acceleration. By combining industry expertise with practical execution, we help businesses increase efficiency, strengthen credibility, reduce operational challenges, and achieve faster market growth.
+                </p>
 
+              </div>
+              {/* CARD 3 */}
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1400"
+                className="group relative overflow-hidden rounded-[30px] border border-black/5 bg-[#012D0E]/30 p-8 md:p-3 shadow-[0_20px_80px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
+              >
+
+                <span className="absolute right-8 top-5 text-[60px] font-black text-black/50 transition-all duration-700 group-hover:scale-125">
+
+                  03
+
+                </span>
+
+                <h3 className="text-[26px] md:text-[30px] font-semibold tracking-[-2px] text-black">
+
+                  Growth Acceleration
+
+                </h3>
+
+                <div className="mt-5 h-[2px] w-[90px] bg-black transition-all duration-700 group-hover:w-[140px]" />
+
+                <p className="mt-7 text-[10px] md:text-[15px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black/90">
+
+                Growth requires more than ambition it demands the right systems, certifications, partnerships, and market positioning. Arvess helps businesses unlock new opportunities through Startup India recognition, DPIIT registration, ISO certifications, government schemes, business development strategies, digital presence enhancement, and expansion planning. Our growth-focused approach ensures organizations remain competitive, investment-ready, and positioned for long-term success in an evolving marketplace.
+
+                </p>
+
+              </div>
+
+              {/* CARD 4 */}
+
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1400"
+                className="group relative overflow-hidden rounded-[30px] border border-black/5 bg-white p-8 md:p-3 shadow-[0_20px_80px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
+              >
+
+                <span className="absolute right-8 top-5 text-[60px] font-black text-black/50 transition-all duration-700 group-hover:scale-125">
+
+                  04
+
+                </span>
+
+                <h3 className="text-[26px] md:text-[30px] font-semibold tracking-[-2px] text-black">
+
+              Trusted Business Partner
+
+                </h3>
+
+                <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[140px]" />
+
+                <p className="mt-7 text-[10px] md:text-[15px] leading-[2] text-black/60 transition-all duration-700 group-hover:text-black/90">
+
+                Arvess is committed to becoming the most trusted business support partner for ambitious entrepreneurs and organizations. We believe in delivering transparent guidance, professional expertise, and result-driven solutions tailored to each client's unique objectives. Whether you are launching a startup, scaling an established company, or seeking operational support, Arvess provides end-to-end consulting and outsourcing services designed to help businesses grow smarter, faster, and stronger.
                 </p>
 
               </div>
@@ -287,25 +347,25 @@ export default function HomePage() {
       
       {/* SERVICES SECTION */}
 
-<section className="relative overflow-hidden bg-white py-24 md:py-36">
+<section className="relative overflow-hidden bg-white py-15 md:py-15">
 
   <div className="relative z-20 mx-auto max-w-[1600px] px-6">
 
     <div className="mb-20 text-center">
 
-      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+      <span className="text-[20px] font-bold uppercase tracking-[6px] text-[#A00A20]">
 
         Our Services
 
       </span>
 
-      <h2 className="mt-5 text-[55px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+      <h2 className="mt-5 text-[55px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-[#012D0E]">
 
         What We
 
-        <span className="block text-[#A00A20]">
+        <span className=" text-[#A00A20]">
 
-          Deliver
+          {" "}Deliver
 
         </span>
 
@@ -319,55 +379,51 @@ export default function HomePage() {
 
         <h3 className="text-[34px] font-semibold">
 
-          Startup Consulting
+         01. Business Consulting
 
         </h3>
 
-        <div className="mt-5 h-[2px] w-[90px] bg-[#A00A20] transition-all duration-700 group-hover:w-[150px]" />
+        <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[150px]" />
 
-        <p className="mt-7 text-black/60 leading-[2]">
+        <p className="mt-7 text-black/60 leading-[2] group-hover:text-black/90">
 
-          Strategic planning, business setup,
-          compliance support and growth frameworks
-          for startups and emerging businesses.
+          Strategic business consulting services designed to help startups, SMEs, and enterprises build strong foundations, improve operational efficiency, ensure regulatory compliance, and achieve sustainable business growth through expert advisory and execution support.
 
         </p>
 
       </div>
 
-      <div className="group rounded-[40px] bg-[#A00A20] p-10 transition-all duration-700 hover:-translate-y-2">
+      <div className="group rounded-[40px] bg-[#A00A20]/30 p-10 transition-all duration-700 hover:-translate-y-2">
 
-        <h3 className="text-[34px] font-semibold text-white">
+        <h3 className="text-[34px] font-semibold text-black">
 
-          Funding Support
+          02. Compliance & Certifications
 
         </h3>
 
-        <div className="mt-5 h-[2px] w-[90px] bg-white transition-all duration-700 group-hover:w-[150px]" />
+        <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[150px]" />
 
-        <p className="mt-7 text-white/80 leading-[2]">
+        <p className="mt-7 text-black/60 leading-[2] group-hover:text-black/90">
 
-          Investor readiness, grant applications,
-          government schemes and fundraising assistance.
+          Comprehensive support for Startup India Registration, DPIIT Recognition, ISO Certification, NPOP Certification, business registrations, legal documentation, and government compliance services that enhance credibility and unlock growth opportunities.
 
         </p>
 
       </div>
 
-      <div className="group rounded-[40px] bg-[#064e3b] p-10 transition-all duration-700 hover:-translate-y-2">
+      <div className="group rounded-[40px] bg-[#012D0E]/30 p-10 transition-all duration-700 hover:-translate-y-2">
 
-        <h3 className="text-[34px] font-semibold text-white">
+        <h3 className="text-[34px] font-semibold text-black">
 
-          Digital Growth
+          03. Digital Transformation
 
         </h3>
 
-        <div className="mt-5 h-[2px] w-[90px] bg-white transition-all duration-700 group-hover:w-[150px]" />
+        <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[150px]" />
 
-        <p className="mt-7 text-white/80 leading-[2]">
+        <p className="mt-7 text-black/60 leading-[2] group-hover:text-black/90">
 
-          Branding, websites, digital marketing,
-          automation and performance-driven growth.
+          End-to-end digital transformation solutions including branding, website development, SEO, digital marketing, business automation, and online growth strategies that help businesses strengthen their market presence and generate measurable results.
 
         </p>
 
@@ -377,16 +433,15 @@ export default function HomePage() {
 
         <h3 className="text-[34px] font-semibold">
 
-          Business Expansion
+          04. Growth & Expansion
 
         </h3>
 
-        <div className="mt-5 h-[2px] w-[90px] bg-[#064e3b] transition-all duration-700 group-hover:w-[150px]" />
+        <div className="mt-5 h-[2px] w-[90px] bg-[#012D0E] transition-all duration-700 group-hover:w-[150px]" />
 
-        <p className="mt-7 text-black/60 leading-[2]">
+        <p className="mt-7 text-black/60 leading-[2] group-hover:text-black/90">
 
-          Operational excellence, scaling strategy,
-          partnerships and sustainable business growth.
+          Business growth consulting focused on funding assistance, government grant schemes, investor readiness, market expansion, strategic partnerships, and scalable growth frameworks that drive long-term success and competitive advantage.
 
         </p>
 
@@ -399,7 +454,7 @@ export default function HomePage() {
 </section>
 {/* WHY CHOOSE ARVESS */}
 
-<section className="relative overflow-hidden bg-white py-24 md:py-36">
+<section className="relative overflow-hidden bg-white py-24 md:py-20">
 
   {/* BACK TEXT */}
 
@@ -419,19 +474,19 @@ export default function HomePage() {
 
     <div className="mb-24 text-center">
 
-      <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+      <span className="text-[20px] font-bold uppercase tracking-[6px] text-[#A00A20]">
 
         Why Choose Us
 
       </span>
 
-      <h2 className="mt-5 text-[55px] md:text-[100px] font-semibold leading-[0.9] tracking-[-5px] text-black">
+      <h2 className="mt-5 text-[55px] md:text-[90px] font-semibold leading-[0.9] tracking-[-5px] text-[#012D0E]">
 
         Why
 
-        <span className="block text-[#A00A20]">
+        <span className=" text-[#A00A20]">
 
-          Arvess
+          {" "}Arvess
 
         </span>
 
@@ -443,11 +498,11 @@ export default function HomePage() {
 
     <div className="space-y-8">
 
-      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] border border-black/5 bg-white p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] border border-black/5 bg-[#A00A20]/30 p-8 md:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.05)] transition-all duration-700 hover:-translate-y-2">
 
         <div>
 
-          <span className="text-[#A00A20] text-sm tracking-[4px] uppercase">
+          <span className="text-[#000000] text-sm tracking-[4px] uppercase">
 
             01
 
@@ -455,70 +510,67 @@ export default function HomePage() {
 
           <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px]">
 
-            Founder First Approach
+            Strategic Expertise
 
           </h3>
 
         </div>
 
-        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2]">
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2] group-hover:text-black/90">
 
-          Every strategy is tailored around the founder's vision,
-          business goals and long-term growth roadmap.
+          Industry-focused business consulting backed by practical insights, regulatory knowledge, and growth-driven strategies.
 
         </p>
 
       </div>
 
-      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#A00A20] p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#ffff] p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
 
         <div>
 
-          <span className="text-white text-sm tracking-[4px] uppercase">
+          <span className="text-black text-sm tracking-[4px] uppercase">
 
             02
 
           </span>
 
-          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-white">
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-black">
 
-            Execution Driven
+            Proven Execution
 
           </h3>
 
         </div>
 
-        <p className="mt-6 md:mt-0 max-w-[650px] text-white/80 leading-[2]">
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2] group-hover:text-black/90">
 
-          We focus on implementation and measurable outcomes,
-          not just recommendations and presentations.
+          A hands-on approach that transforms business plans into real-world results through structured implementation and continuous support.
 
         </p>
 
       </div>
 
-      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#064e3b] p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
+      <div className="group flex flex-col md:flex-row md:items-center justify-between rounded-[40px] bg-[#012D0E]/30 p-8 md:p-12 transition-all duration-700 hover:-translate-y-2">
 
         <div>
 
-          <span className="text-white text-sm tracking-[4px] uppercase">
+          <span className="text-black text-sm tracking-[4px] uppercase">
 
             03
 
           </span>
 
-          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-white">
+          <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px] text-black">
 
-            Growth Focused
+            Scalable Growth
 
           </h3>
 
         </div>
 
-        <p className="mt-6 md:mt-0 max-w-[650px] text-white/80 leading-[2]">
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2] group-hover:text-black/90">
 
-          From funding to expansion, every initiative is designed
-          to create scalable and sustainable growth.
+          Solutions designed to improve credibility, attract opportunities, strengthen operations, and accelerate long-term business growth.
 
         </p>
 
@@ -528,7 +580,7 @@ export default function HomePage() {
 
         <div>
 
-          <span className="text-[#064e3b] text-sm tracking-[4px] uppercase">
+          <span className="text-black text-sm tracking-[4px] uppercase">
 
             04
 
@@ -536,16 +588,15 @@ export default function HomePage() {
 
           <h3 className="mt-2 text-[32px] md:text-[48px] font-semibold tracking-[-2px]">
 
-            Future Ready Systems
+            Future-Ready Systems
 
           </h3>
 
         </div>
 
-        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 leading-[2]">
+        <p className="mt-6 md:mt-0 max-w-[650px] text-black/60 group-hover:text-black/90 leading-[2]">
 
-          We help businesses build strong legal, operational,
-          financial and digital foundations for long-term success.
+          We create future-ready business ecosystems by strengthening compliance, operations, technology, and growth frameworks that support long-term scalability and competitive advantage.
 
         </p>
 
