@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arvess Services ",
+  title: "Arvess  ",
   description: "Arvess Service Private Limited",
 };
 
