@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#000000_1px,transparent_1px),linear-gradient(to_bottom,#000000_1px,transparent_1px)] bg-[size:80px_80px]" />
       </div>
 
-      <div className="absolute top-[-150px] left-[-150px] h-[400px] w-[400px] rounded-full bg-[#064e3b]/10 blur-[180px]" />
+      <div className="absolute top-[-150px] left-[-150px] h-[400px] w-[400px] rounded-full bg-[#012D0E]/10 blur-[180px]" />
 
       <div className="absolute bottom-[-250px] right-[-250px] h-[500px] w-[500px] rounded-full bg-[#A00A20]/10 blur-[180px]" />
 
@@ -23,37 +23,40 @@ export default function Footer() {
 
         <div className="pt-0 md:pt-0">
 
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-          >
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+  >
 
-            {/* LOGO */}
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
 
-            <img
-              src="/arvess.svg"
-              alt="Arvess"
-              className=" md:h-100 w-auto"
-            />
+      <img
+        src="/arvess.svg"
+        alt="Arvess"
+        className="w-auto max-w-[450px]"
+      />
 
-            <p className="
-              max-w-[800px]
-              text-black/60
-              text-lg
-              md:text-2xl
-              leading-relaxed
-            ">
-              Building Modern Businesses Through Strategic Growth.
-              We help startups, founders and enterprises navigate
-              funding, compliance, investor relations and scalable
-              business expansion.
-            </p>
+      <p
+        className="
+          mt-30
+          ml-30
+    max-w-[800px]
+    text-black
+    text-
+    md:tepxxt-2xl
+    leading-relaxed
+        "
+      >
+        Trusted by startups, founders, SMEs, and enterprises across India, Arvess delivers business consulting, legal compliance, Startup India registration, DPIIT recognition, ISO certification, government grant support, investor readiness, fundraising advisory, digital transformation, and business growth solutions. Our mission is to help businesses build credibility, improve efficiency, secure opportunities, and achieve sustainable growth through innovative strategies and execution-driven support.
+      </p>
 
-          </motion.div>
+    </div>
 
-        </div>
+  </motion.div>
+
+</div>
 
         {/* LINKS */}
 
@@ -63,7 +66,7 @@ export default function Footer() {
           md:grid-cols-2
           lg:grid-cols-4
           gap-14
-          py-24
+          py-20
           border-b
           border-black/10
         ">
@@ -77,47 +80,47 @@ export default function Footer() {
           >
 
             <h3 className="
-              text-black
+              text-[#A00A20]
               text-[24px]
               font-bold
-              mb-8
+              mb-5
             ">
               Company
             </h3>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
 
               <Link
                 href="/"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                className="text-[#012D0E] hover:text-[#A00A20]"
               >
                 Home
               </Link>
 
               <Link
                 href="/about"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                className="text-[#012D0E] hover:text-[#A00A20] transition"
               >
                 About Us
               </Link>
 
               <Link
                 href="/digital"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                className="text-[#012D0E] hover:text-[#A00A20] transition"
               >
                 Digital
               </Link>
 
               <Link
                 href="/investor"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                className="text-[#012D0E] hover:text-[#A00A20] transition"
               >
                 Investor Relation
               </Link>
 
               <Link
                 href="/pricing"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                className="text-[#012D0E] hover:text-[#A00A20] transition"
               >
                 Pricing
               </Link>
@@ -135,33 +138,33 @@ export default function Footer() {
           >
 
             <h3 className="
-              text-black
+              text-[#A00A20]
               text-[24px]
               font-bold
-              mb-8
+              mb-5
             ">
               Services
             </h3>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Startup Consulting
               </p>
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Funding Support
               </p>
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Investor Relations
               </p>
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Strategic Growth
               </p>
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Business Expansion
               </p>
 
@@ -178,33 +181,33 @@ export default function Footer() {
           >
 
             <h3 className="
-              text-black
+              text-[#A00A20]
               text-[24px]
               font-bold
-              mb-8
+              mb-5
             ">
               Legal
             </h3>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
 
               <Link
                 href="/privacy-policy"
-                className="text-black/60 hover:text-[#064e3b] transition"
+                className="text-[#012D0E] hover:text-[#012D0E] transition"
               >
                 Privacy Policy
               </Link>
 
               <Link
                 href="/refund-policy"
-                className="text-black/60 hover:text-[#064e3b] transition"
+                className="text-[#012D0E] hover:text-[#012D0E] transition"
               >
                 Refund Policy
               </Link>
 
               <Link
                 href="/terms-condition"
-                className="text-black/60 hover:text-[#064e3b] transition"
+                className="text-[#012D0E] hover:text-[#012D0E] transition"
               >
                 Terms & Conditions
               </Link>
@@ -222,29 +225,29 @@ export default function Footer() {
           >
 
             <h3 className="
-              text-black
+              text-[#A00A20]
               text-[24px]
               font-bold
-              mb-8
+              mb-5
             ">
               Contact
             </h3>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
 
               <a
-                href="mailto:hello@arvess.com"
-                className="text-black/60 hover:text-[#A00A20] transition"
+                href="mailto:arvess.services@gmail.com"
+                className="text-[#012D0E] hover:text-[#A00A20] transition"
               >
-                hello@arvess.com
+                arvess.services@gmail.com
               </a>
 
-              <p className="text-black/60">
+              <p className="text-[#012D0E]">
                 Ahmedabad, Gujarat, India
               </p>
 
-              <p className="text-black/60">
-                +91 99999 99999
+              <p className="text-[#012D0E]">
+                +91 9662347619
               </p>
 
             </div>
@@ -260,7 +263,7 @@ export default function Footer() {
           flex-wrap
           justify-center
           gap-4
-          py-16
+          
         ">
 
           {[
@@ -278,7 +281,7 @@ export default function Footer() {
               }}
               className="
                 px-8
-                py-4
+                py-2
                 rounded-full
                 border
                 border-black/10
@@ -300,7 +303,7 @@ export default function Footer() {
         {/* BOTTOM */}
 
         <div className="
-          py-8
+          py-2
           flex
           flex-col
           md:flex-row

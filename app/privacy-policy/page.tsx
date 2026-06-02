@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
 
       <div className="absolute left-[-200px] top-[5%] h-[450px] w-[450px] rounded-full bg-[#A00A20]/10 blur-[140px]" />
 
-      <div className="absolute right-[-200px] bottom-[5%] h-[450px] w-[450px] rounded-full bg-[#064e3b]/10 blur-[140px]" />
+      <div className="absolute right-[-200px] bottom-[5%] h-[450px] w-[450px] rounded-full bg-[#012D0E]/10 blur-[140px]" />
 
       {/* HERO */}
 
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
           <div className="mb-6 flex items-center gap-4">
             <div className="h-[2px] w-[70px] bg-[#A00A20]" />
 
-            <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+            <span className="text-[11px] uppercase tracking-[6px] text-[#012D0E]">
               Legal
             </span>
           </div>
@@ -197,7 +197,7 @@ export default function PrivacyPolicyPage() {
                     </ul>
                   </div>
 
-                  <div className="policy-card rounded-[35px] border border-black bg-[#064e3b]/5 p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(6,78,59,0.12)]">
+                  <div className="policy-card rounded-[35px] border border-black bg-[#012D0E]/5 p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(6,78,59,0.12)]">
                     <h4 className="text-[30px] font-semibold text-black">
                       B. Technical & Usage Information
                     </h4>
@@ -291,7 +291,7 @@ export default function PrivacyPolicyPage() {
                   ].map((item, index) => (
                     <div
                       key={index}
-                      className="rounded-[28px] border border-black bg-[#064e3b]/5 p-6"
+                      className="rounded-[28px] border border-black bg-[#012D0E]/5 p-6"
                     >
                       <p className="text-[16px] text-black/70">• {item}</p>
                     </div>
@@ -367,7 +367,7 @@ export default function PrivacyPolicyPage() {
                     </ul>
                   </div>
 
-                  <div className="rounded-[30px] bg-[#064e3b]/5 border border-black p-8">
+                  <div className="rounded-[30px] bg-[#012D0E]/5 border border-black p-8">
                     <h4 className="text-[24px] font-semibold text-black">
                       B. Legal & Regulatory Compliance
                     </h4>

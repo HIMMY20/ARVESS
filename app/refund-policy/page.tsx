@@ -63,7 +63,7 @@ export default function RefundPolicyPage() {
 
       <div className="absolute left-[-200px] top-[5%] h-[450px] w-[450px] rounded-full bg-[#A00A20]/10 blur-[140px]" />
 
-      <div className="absolute right-[-200px] bottom-[5%] h-[450px] w-[450px] rounded-full bg-[#064e3b]/10 blur-[140px]" />
+      <div className="absolute right-[-200px] bottom-[5%] h-[450px] w-[450px] rounded-full bg-[#012D0E]/10 blur-[140px]" />
 
       {/* HERO */}
 
@@ -72,7 +72,7 @@ export default function RefundPolicyPage() {
           <div className="mb-6 flex items-center gap-4">
             <div className="h-[2px] w-[70px] bg-[#A00A20]" />
 
-            <span className="text-[11px] uppercase tracking-[6px] text-[#064e3b]">
+            <span className="text-[11px] uppercase tracking-[6px] text-[#012D0E]">
               Legal
             </span>
           </div>
@@ -158,7 +158,7 @@ export default function RefundPolicyPage() {
                     </p>
                   </div>
 
-                  <div className="policy-card rounded-[35px] bg-[#064e3b]/5 p-8">
+                  <div className="policy-card rounded-[35px] bg-[#012D0E]/5 p-8">
                     <h4 className="text-[26px] font-semibold text-black">
                       Client / Service Receiver
                     </h4>
@@ -239,7 +239,7 @@ export default function RefundPolicyPage() {
                   ].map((item, index) => (
                     <div
                       key={index}
-                      className="policy-card rounded-[28px] bg-[#064e3b]/5 p-6"
+                      className="policy-card rounded-[28px] bg-[#012D0E]/5 p-6"
                     >
                       <p className="text-[16px] text-black/70">• {item}</p>
                     </div>
@@ -378,7 +378,7 @@ export default function RefundPolicyPage() {
                   ].map((item, index) => (
                     <div
                       key={index}
-                      className="policy-card rounded-[28px] bg-[#064e3b]/5 p-6"
+                      className="policy-card rounded-[28px] bg-[#012D0E]/5 p-6"
                     >
                       <p className="text-[16px] text-black/70">• {item}</p>
                     </div>
