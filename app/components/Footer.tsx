@@ -97,26 +97,6 @@ export default function Footer() {
                 Home
               </Link>
 
-              <Link
-                href="/about"
-                className="text-[#012D0E] hover:text-[#A00A20] transition"
-              >
-                About Us
-              </Link>
-
-              <Link
-                href="/digital"
-                className="text-[#012D0E] hover:text-[#A00A20] transition"
-              >
-                Digital
-              </Link>
-
-              <Link
-                href="/investor"
-                className="text-[#012D0E] hover:text-[#A00A20] transition"
-              >
-                Investor Relation
-              </Link>
 
               <Link
                 href="/pricing"
@@ -148,21 +128,21 @@ export default function Footer() {
 
             <div className="flex flex-col gap-2">
 
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
+              <Link href="/" className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Funding
-              </p>
+              </Link>
 
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
+              <Link href="/" className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Legal
-              </p>
+              </Link>
 
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
+              <Link href="/" className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Digital
-              </p>
+              </Link>
 
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
+              <Link href="/" className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Investor Relations
-              </p>
+              </Link>
 
 
             </div>
@@ -183,7 +163,7 @@ export default function Footer() {
               font-bold
               mb-5
             ">
-              Legal
+              Resources
             </h3>
 
             <div className="flex flex-col gap-2">
@@ -255,43 +235,52 @@ export default function Footer() {
 
         {/* SOCIALS */}
 
-        <div className="
-          flex
-          flex-wrap
-          justify-center
-          gap-4
-          
-        ">
-
-          {[
-            "LinkedIn",
-            "Instagram",
-            "Facebook",
-            "YouTube",
-          ].map((item) => (
-
-            <motion.a
-              key={item}
-              href="#"
-              whileHover={{
-                scale: 1.05,
-              }}
-              className="
-                px-8
-                py-2
-                rounded-full
-                border
-                border-black/10
-                bg-white
-                text-black/70
-                hover:border-[#A00A20]
-                hover:text-[#A00A20]
-                transition-all
-                duration-300
-              "
-            >
-              {item}
-            </motion.a>
+        <div
+  className="
+    flex
+    flex-wrap
+    justify-center
+    gap-4
+  "
+>
+  {[
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/arvessbusinessfundinginvestorgrant/",
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/arvess_official?igsh=MXFyYWw4MTJ5eXJyMA==",
+    },
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/share/1JePX6Z9km/",
+    },
+  ].map((item) => (
+    <motion.a
+      key={item.name}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{
+        scale: 1.05,
+      }}
+      className="
+        px-8
+        py-2
+        rounded-full
+        border
+        border-black/10
+        bg-white
+        text-black/70
+        hover:border-[#A00A20]
+        hover:text-[#A00A20]
+        transition-all
+        duration-300
+      "
+    >
+      {item.name}
+    </motion.a>
 
           ))}
 
