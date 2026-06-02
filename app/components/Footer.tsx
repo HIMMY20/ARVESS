@@ -149,24 +149,21 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
 
               <p className="text-[#012D0E] hover:text-[#A00A20] transition">
-                Startup Consulting
+                Funding
               </p>
 
               <p className="text-[#012D0E] hover:text-[#A00A20] transition">
-                Funding Support
+                Legal
+              </p>
+
+              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
+                Digital
               </p>
 
               <p className="text-[#012D0E] hover:text-[#A00A20] transition">
                 Investor Relations
               </p>
 
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
-                Strategic Growth
-              </p>
-
-              <p className="text-[#012D0E] hover:text-[#A00A20] transition">
-                Business Expansion
-              </p>
 
             </div>
 
