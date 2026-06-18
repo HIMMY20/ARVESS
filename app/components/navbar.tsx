@@ -69,107 +69,116 @@ export default function Navbar() {
 
           
 
-          {/* FUNDING */}
+    {/* FUNDING */}
 
-          <div className="group relative">
-            <button
-              className={`flex items-center gap-[6px] text-[14px] font-medium uppercase tracking-[0.4px] transition-all duration-300 hover:scale-[1.06] hover:font-semibold ${
-                pathname.includes("/funding")
-                  ? "text-[#A00A20]"
-                  : "text-black hover:text-[#A00A20]"
-              }`}
-            >
-              Funding
-              <span className="text-[7px] transition-all duration-300 group-hover:rotate-180">
-                ▼
-              </span>
-            </button>
+<div className="group relative">
+  <button
+    className={`flex items-center gap-[6px] text-[14px] font-medium uppercase tracking-[0.4px] transition-all duration-300 hover:scale-[1.06] hover:font-semibold text-black hover:text-[#A00A20]`}
+  >
+    Funding
+    <span className="text-[7px] transition-all duration-300 group-hover:rotate-180">
+      ▼
+    </span>
+  </button>
 
-            <div className="invisible absolute left-0 top-[145%] z-50 w-[255px] rounded-[22px] border border-black/5 bg-white/95 p-4 opacity-0 shadow-[0_15px_50px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-300 group-hover:visible group-hover:top-[125%] group-hover:opacity-100">
-              <div className="space-y-2">
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    Grant Funding
-                  </h3>
+  <div className="invisible absolute left-0 top-[145%] z-50 w-[255px] rounded-[22px] border border-black/5 bg-white/95 p-4 opacity-0 shadow-[0_15px_50px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-300 group-hover:visible group-hover:top-[125%] group-hover:opacity-100">
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Government backend financial support
-                  </p>
-                </div>
+    <div className="space-y-2">
 
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    Equity Investment
-                  </h3>
+      <a href="/funding/grant-funding">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            Grant Funding
+          </h3>
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Raise capital by offering ownership
-                  </p>
-                </div>
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Government backend financial support
+          </p>
+        </div>
+      </a>
 
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    Debt Financing
-                  </h3>
+      <a href="/funding/equity-investment">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            Equity Investment
+          </h3>
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Secure funds without equity dilution
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Raise capital by offering ownership
+          </p>
+        </div>
+      </a>
 
-          {/* LEGAL */}
+      <a href="/funding/debt-financing">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            Debt Financing
+          </h3>
 
-          <div className="group relative">
-            <button
-              className={`flex items-center gap-[6px] text-[14px] font-medium uppercase tracking-[0.4px] transition-all duration-300 hover:scale-[1.06] hover:font-semibold ${
-                pathname.includes("/legal")
-                  ? "text-[#A00A20]"
-                  : "text-black hover:text-[#A00A20]"
-              }`}
-            >
-              Legal
-              <span className="text-[7px] transition-all duration-300 group-hover:rotate-180">
-                ▼
-              </span>
-            </button>
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Secure funds without equity dilution
+          </p>
+        </div>
+      </a>
 
-            <div className="invisible absolute left-0 top-[145%] z-50 w-[255px] rounded-[22px] border border-black/5 bg-white/95 p-4 opacity-0 shadow-[0_15px_50px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-300 group-hover:visible group-hover:top-[125%] group-hover:opacity-100">
-              <div className="space-y-2">
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    Business Formation
-                  </h3>
+    </div>
+  </div>
+</div>
+{/* LEGAL */}
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Company setup & legal registrations
-                  </p>
-                </div>
+<div className="group relative">
+  <button
+    className={`flex items-center gap-[6px] text-[14px] font-medium uppercase tracking-[0.4px] transition-all duration-300 hover:scale-[1.06] hover:font-semibold text-black hover:text-[#A00A20]`}
+  >
+    Legal
+    <span className="text-[7px] transition-all duration-300 group-hover:rotate-180">
+      ▼
+    </span>
+  </button>
 
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    IP Protection
-                  </h3>
+  <div className="invisible absolute left-0 top-[145%] z-50 w-[255px] rounded-[22px] border border-black/5 bg-white/95 p-4 opacity-0 shadow-[0_15px_50px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-300 group-hover:visible group-hover:top-[125%] group-hover:opacity-100">
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Safeguard your brand & innovations
-                  </p>
-                </div>
+    <div className="space-y-2">
 
-                <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5 hover:scale-[1.02]">
-                  <h3 className="text-[14px] font-medium tracking-[-0.3px] text-[#012D0E] transition-all duration-300 hover:font-bold hover:text-[#A00A20]">
-                    Legal & Compliance
-                  </h3>
+      <a href="/legal/business-formation">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            Business Formation
+          </h3>
 
-                  <p className="mt-[2px] text-[11px] leading-4 text-black">
-                    Contracts, filings & regulatory support
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Company setup & registrations
+          </p>
+        </div>
+      </a>
+
+      <a href="/legal/ip-protection">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            IP Protection
+          </h3>
+
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Trademark, copyright & patents
+          </p>
+        </div>
+      </a>
+
+      <a href="/legal/compliance">
+        <div className="cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-[#A00A20]/5">
+          <h3 className="text-[14px] font-medium text-[#012D0E]">
+            Legal & Compliance
+          </h3>
+
+          <p className="mt-[2px] text-[11px] leading-4 text-black">
+            Regulatory and legal support
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
 
           {/* DIGITAL */}
 
