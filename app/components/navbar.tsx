@@ -174,14 +174,8 @@ export default function Navbar() {
         }`}
       >
         {/* DRAWER HEADER */}
-        <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-gray-100">
-          <img src="/arvess.svg" alt="logo" className="h-[50px] object-contain" />
-          <button
-            onClick={() => setOpen(false)}
-            className="p-2 rounded-full hover:bg-gray-100 transition"
-          >
-            <X size={22} strokeWidth={2.5} />
-          </button>
+        <div className="flex items-center justify-between px-6 pt-6 pb-12 border-b border-gray-100">
+          
         </div>
 
         {/* DRAWER LINKS */}
