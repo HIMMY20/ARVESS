@@ -122,7 +122,7 @@ export default function Navbar() {
           </div>
 
           <a href="/digital" className={navLink("/digital")}>Digital</a>
-          <a href="/investor-relation" className={navLink("/investor-relation")}>Investor Relation</a>
+          <a href="/investor" className={navLink("/investor")}>Investor Relation</a>
           <a href="/pricing" className={navLink("/pricing")}>Pricing</a>
 
           {/* MORE */}
@@ -265,10 +265,10 @@ export default function Navbar() {
 
           {/* INVESTOR RELATION */}
           <a
-            href="/investor-relation"
+            href="/investor"
             onClick={() => setOpen(false)}
             className={`flex items-center px-4 py-3 rounded-xl text-[15px] font-semibold uppercase tracking-wide transition-all duration-200 ${
-              pathname === "/investor-relation" ? "bg-[#A00A20]/8 text-[#A00A20]" : "text-black hover:bg-gray-50 hover:text-[#A00A20]"
+              pathname === "/investor" ? "bg-[#A00A20]/8 text-[#A00A20]" : "text-black hover:bg-gray-50 hover:text-[#A00A20]"
             }`}
           >
             Investor Relation
