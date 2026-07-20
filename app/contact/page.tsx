@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/Footer";
 import {
@@ -36,9 +36,13 @@ interface FieldErrors {
   message?: string;
 }
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
 };
 
 /* ─────────────────────────────────────────────────────────── */
@@ -84,7 +88,12 @@ function Counter({ end, label }: { end: number; label: string }) {
 /* ─────────────────────────────────────────────────────────── */
 export default function ContactPage() {
   const [form, setForm] = useState<FormData>({
-    name: "", email: "", phone: "", company: "", service: "", message: "",
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    message: "",
   });
   const [errors, setErrors] = useState<FieldErrors>({});
   const [sending, setSending] = useState(false);
@@ -106,7 +115,9 @@ export default function ContactPage() {
     if (!validate()) return;
     setSending(true);
 
-    const subject = form.service ? `Service Enquiry: ${form.service}` : "General Enquiry";
+    const subject = form.service
+      ? `Service Enquiry: ${form.service}`
+      : "General Enquiry";
     const text = [
       "Hello Arvess Services,",
       "",
@@ -126,7 +137,10 @@ export default function ContactPage() {
     setTimeout(() => {
       setSending(false);
       setSent(true);
-      window.open(`https://wa.me/919662347619?text=${encodeURIComponent(text)}`, "_blank");
+      window.open(
+        `https://wa.me/919662347619?text=${encodeURIComponent(text)}`,
+        "_blank"
+      );
     }, 800);
   };
 
@@ -143,7 +157,12 @@ export default function ContactPage() {
 
   /* Contact details */
   const contactDetails = [
-    { icon: MapPin, label: "Office", value: "Office No. C-821, Siddhi Vinayak Tower, Makarba, Ahmedabad – 380051" },
+    {
+      icon: MapPin,
+      label: "Office",
+      value:
+        "Office No. C-821, Siddhi Vinayak Tower, Makarba, Ahmedabad – 380051",
+    },
     { icon: Mail, label: "Email", value: "contact@arvessservices.com" },
     { icon: Phone, label: "Phone", value: "+91 96623 47619" },
     { icon: MessageCircle, label: "WhatsApp", value: "+91 96623 47619" },
@@ -189,14 +208,14 @@ export default function ContactPage() {
           </span>
 
           <h1 className="mt-8 text-[44px] md:text-[76px] font-black leading-[0.98] tracking-[-3px] text-[#012D0E]">
-            Let's Talk Business.
+            Let&apos;s Talk Business.
           </h1>
 
           <p className="mx-auto mt-7 max-w-[640px] text-lg leading-relaxed text-black/60">
             Not just messages — real discussions, expert guidance, and
-            strategic business solutions. Whether you're seeking funding,
-            legal advisory, digital transformation, or startup consulting,
-            our team is ready to help.
+            strategic business solutions. Whether you&apos;re seeking
+            funding, legal advisory, digital transformation, or startup
+            consulting, our team is ready to help.
           </p>
         </motion.div>
       </section>
@@ -205,7 +224,6 @@ export default function ContactPage() {
       <section id="contact-form" className="relative px-6 py-10">
         <div className="mx-auto max-w-[1300px]">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.25fr] lg:items-stretch">
-
             {/* LEFT — Get In Touch, soft gradient panel */}
             <motion.div
               variants={fadeUp}
@@ -214,7 +232,9 @@ export default function ContactPage() {
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col rounded-[32px] bg-gradient-to-br from-[#012D0E] to-[#01180a] p-9 sm:p-11 shadow-[0_25px_60px_-15px_rgba(1,45,14,0.4)]"
             >
-              <p className="text-[11px] uppercase tracking-[3px] text-white/50">Reach Us Directly</p>
+              <p className="text-[11px] uppercase tracking-[3px] text-white/50">
+                Reach Us Directly
+              </p>
               <h2 className="mt-3 text-[32px] sm:text-[38px] font-black text-white leading-[1.05]">
                 Get In Touch
               </h2>
@@ -227,8 +247,12 @@ export default function ContactPage() {
                       <Icon size={18} className="text-white" />
                     </div>
                     <div>
-                      <p className="mb-1 text-[10px] uppercase tracking-[3px] text-white/45">{label}</p>
-                      <p className="text-sm font-medium leading-snug text-white/95">{value}</p>
+                      <p className="mb-1 text-[10px] uppercase tracking-[3px] text-white/45">
+                        {label}
+                      </p>
+                      <p className="text-sm font-medium leading-snug text-white/95">
+                        {value}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -268,7 +292,14 @@ export default function ContactPage() {
                     className="mt-8 rounded-full bg-[#A00A20] px-8 py-4 text-sm font-semibold text-white transition hover:bg-[#012D0E]"
                     onClick={() => {
                       setSent(false);
-                      setForm({ name: "", email: "", phone: "", company: "", service: "", message: "" });
+                      setForm({
+                        name: "",
+                        email: "",
+                        phone: "",
+                        company: "",
+                        service: "",
+                        message: "",
+                      });
                     }}
                   >
                     Send Another
@@ -282,7 +313,8 @@ export default function ContactPage() {
                         Send Us A Message
                       </h3>
                       <p className="mt-1 text-sm text-black/50">
-                        Fill in your details and we'll get back to you fast.
+                        Fill in your details and we&apos;ll get back to you
+                        fast.
                       </p>
                     </div>
                     <span className="hidden shrink-0 rounded-full bg-[#012D0E]/5 px-3.5 py-2 text-[11px] font-semibold text-[#012D0E]/60 sm:block">
@@ -296,12 +328,18 @@ export default function ContactPage() {
                         type="text"
                         placeholder="Your Name *"
                         value={form.name}
-                        onChange={(e) => setForm({ ...form, name: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, name: e.target.value })
+                        }
                         onFocus={() => setFocusedField("name")}
                         onBlur={() => setFocusedField(null)}
                         className={inputStyle("name", !!errors.name)}
                       />
-                      {errors.name && <p className="mt-1 text-xs text-[#A00A20]">{errors.name}</p>}
+                      {errors.name && (
+                        <p className="mt-1 text-xs text-[#A00A20]">
+                          {errors.name}
+                        </p>
+                      )}
                     </div>
 
                     <div>
@@ -309,12 +347,18 @@ export default function ContactPage() {
                         type="email"
                         placeholder="Your Email *"
                         value={form.email}
-                        onChange={(e) => setForm({ ...form, email: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, email: e.target.value })
+                        }
                         onFocus={() => setFocusedField("email")}
                         onBlur={() => setFocusedField(null)}
                         className={inputStyle("email", !!errors.email)}
                       />
-                      {errors.email && <p className="mt-1 text-xs text-[#A00A20]">{errors.email}</p>}
+                      {errors.email && (
+                        <p className="mt-1 text-xs text-[#A00A20]">
+                          {errors.email}
+                        </p>
+                      )}
                     </div>
 
                     <div>
@@ -322,12 +366,18 @@ export default function ContactPage() {
                         type="tel"
                         placeholder="Phone Number *"
                         value={form.phone}
-                        onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, phone: e.target.value })
+                        }
                         onFocus={() => setFocusedField("phone")}
                         onBlur={() => setFocusedField(null)}
                         className={inputStyle("phone", !!errors.phone)}
                       />
-                      {errors.phone && <p className="mt-1 text-xs text-[#A00A20]">{errors.phone}</p>}
+                      {errors.phone && (
+                        <p className="mt-1 text-xs text-[#A00A20]">
+                          {errors.phone}
+                        </p>
+                      )}
                     </div>
 
                     <div>
@@ -335,7 +385,9 @@ export default function ContactPage() {
                         type="text"
                         placeholder="Company Name"
                         value={form.company}
-                        onChange={(e) => setForm({ ...form, company: e.target.value })}
+                        onChange={(e) =>
+                          setForm({ ...form, company: e.target.value })
+                        }
                         onFocus={() => setFocusedField("company")}
                         onBlur={() => setFocusedField(null)}
                         className={inputStyle("company")}
@@ -354,7 +406,9 @@ export default function ContactPage() {
                           <button
                             key={s}
                             type="button"
-                            onClick={() => setForm({ ...form, service: active ? "" : s })}
+                            onClick={() =>
+                              setForm({ ...form, service: active ? "" : s })
+                            }
                             className={`rounded-full px-4 py-2 text-xs font-semibold transition-colors duration-150 ${
                               active
                                 ? "bg-[#012D0E] text-white"
@@ -373,12 +427,21 @@ export default function ContactPage() {
                       rows={5}
                       placeholder="Your Message *"
                       value={form.message}
-                      onChange={(e) => setForm({ ...form, message: e.target.value })}
+                      onChange={(e) =>
+                        setForm({ ...form, message: e.target.value })
+                      }
                       onFocus={() => setFocusedField("message")}
                       onBlur={() => setFocusedField(null)}
-                      className={`${inputStyle("message", !!errors.message)} h-full resize-none`}
+                      className={`${inputStyle(
+                        "message",
+                        !!errors.message
+                      )} h-full resize-none`}
                     />
-                    {errors.message && <p className="mt-1 text-xs text-[#A00A20]">{errors.message}</p>}
+                    {errors.message && (
+                      <p className="mt-1 text-xs text-[#A00A20]">
+                        {errors.message}
+                      </p>
+                    )}
                   </div>
 
                   <button
@@ -400,7 +463,8 @@ export default function ContactPage() {
                   </button>
 
                   <p className="mt-4 text-center text-xs text-black/35">
-                    Powered by Arvess Services · No data stored, opens WhatsApp directly.
+                    Powered by Arvess Services · No data stored, opens
+                    WhatsApp directly.
                   </p>
                 </div>
               )}
@@ -437,8 +501,13 @@ export default function ContactPage() {
               <div className="space-y-2.5">
                 {whyUs.map((item) => (
                   <div key={item} className="flex items-start gap-2.5">
-                    <CheckCircle size={15} className="mt-[2px] shrink-0 text-[#A00A20]" />
-                    <span className="text-sm leading-snug text-black/65">{item}</span>
+                    <CheckCircle
+                      size={15}
+                      className="mt-[2px] shrink-0 text-[#A00A20]"
+                    />
+                    <span className="text-sm leading-snug text-black/65">
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -446,14 +515,19 @@ export default function ContactPage() {
 
             {/* Services */}
             <div className="md:pl-8">
-              <h3 className="mb-4 text-lg font-bold text-[#012D0E]">What We Help With</h3>
+              <h3 className="mb-4 text-lg font-bold text-[#012D0E]">
+                What We Help With
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {services.map((s, i) => (
                   <span
                     key={s}
                     className="rounded-full px-3.5 py-2 text-xs font-medium"
                     style={{
-                      background: i % 2 === 0 ? "rgba(1,45,14,0.06)" : "rgba(160,10,32,0.06)",
+                      background:
+                        i % 2 === 0
+                          ? "rgba(1,45,14,0.06)"
+                          : "rgba(160,10,32,0.06)",
                       color: i % 2 === 0 ? "#012D0E" : "#A00A20",
                     }}
                   >
@@ -505,7 +579,11 @@ export default function ContactPage() {
             </p>
             <button
               className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#A00A20] px-10 py-4 text-sm font-semibold uppercase tracking-[2px] text-white transition-transform duration-300 hover:scale-[1.03]"
-              onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("contact-form")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Book A Consultation
               <ArrowRight size={18} />
